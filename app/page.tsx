@@ -95,8 +95,8 @@ export default function Home() {
             <div className="section-tag">Selected work</div>
             <h2 className="section-title">Projects that<br /><em>shipped</em></h2>
           </div>
-          <a href="#" className="btn-ghost" style={{ color: 'var(--muted)' }}>
-            All projects <span className="arr">&rarr;</span>
+          <a href="#" className="btn-primary" style={{ fontSize: '0.78rem', padding: '0.6rem 1.4rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+            All projects <span style={{ fontSize: '1rem', lineHeight: 1 }}>↗</span>
           </a>
         </div>
         <div className="works-grid">
@@ -114,7 +114,7 @@ export default function Home() {
                 End-to-end mobile ordering for a real restaurant client. Research, competitive audit,
                 persona &amp; user journey through to final UI.
               </p>
-              <div className="work-arrow">&nearr;</div>
+              <div className="work-arrow">↗</div>
             </div>
           </a>
           <a href="/flaura" className="work-card reveal">
@@ -131,7 +131,7 @@ export default function Home() {
                 A complete brand refresh to sharpen market positioning and stand out
                 from competitors in the floral space.
               </p>
-              <div className="work-arrow">&nearr;</div>
+              <div className="work-arrow">↗</div>
             </div>
           </a>
         </div>
@@ -228,7 +228,7 @@ export default function Home() {
               </div>
               <a href="https://www.linkedin.com/in/humza-saeed-7b3761158" target="_blank" rel="noopener noreferrer"
                 style={{ fontSize: '0.67rem', color: 'var(--accent)', textDecoration: 'none' }}>
-                LinkedIn &nearr;
+                LinkedIn ↗
               </a>
             </div>
           </div>
@@ -334,7 +334,7 @@ export default function Home() {
             or just a conversation about design &mdash; I&apos;d love to hear from you.
           </p>
           <a href="mailto:humzadesign@gmail.com" className="cta-email">
-            humzadesign@gmail.com &nearr;
+            humzadesign@gmail.com ↗
           </a>
         </div>
       </section>
