@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: 'Humza Saeed — UX & UI Designer',
   description: 'Portfolio of Humza Saeed — UX & UI Designer based in Magdeburg, Germany.',
