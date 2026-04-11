@@ -28,27 +28,34 @@ body {
   font-weight: 300;
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none;
 }
 
-/* ── Custom Cursor ── */
-.cursor {
-  width: 9px; height: 9px;
-  background: var(--accent);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none; z-index: 9999;
-  transform: translate(-50%,-50%);
-  transition: transform 0.12s ease;
-}
-.cursor-ring {
-  width: 34px; height: 34px;
-  border: 1px solid rgba(200,255,110,0.3);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none; z-index: 9998;
-  transform: translate(-50%,-50%);
-  transition: transform 0.38s ease;
+/* ── Custom Cursor — pointer devices only ── */
+.cursor, .cursor-ring { display: none; }
+
+@media (pointer: fine) {
+  body { cursor: none; }
+
+  .cursor {
+    display: block;
+    width: 9px; height: 9px;
+    background: var(--accent);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none; z-index: 9999;
+    transform: translate(-50%,-50%);
+    transition: transform 0.12s ease;
+  }
+  .cursor-ring {
+    display: block;
+    width: 34px; height: 34px;
+    border: 1px solid rgba(200,255,110,0.3);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none; z-index: 9998;
+    transform: translate(-50%,-50%);
+    transition: transform 0.38s ease;
+  }
 }
 
 /* ── Nav ── */
@@ -313,7 +320,7 @@ section { padding: 6rem 3rem; }
   color: var(--muted); align-self: flex-start;
 }
 .work-card:hover .work-arrow { border-color: var(--accent); color: var(--accent); transform: translate(3px,-3px); }
-.work-year { position: absolute; top: 1.75rem; right: 1.75rem; font-size: 0.64rem; color: var(--muted); letter-spacing: 0.1em; }
+.work-year { position: absolute; top: 1.25rem; right: 1.25rem; font-size: 0.6rem; color: var(--muted); letter-spacing: 0.08em; background: rgba(14,14,14,0.72); border: 1px solid rgba(255,255,255,0.1); border-radius: 100px; padding: 0.25rem 0.6rem; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
 
 #services { background: var(--bg2); }
 .services-grid {

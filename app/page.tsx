@@ -9,6 +9,7 @@ export default function Home() {
   const ringRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!window.matchMedia('(pointer: fine)').matches) return;
     const cursor = cursorRef.current;
     const ring = ringRef.current;
     if (!cursor || !ring) return;
