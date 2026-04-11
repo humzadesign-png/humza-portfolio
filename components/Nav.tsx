@@ -13,8 +13,9 @@ export default function Nav({ variant = 'home' }: NavProps) {
   const textRef = useRef<HTMLSpanElement>(null);
   const dotLatinRef = useRef<HTMLSpanElement>(null);
   const dotUrduRef = useRef<HTMLSpanElement>(null);
+  const tcursorRef = useRef<HTMLSpanElement>(null);
 
-  useTypingAnimation(textRef, dotLatinRef, dotUrduRef);
+  useTypingAnimation(textRef, dotLatinRef, dotUrduRef, tcursorRef);
 
   useEffect(() => {
     const nav = navRef.current;
@@ -30,7 +31,7 @@ export default function Nav({ variant = 'home' }: NavProps) {
         <span className="logo-inner">
           <span ref={dotUrduRef} id="dotUrdu" className="dot-urdu">۔</span>
           <span ref={textRef} id="logoText" className="logo-text latin"></span>
-          <span className="tcursor"></span>
+          <span ref={tcursorRef} className="tcursor"></span>
           <span ref={dotLatinRef} id="dotLatin" className="dot-latin">.</span>
         </span>
       </Link>

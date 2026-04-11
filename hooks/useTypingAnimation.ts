@@ -12,7 +12,8 @@ const T_GAP = 450;
 export function useTypingAnimation(
   textRef: React.RefObject<HTMLSpanElement | null>,
   dotLatinRef: React.RefObject<HTMLSpanElement | null>,
-  dotUrduRef: React.RefObject<HTMLSpanElement | null>
+  dotUrduRef: React.RefObject<HTMLSpanElement | null>,
+  cursorRef?: React.RefObject<HTMLSpanElement | null>
 ) {
   const stateRef = useRef({ isUrdu: false, idx: 0, deleting: false });
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -26,9 +27,11 @@ export function useTypingAnimation(
     function hideDots() {
       dotL!.classList.remove('on');
       dotU!.classList.remove('on');
+      if (cursorRef?.current) cursorRef.current.style.display = '';
     }
 
     function showDot() {
+      if (cursorRef?.current) cursorRef.current.style.display = 'none';
       if (stateRef.current.isUrdu) {
         dotU!.classList.add('on');
         dotL!.classList.remove('on');
