@@ -1,7 +1,30 @@
 import type { Metadata } from 'next';
+import { DM_Serif_Display, DM_Sans, Noto_Nastaliq_Urdu } from 'next/font/google';
 import './globals.css';
 
 export const runtime = 'edge';
+
+const dmSerif = DM_Serif_Display({
+  weight: ['400'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-serif',
+  display: 'swap',
+});
+
+const dmSans = DM_Sans({
+  weight: ['300', '400', '500'],
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const notoNastaliq = Noto_Nastaliq_Urdu({
+  weight: ['400'],
+  subsets: ['arabic'],
+  variable: '--font-urdu',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Humza Saeed — UX & UI Designer',
@@ -25,15 +48,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Noto+Nastaliq+Urdu&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={`${dmSerif.variable} ${dmSans.variable} ${notoNastaliq.variable}`}>
       <body>{children}</body>
     </html>
   );

@@ -14,9 +14,9 @@
   --muted: rgba(240,237,232,0.45);
   --accent: #c8ff6e;
   --orange: #f5a623;
-  --serif: 'DM Serif Display', Georgia, serif;
-  --sans: 'DM Sans', system-ui, sans-serif;
-  --urdu: 'Noto Nastaliq Urdu', serif;
+  --serif: var(--font-serif), Georgia, serif;
+  --sans: var(--font-sans), system-ui, sans-serif;
+  --urdu: var(--font-urdu), serif;
 }
 
 html { scroll-behavior: smooth; }
