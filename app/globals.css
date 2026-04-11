@@ -406,7 +406,22 @@ footer a:hover { color: var(--accent); }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
 
-@media (max-width: 900px) {
+/* ── Tablet (768px – 1024px) ── */
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav { padding: 1.2rem 2rem; }
+  .nav-links { display: flex; gap: 1.5rem; }
+  .nav-links li:last-child { display: none; } /* hide Hire me CTA on tablet */
+  .hero { grid-template-columns: 1.1fr 0.9fr; padding: 7rem 2rem 3rem; gap: 2.5rem; }
+  section { padding: 4.5rem 2rem; }
+  .works-grid { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .reviews-grid { grid-template-columns: 1fr 1fr; }
+  footer { padding: 2rem; }
+}
+
+/* ── Mobile (≤ 767px) ── */
+@media (max-width: 767px) {
   nav { padding: 1.2rem 1.5rem; }
   .nav-links { display: none; }
   .hero { grid-template-columns: 1fr; padding: 7rem 1.5rem 3rem; }
@@ -575,7 +590,21 @@ h2.cs-h2 em { font-style: italic; color: var(--muted); }
 .next-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
 .next-title { font-family: var(--serif); font-size: 2rem; color: var(--text); }
 
-@media (max-width: 900px) {
+/* ── Case Study — Tablet ── */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cs-hero { grid-template-columns: 1fr; padding: 7rem 2rem 3rem; }
+  .cs-hero-right { display: none; }
+  .cs-section { padding: 3.5rem 2rem; }
+  .ov-grid { grid-template-columns: 1fr 1fr; }
+  .comp-grid { grid-template-columns: 1fr 1fr; }
+  .gaps-row { grid-template-columns: 1fr 1fr; }
+  .reflect-grid { grid-template-columns: 1fr 1fr; }
+  .persona-body { grid-template-columns: 1fr 1fr; }
+  .next-cta { gap: 3rem; }
+}
+
+/* ── Case Study — Mobile ── */
+@media (max-width: 767px) {
   .cs-hero { grid-template-columns: 1fr; padding: 7rem 1.5rem 3rem; }
   .cs-hero-right { display: none; }
   .cs-section { padding: 3.5rem 1.5rem; }
