@@ -1,4 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#0e0e0e"/>
-  <text x="16" y="23" font-family="Georgia, serif" font-size="20" font-weight="400" fill="#c8ff6e" text-anchor="middle" letter-spacing="-1">H</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="32" rx="0" fill="none"/>
+  <rect width="64" height="64" rx="14" fill="#0e0e0e"/>
+
+  <!-- H left bar -->
+  <rect x="6" y="9" width="6.5" height="37" rx="1.5" fill="#f0ede8"/>
+
+  <!-- H crossbar -->
+  <rect x="6" y="25" width="22" height="5.5" rx="1.5" fill="#f0ede8"/>
+
+  <!-- H right bar — shared with D left stem -->
+  <rect x="21" y="9" width="6.5" height="37" rx="1.5" fill="#f0ede8"/>
+
+  <!-- D curve (open path from top of shared stem to bottom) -->
+  <path d="M27.5 9 Q51 9 51 27.5 Q51 46 27.5 46"
+        stroke="#f0ede8" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Accent dot — brand mark, like humzadesign· -->
+  <circle cx="56" cy="52" r="5" fill="#c8ff6e"/>
 </svg>
