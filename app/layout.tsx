@@ -4,6 +4,21 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Humza Saeed — UX & UI Designer',
   description: 'Portfolio of Humza Saeed — UX & UI Designer based in Magdeburg, Germany.',
+  metadataBase: new URL('https://humzadesign.com'),
+  openGraph: {
+    title: 'Humza Saeed — UX & UI Designer',
+    description: 'Portfolio of Humza Saeed — UX & UI Designer based in Magdeburg, Germany.',
+    url: 'https://humzadesign.com',
+    siteName: 'humzadesign',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Humza Saeed — UX & UI Designer' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Humza Saeed — UX & UI Designer',
+    description: 'Portfolio of Humza Saeed — UX & UI Designer based in Magdeburg, Germany.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
