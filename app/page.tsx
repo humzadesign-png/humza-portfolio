@@ -95,8 +95,8 @@ export default function Home() {
             <div className="section-tag">Selected work</div>
             <h2 className="section-title">Projects that<br /><em>shipped</em></h2>
           </div>
-          <a href="#" className="btn-primary" style={{ fontSize: '0.78rem', padding: '0.6rem 1.4rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-            All projects <span style={{ fontSize: '1rem', lineHeight: 1 }}>↗</span>
+          <a href="#" className="btn-ghost" style={{ color: 'var(--muted)' }}>
+            All projects <span className="arr">→</span>
           </a>
         </div>
         <div className="works-grid">

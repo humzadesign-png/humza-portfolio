@@ -141,7 +141,10 @@ export default function SmokinGrill() {
           </p>
           <div className="persona-card reveal">
             <div className="persona-head">
-              <div className="persona-avatar">👤</div>
+              <div className="persona-avatar" style={{ padding: 0, overflow: 'hidden' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/aaraiz-avatar.svg" alt="Aaraiz" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
               <div>
                 <div className="persona-name">Aaraiz</div>
                 <div className="persona-sub">Primary user persona — Smokin Grill app</div>
