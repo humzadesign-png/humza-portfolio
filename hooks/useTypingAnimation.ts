@@ -27,11 +27,9 @@ export function useTypingAnimation(
     function hideDots() {
       dotL!.classList.remove('on');
       dotU!.classList.remove('on');
-      if (cursorRef?.current) cursorRef.current.style.display = '';
     }
 
     function showDot() {
-      if (cursorRef?.current) cursorRef.current.style.display = 'none';
       if (stateRef.current.isUrdu) {
         dotU!.classList.add('on');
         dotL!.classList.remove('on');

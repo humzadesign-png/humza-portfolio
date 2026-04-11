@@ -31,8 +31,8 @@ export default function Nav({ variant = 'home' }: NavProps) {
         <span className="logo-inner">
           <span ref={dotUrduRef} id="dotUrdu" className="dot-urdu">۔</span>
           <span ref={textRef} id="logoText" className="logo-text latin"></span>
-          <span ref={tcursorRef} className="tcursor"></span>
           <span ref={dotLatinRef} id="dotLatin" className="dot-latin">.</span>
+          <span ref={tcursorRef} className="tcursor"></span>
         </span>
       </Link>
 
