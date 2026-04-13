@@ -295,7 +295,7 @@ section { padding: 6rem 3rem; }
   transition: background 0.35s; min-height: 440px;
 }
 .work-card:hover { background: var(--bg2); }
-.work-thumb { position: absolute; inset: 0; overflow: hidden; }
+.work-thumb { position: absolute; inset: 0; overflow: hidden; background: var(--bg); }
 .work-thumb img {
   width: 100%; height: 100%; object-fit: cover;
   opacity: 0.68; transition: opacity 0.4s, transform 0.5s;
@@ -468,6 +468,8 @@ footer a:hover { color: var(--accent); }
   .works-grid { grid-template-columns: 1fr; border-radius: 16px; }
   .work-card { padding: 1.5rem 1.5rem 1.75rem; min-height: 420px; }
   .work-thumb img { object-position: center 40%; }
+  .fd-thumb { object-fit: contain !important; object-position: center center !important; }
+  .flaura-thumb { object-fit: contain !important; object-position: center center !important; }
   .work-title { font-size: 1.25rem; line-height: 1.25; }
   .work-desc { font-size: 0.74rem; line-height: 1.7; }
   .work-pill { font-size: 0.6rem; margin-bottom: 0.6rem; }
