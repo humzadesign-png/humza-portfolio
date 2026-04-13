@@ -124,7 +124,7 @@ export default function Home() {
           <a href="/feedback-drop" className="work-card reveal">
             <div className="work-thumb">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center top' }} />
+              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center 22%' }} />
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2026</div>
