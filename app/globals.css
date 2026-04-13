@@ -288,7 +288,7 @@ section { padding: 6rem 3rem; }
   border: 1px solid var(--border2); border-radius: 20px; overflow: hidden;
 }
 .work-card {
-  background: var(--bg); padding: 2.5rem;
+  background: var(--bg); padding: 2.5rem 2.5rem 2rem;
   position: relative; overflow: hidden;
   text-decoration: none; color: var(--text);
   display: flex; flex-direction: column; justify-content: flex-end;
@@ -312,15 +312,16 @@ section { padding: 6rem 3rem; }
 }
 .work-pill.client { border-color: rgba(200,255,110,0.35); color: var(--accent); }
 .work-title { font-family: var(--serif); font-size: 1.75rem; margin-bottom: 0.5rem; line-height: 1.2; }
-.work-desc { font-size: 0.79rem; color: var(--muted); line-height: 1.75; margin-bottom: 1.2rem; }
+.work-desc { font-size: 0.79rem; color: var(--muted); line-height: 1.75; margin-bottom: 0; }
 .work-arrow {
-  width: 38px; height: 38px; border: 1px solid var(--border2);
+  position: absolute; top: 1.25rem; left: 1.5rem; z-index: 2;
+  width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.12);
   border-radius: 50%; display: flex; align-items: center; justify-content: center;
-  font-size: 0.95rem; transition: transform 0.2s, border-color 0.2s, color 0.2s;
-  color: var(--muted); align-self: flex-start;
+  font-size: 0.9rem; transition: transform 0.2s, border-color 0.2s, color 0.2s;
+  color: rgba(255,255,255,0.4); background: rgba(14,14,14,0.5); backdrop-filter: blur(8px);
 }
 .work-card:hover .work-arrow { border-color: var(--accent); color: var(--accent); transform: translate(3px,-3px); }
-.work-year { position: absolute; top: 2.5rem; right: 1.5rem; font-size: 0.6rem; color: var(--muted); letter-spacing: 0.08em; background: rgba(14,14,14,0.72); border: 1px solid rgba(255,255,255,0.1); border-radius: 100px; padding: 0.25rem 0.6rem; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.work-year { position: absolute; top: 1.25rem; right: 1.25rem; font-size: 0.6rem; color: var(--muted); letter-spacing: 0.08em; background: rgba(14,14,14,0.72); border: 1px solid rgba(255,255,255,0.1); border-radius: 100px; padding: 0.25rem 0.6rem; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
 
 #services { background: var(--bg2); }
 .services-grid {

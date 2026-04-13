@@ -109,6 +109,7 @@ export default function Home() {
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2023</div>
+            <div className="work-arrow">↗</div>
             <div className="work-content">
               <span className="work-pill client">Client project &middot; Mobile App</span>
               <div className="work-title">Smokin Grill &mdash; Food ordering experience</div>
@@ -116,7 +117,6 @@ export default function Home() {
                 End-to-end mobile ordering for a real restaurant client. Research, competitive audit,
                 persona &amp; user journey through to final UI.
               </p>
-              <div className="work-arrow">↗</div>
             </div>
           </a>
 
@@ -124,10 +124,11 @@ export default function Home() {
           <a href="/feedback-drop" className="work-card reveal">
             <div className="work-thumb">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center 22%' }} />
+              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center 8%' }} />
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2026</div>
+            <div className="work-arrow">↗</div>
             <div className="work-content">
               <span className="work-pill">Self-initiated &middot; SaaS</span>
               <div className="work-title">FeedbackDrop &mdash; SaaS product design</div>
@@ -135,7 +136,6 @@ export default function Home() {
                 End-to-end product design for a customer feedback management platform —
                 public voting board, admin dashboard, and embeddable widget.
               </p>
-              <div className="work-arrow">↗</div>
             </div>
           </a>
 
@@ -147,6 +147,7 @@ export default function Home() {
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2024</div>
+            <div className="work-arrow">↗</div>
             <div className="work-content">
               <span className="work-pill">Self-initiated &middot; Brand Identity</span>
               <div className="work-title">Flaura &mdash; Brand identity redesign</div>
@@ -154,7 +155,6 @@ export default function Home() {
                 A complete brand refresh to sharpen market positioning and stand out
                 from competitors in the floral space.
               </p>
-              <div className="work-arrow">↗</div>
             </div>
           </a>
 
