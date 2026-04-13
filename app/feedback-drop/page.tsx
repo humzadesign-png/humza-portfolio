@@ -179,7 +179,8 @@ export default function FeedbackDrop() {
           {/* Lisa */}
           <div className="persona-card reveal">
             <div className="persona-head">
-              <div className="persona-avatar" style={{ background: 'linear-gradient(135deg, #6D28D9 0%, #4c1d95 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', fontFamily: 'var(--serif)', color: '#ede9fe' }}>L</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/fd-persona-lisa.svg" alt="Lisa Richter" className="persona-avatar" style={{ objectFit: 'cover' }} />
               <div>
                 <div className="persona-name">Lisa Richter</div>
                 <div className="persona-sub">Primary persona — Admin / Product Manager</div>
@@ -217,7 +218,8 @@ export default function FeedbackDrop() {
           {/* Jake */}
           <div className="persona-card reveal" style={{ marginTop: '2rem' }}>
             <div className="persona-head">
-              <div className="persona-avatar" style={{ background: 'linear-gradient(135deg, #0e7490 0%, #164e63 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', fontFamily: 'var(--serif)', color: '#cffafe' }}>J</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/fd-persona-jake.svg" alt="Jake Torres" className="persona-avatar" style={{ objectFit: 'cover' }} />
               <div>
                 <div className="persona-name">Jake Torres</div>
                 <div className="persona-sub">Secondary persona — Solo Founder / End User</div>

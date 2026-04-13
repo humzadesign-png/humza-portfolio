@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="32" fill="#2d1b4e"/>
+
+  <!-- Body / shoulders — blazer -->
+  <ellipse cx="32" cy="76" rx="26" ry="18" fill="#1e1432"/>
+  <ellipse cx="32" cy="73" rx="20" ry="14" fill="#3b1f72"/>
+  <!-- Blazer lapels -->
+  <path d="M26 66 L32 70 L38 66 L36 80 L28 80 Z" fill="#4c2a8a"/>
+  <path d="M28 66 L32 69 L36 66" fill="#ede9fe" opacity="0.15"/>
+
+  <!-- Neck -->
+  <rect x="28.5" y="47" width="7" height="9" rx="2" fill="#d4a574"/>
+
+  <!-- Head -->
+  <ellipse cx="32" cy="33" rx="13" ry="14" fill="#d4a574"/>
+
+  <!-- Hair — smooth dark bun/updo style -->
+  <ellipse cx="32" cy="19.5" rx="13" ry="7" fill="#1a0e0a"/>
+  <ellipse cx="32" cy="23" rx="13" ry="5" fill="#1a0e0a"/>
+  <ellipse cx="19.5" cy="28" rx="4.5" ry="7" fill="#1a0e0a"/>
+  <ellipse cx="44.5" cy="28" rx="4.5" ry="7" fill="#1a0e0a"/>
+  <!-- Bun detail on top -->
+  <ellipse cx="32" cy="17" rx="6" ry="5" fill="#261208"/>
+  <ellipse cx="32" cy="15" rx="4" ry="3" fill="#2e1510"/>
+
+  <!-- Ear left -->
+  <ellipse cx="18.5" cy="33" rx="3" ry="3.5" fill="#c0946a"/>
+  <!-- Ear right -->
+  <ellipse cx="45.5" cy="33" rx="3" ry="3.5" fill="#c0946a"/>
+  <!-- Small earring left -->
+  <circle cx="18.5" cy="36" r="1.2" fill="#a78bfa" opacity="0.9"/>
+  <!-- Small earring right -->
+  <circle cx="45.5" cy="36" r="1.2" fill="#a78bfa" opacity="0.9"/>
+
+  <!-- Eyebrows — arched, feminine -->
+  <path d="M23.5 26.5 Q27 24.5 29.5 26" stroke="#2a1208" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <path d="M34.5 26 Q37 24.5 40.5 26.5" stroke="#2a1208" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="27" cy="29.5" rx="3" ry="2.5" fill="#fff"/>
+  <ellipse cx="37" cy="29.5" rx="3" ry="2.5" fill="#fff"/>
+  <circle cx="27.5" cy="30" r="1.8" fill="#2a1808"/>
+  <circle cx="37.5" cy="30" r="1.8" fill="#2a1808"/>
+  <circle cx="28" cy="29.3" r="0.55" fill="#fff" opacity="0.9"/>
+  <circle cx="38" cy="29.3" r="0.55" fill="#fff" opacity="0.9"/>
+  <!-- Lashes top left -->
+  <path d="M24.5 27.5 Q27 26.5 29.5 27.5" stroke="#1a0e0a" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+  <!-- Lashes top right -->
+  <path d="M34.5 27.5 Q37 26.5 39.5 27.5" stroke="#1a0e0a" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M30.5 33 Q32 35.5 33.5 33" stroke="#b07840" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+
+  <!-- Lips — subtle pink -->
+  <path d="M28 38.5 Q32 41.5 36 38.5" stroke="#c07060" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M28.5 38.5 Q32 37 35.5 38.5" stroke="#c07060" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+  <!-- Cheek blush -->
+  <ellipse cx="22" cy="36" rx="4" ry="2.5" fill="#e08060" opacity="0.18"/>
+  <ellipse cx="42" cy="36" rx="4" ry="2.5" fill="#e08060" opacity="0.18"/>
+</svg>

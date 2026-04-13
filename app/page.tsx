@@ -101,6 +101,7 @@ export default function Home() {
           </a>
         </div>
         <div className="works-grid">
+          {/* 1 — Smokin Grill */}
           <a href="/smokin-grill" className="work-card reveal">
             <div className="work-thumb">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -118,6 +119,27 @@ export default function Home() {
               <div className="work-arrow">↗</div>
             </div>
           </a>
+
+          {/* 2 — FeedbackDrop */}
+          <a href="/feedback-drop" className="work-card reveal">
+            <div className="work-thumb">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center top' }} />
+            </div>
+            <div className="work-overlay"></div>
+            <div className="work-year">2026</div>
+            <div className="work-content">
+              <span className="work-pill">Self-initiated &middot; SaaS</span>
+              <div className="work-title">FeedbackDrop &mdash; SaaS product design</div>
+              <p className="work-desc">
+                End-to-end product design for a customer feedback management platform —
+                public voting board, admin dashboard, and embeddable widget.
+              </p>
+              <div className="work-arrow">↗</div>
+            </div>
+          </a>
+
+          {/* 3 — Flaura */}
           <a href="/flaura" className="work-card reveal">
             <div className="work-thumb">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -135,23 +157,42 @@ export default function Home() {
               <div className="work-arrow">↗</div>
             </div>
           </a>
-          <a href="/feedback-drop" className="work-card reveal" style={{ gridColumn: '1 / -1' }}>
-            <div className="work-thumb">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center top' }} />
+
+          {/* 4 — Coming soon placeholder */}
+          <div className="work-card reveal" style={{ cursor: 'default', background: 'var(--bg2)' }}>
+            <div style={{
+              position: 'absolute', inset: 0,
+              backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(200,255,110,0.04) 0%, transparent 60%), radial-gradient(circle at 80% 70%, rgba(200,255,110,0.03) 0%, transparent 50%)',
+            }} />
+            {/* Animated dots grid */}
+            <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', opacity: 0.18 }}>
+              {Array.from({ length: 48 }).map((_, i) => (
+                <div key={i} style={{
+                  position: 'absolute',
+                  width: '3px', height: '3px',
+                  borderRadius: '50%',
+                  background: 'var(--accent)',
+                  left: `${(i % 8) * 14 + 4}%`,
+                  top: `${Math.floor(i / 8) * 18 + 6}%`,
+                  opacity: Math.random() > 0.5 ? 1 : 0.3,
+                }} />
+              ))}
             </div>
-            <div className="work-overlay"></div>
-            <div className="work-year">2026</div>
-            <div className="work-content">
-              <span className="work-pill">Self-initiated &middot; SaaS</span>
-              <div className="work-title">FeedbackDrop &mdash; SaaS product design</div>
-              <p className="work-desc">
-                End-to-end product design for a customer feedback management platform —
-                public voting board, admin dashboard, embeddable widget, and integrations.
+            <div className="work-content" style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'center', alignItems: 'flex-start', padding: '2.5rem' }}>
+              <div style={{
+                display: 'inline-flex', alignItems: 'center', gap: '6px',
+                border: '1px solid rgba(200,255,110,0.2)', borderRadius: '100px',
+                padding: '0.28rem 0.75rem', marginBottom: '1.75rem',
+              }}>
+                <div style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--accent)', animation: 'pulse 2s infinite' }} />
+                <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--accent)' }}>In progress</span>
+              </div>
+              <div className="work-title" style={{ fontSize: '1.5rem', color: 'var(--muted)', marginBottom: '0.75rem' }}>Next project<br />coming soon</div>
+              <p className="work-desc" style={{ maxWidth: '240px' }}>
+                Something new is in the works. Check back soon.
               </p>
-              <div className="work-arrow">↗</div>
             </div>
-          </a>
+          </div>
         </div>
       </section>
 
