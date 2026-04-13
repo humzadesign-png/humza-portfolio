@@ -466,13 +466,11 @@ footer a:hover { color: var(--accent); }
   /* Works */
   .works-header { flex-direction: column; align-items: flex-start; gap: 0.6rem; margin-bottom: 1.75rem; }
   .works-grid { grid-template-columns: 1fr; border-radius: 16px; }
-  .work-card { padding: 1.5rem 1.5rem 1.75rem; min-height: 420px; }
-  .work-thumb img { object-position: center 40%; }
-  .fd-thumb { object-fit: contain !important; object-position: center center !important; }
-  .flaura-thumb { object-fit: contain !important; object-position: center center !important; }
-  .work-title { font-size: 1.25rem; line-height: 1.25; }
-  .work-desc { font-size: 0.74rem; line-height: 1.7; }
-  .work-pill { font-size: 0.6rem; margin-bottom: 0.6rem; }
+  .work-card { padding: 1.25rem 1.25rem 1.5rem; height: 290px; min-height: unset; }
+  .work-overlay { background: linear-gradient(to top, rgba(14,14,14,0.97) 40%, rgba(14,14,14,0.45) 68%, rgba(14,14,14,0.0) 100%); }
+  .work-title { font-size: 1.2rem; line-height: 1.25; }
+  .work-desc { font-size: 0.72rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .work-pill { font-size: 0.6rem; margin-bottom: 0.5rem; }
   .work-arrow { top: 1rem; left: 1rem; width: 32px; height: 32px; font-size: 0.8rem; }
   .work-year { top: 1rem; right: 1rem; font-size: 0.56rem; }
 

@@ -124,7 +124,7 @@ export default function Home() {
           <a href="/feedback-drop" className="work-card reveal">
             <div className="work-thumb">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-feedback-drop.png" alt="FeedbackDrop" className="fd-thumb" style={{ objectPosition: 'center 60%' }} />
+              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center 60%' }} />
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2026</div>
@@ -143,7 +143,7 @@ export default function Home() {
           <a href="/flaura" className="work-card reveal">
             <div className="work-thumb">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-flaura.jpg" alt="Flaura" className="flaura-thumb" />
+              <img src="/work-flaura.jpg" alt="Flaura" />
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2024</div>
