@@ -135,6 +135,23 @@ export default function Home() {
               <div className="work-arrow">↗</div>
             </div>
           </a>
+          <a href="/feedback-drop" className="work-card reveal" style={{ gridColumn: '1 / -1' }}>
+            <div className="work-thumb">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center top' }} />
+            </div>
+            <div className="work-overlay"></div>
+            <div className="work-year">2026</div>
+            <div className="work-content">
+              <span className="work-pill">Self-initiated &middot; SaaS</span>
+              <div className="work-title">FeedbackDrop &mdash; SaaS product design</div>
+              <p className="work-desc">
+                End-to-end product design for a customer feedback management platform —
+                public voting board, admin dashboard, embeddable widget, and integrations.
+              </p>
+              <div className="work-arrow">↗</div>
+            </div>
+          </a>
         </div>
       </section>
 
