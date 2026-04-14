@@ -21,6 +21,7 @@ export default function Nav({ variant = 'home' }: NavProps) {
     const nav = navRef.current;
     if (!nav) return;
     const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 50);
+    onScroll(); // apply correct state immediately on mount / refresh
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);

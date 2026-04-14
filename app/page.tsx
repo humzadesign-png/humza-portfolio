@@ -66,7 +66,7 @@ export default function Home() {
                 </svg>
               </div>
               <div className="meta-num">8<span>+</span></div>
-              <div className="meta-label">Years of design</div>
+              <div className="meta-label">Yrs graphic design</div>
             </div>
             <div className="meta-div"></div>
             <div className="meta-stat">
@@ -124,7 +124,7 @@ export default function Home() {
           <a href="/feedback-drop" className="work-card reveal">
             <div className="work-thumb">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-feedback-drop.png" alt="FeedbackDrop" style={{ objectPosition: 'center 60%' }} />
+              <img src="/work-feedback-drop.jpg" alt="FeedbackDrop" style={{ objectPosition: 'center 60%' }} />
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2026</div>
