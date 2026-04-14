@@ -256,66 +256,14 @@ export default function FeedbackDrop() {
         </div>
       </div>
 
-      {/* ── 5. EMPATHY MAPS ─────────────────────────────── */}
-      <div className="cs-section">
-        <div className="inner">
-          <div className="section-tag reveal">Empathy Maps</div>
-          <h2 className="cs-h2 reveal">Getting inside <em>their heads</em></h2>
-          <p className="cs-body reveal">
-            I mapped what each persona thinks, feels, says, and does to surface the emotional drivers
-            behind their behaviour — not just the surface-level task list.
-          </p>
-
-          {/* Lisa empathy map */}
-          <div style={{ marginTop: '2.5rem' }} className="reveal">
-            <div style={{ fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: '1rem' }}>Lisa Richter — Product Manager</div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'var(--border)', border: '1px solid var(--border)', borderRadius: '12px', overflow: 'hidden' }}>
-              {[
-                { label: 'Thinks 💭', items: ['"Am I building the right thing?"', '"I need data to back my roadmap decisions"', '"There has to be a faster way to collect this"', '"Our competitors ship features users actually want"'] },
-                { label: 'Feels 💡', items: ['Anxious about making the wrong product bet', 'Overwhelmed by feedback volume from 5+ channels', 'Frustrated that spreadsheets don\'t scale', 'Pressure from leadership to ship faster'] },
-                { label: 'Says 🗣', items: ['"Let me check the spreadsheet"', '"I think someone already asked for that"', '"We don\'t have budget for Canny Growth"', '"I\'ll circle back on that feature request"'] },
-                { label: 'Does ⚡', items: ['Copies Intercom messages into a Google Sheet', 'Runs quarterly surveys manually via Typeform', 'Ctrl+F through Slack to find feature requests', 'Manually emails users when their request ships'] },
-              ].map((q) => (
-                <div key={q.label} style={{ background: 'var(--bg)', padding: '1.5rem' }}>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 500, color: 'var(--text)', marginBottom: '0.9rem', letterSpacing: '0.04em' }}>{q.label}</div>
-                  {q.items.map((item) => (
-                    <div key={item} style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '0.45rem', paddingLeft: '0.75rem', borderLeft: '1.5px solid var(--border2)' }}>{item}</div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Jake empathy map */}
-          <div style={{ marginTop: '2.5rem' }} className="reveal">
-            <div style={{ fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#67e8f9', marginBottom: '1rem' }}>Jake Torres — Solo Founder</div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'var(--border)', border: '1px solid var(--border)', borderRadius: '12px', overflow: 'hidden' }}>
-              {[
-                { label: 'Thinks 💭', items: ['"I should listen to users more systematically"', '"I can\'t afford enterprise pricing"', '"If it takes more than 10 minutes I\'ll abandon it"', '"My board should feel like part of my app"'] },
-                { label: 'Feels 💡', items: ['Guilty about losing track of user requests', 'Excited when users care enough to give feedback', 'Sceptical that feedback tools are worth paying for', 'Stretched thin wearing every hat'] },
-                { label: 'Says 🗣', items: ['"Just DM me the feature request"', '"I\'ll add it to my list" (the list doesn\'t exist)', '"That\'s on the roadmap" (there is no roadmap)', '"I should set up a proper feedback system"'] },
-                { label: 'Does ⚡', items: ['Screenshots Twitter DMs into Apple Notes', 'Stars emails with feature requests', 'Builds whatever he personally finds interesting', 'Announces updates on Twitter, forgets who asked'] },
-              ].map((q) => (
-                <div key={q.label} style={{ background: 'var(--bg)', padding: '1.5rem' }}>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 500, color: 'var(--text)', marginBottom: '0.9rem', letterSpacing: '0.04em' }}>{q.label}</div>
-                  {q.items.map((item) => (
-                    <div key={item} style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '0.45rem', paddingLeft: '0.75rem', borderLeft: '1.5px solid var(--border2)' }}>{item}</div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ── 6. USER JOURNEY MAP ─────────────────────────── */}
+      {/* ── 5. USER JOURNEY MAP + HMW (merged) ──────────── */}
       <div className="cs-section alt">
         <div className="inner-wide">
-          <div className="section-tag reveal">User Journey Map</div>
-          <h2 className="cs-h2 reveal">Lisa&apos;s <em>current state</em></h2>
+          <div className="section-tag reveal">User Journey</div>
+          <h2 className="cs-h2 reveal">Mapping Lisa&apos;s <em>pain points</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
-            I mapped Lisa&apos;s end-to-end feedback workflow to find exactly where the pain is worst.
-            Every pain point became a direct design opportunity.
+            I mapped Lisa&apos;s end-to-end feedback workflow to find where the pain is worst — then
+            reframed each pain point as a design opportunity.
           </p>
           <div style={{ overflowX: 'auto', marginTop: '2.5rem' }} className="reveal">
             <table className="journey-table">
@@ -365,134 +313,101 @@ export default function FeedbackDrop() {
               </tbody>
             </table>
           </div>
-        </div>
-      </div>
 
-      {/* ── 7. HOW MIGHT WE ─────────────────────────────── */}
-      <div className="cs-section">
-        <div className="inner">
-          <div className="section-tag reveal">How Might We</div>
-          <h2 className="cs-h2 reveal">Framing the <em>design problems</em></h2>
-          <p className="cs-body reveal">
-            I converted the journey map pain points into HMW questions to reframe them as
-            design opportunities before moving into ideation.
-          </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '2.5rem' }} className="reveal">
-            {[
-              { n: '01', q: 'HMW help PMs see which feedback actually matters — not just which has the most votes?' },
-              { n: '02', q: 'HMW make the feedback board feel like part of the customer\'s own product, not a third-party tool?' },
-              { n: '03', q: 'HMW close the loop — so users who gave feedback know their voice was heard?' },
-              { n: '04', q: 'HMW get a new user from signup to their first collected feedback in under 5 minutes?' },
-            ].map((h) => (
-              <div key={h.n} style={{ background: 'var(--bg2)', border: '1px solid var(--border2)', borderRadius: '12px', padding: '1.5rem', borderLeft: `3px solid ${fdPurple}` }}>
-                <div style={{ fontSize: '0.6rem', letterSpacing: '0.14em', color: '#a78bfa', textTransform: 'uppercase', marginBottom: '0.6rem' }}>{h.n}</div>
-                <p style={{ fontSize: '0.86rem', color: 'var(--text)', lineHeight: 1.75 }}>{h.q}</p>
-              </div>
-            ))}
+          {/* HMW — folded in as natural conclusion */}
+          <div className="reveal" style={{ marginTop: '3rem' }}>
+            <p className="cs-body" style={{ marginBottom: '1.5rem' }}>
+              These pain points became four design challenges that shaped every screen:
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              {[
+                { n: '1', q: 'HMW help PMs see which feedback actually matters — not just which has the most votes?' },
+                { n: '2', q: 'HMW make the feedback board feel like part of the customer\'s own product?' },
+                { n: '3', q: 'HMW close the loop — so users who gave feedback know their voice was heard?' },
+                { n: '4', q: 'HMW get a new user from signup to first feedback in under 5 minutes?' },
+              ].map((h) => (
+                <div key={h.n} style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start', padding: '1rem 1.25rem', background: 'var(--bg)', border: '1px solid var(--border2)', borderRadius: '10px', borderLeft: `3px solid ${fdPurple}` }}>
+                  <span style={{ fontSize: '0.68rem', fontWeight: 600, color: '#a78bfa', flexShrink: 0, marginTop: '0.15rem' }}>{h.n}</span>
+                  <p style={{ fontSize: '0.86rem', color: 'var(--text)', lineHeight: 1.7, margin: 0 }}>{h.q}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
 
-      {/* ── 8. MOSCOW ───────────────────────────────────── */}
+      {/* ── 6. SCOPING V1 ───────────────────────────────── */}
+      <div className="cs-section">
+        <div className="inner">
+          <div className="section-tag reveal">Scoping v1</div>
+          <h2 className="cs-h2 reveal">Building <em>less</em> on purpose</h2>
+          <p className="cs-body reveal">
+            Not every feature belongs in v1. I used MoSCoW prioritisation to scope FeedbackDrop
+            to four core features — each one mapped to a specific pain point from the user journey.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '2.5rem' }} className="reveal">
+            {[
+              { title: 'Feedback board with voting', pain: 'Solves: feedback is scattered', desc: 'Public board where users submit and upvote ideas.' },
+              { title: 'Admin dashboard', pain: 'Solves: no way to see what matters', desc: 'Trends, top requests, volume at a glance.' },
+              { title: 'Status workflow', pain: 'Solves: users feel ignored', desc: 'Under review → Planned → In progress → Shipped → Closed.' },
+              { title: 'Category tags & filters', pain: 'Solves: duplicates pile up unseen', desc: 'Tag by type, filter, sort, search.' },
+            ].map((f) => (
+              <div key={f.title} style={{ background: 'rgba(109,40,217,0.08)', border: '1px solid rgba(109,40,217,0.2)', borderRadius: '12px', padding: '1.5rem' }}>
+                <div style={{ fontSize: '0.88rem', fontWeight: 500, color: 'var(--text)', marginBottom: '0.4rem' }}>{f.title}</div>
+                <div style={{ fontSize: '0.65rem', color: '#a78bfa', letterSpacing: '0.06em', marginBottom: '0.75rem', fontWeight: 500 }}>{f.pain}</div>
+                <p style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>{f.desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="cs-body reveal" style={{ marginTop: '1.75rem', fontSize: '0.82rem' }}>
+            Deferred to v2: email notifications, embeddable widget, board customisation, Slack integration,
+            impact scoring, and public roadmap — each validated by research but not essential for the core feedback loop.
+          </p>
+        </div>
+      </div>
+
+      {/* ── 7. INFORMATION ARCHITECTURE ─────────────────── */}
       <div className="cs-section alt">
-        <div className="inner">
-          <div className="section-tag reveal">Feature Prioritization</div>
-          <h2 className="cs-h2 reveal">MoSCoW — <em>scoping v1</em></h2>
-          <p className="cs-body reveal">
-            I used MoSCoW to decide what to design now versus defer. A focused scope
-            demonstrates better product thinking than designing every edge case.
-          </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '2.5rem' }} className="reveal">
-            {[
-              {
-                label: 'Must have', color: '#a78bfa', bg: 'rgba(109,40,217,0.1)', items: [
-                  'Feedback board with voting — public board where users submit and upvote ideas',
-                  'Admin dashboard — trends, top requests, new submissions, feedback volume',
-                  'Status workflow — Under review → Planned → In progress → Shipped → Closed',
-                  'Category tags & filters — tag by type, filter and sort'
-                ]
-              },
-              {
-                label: 'Should have', color: '#6ee7b7', bg: 'rgba(16,185,129,0.08)', items: [
-                  'Auto email notifications — notify voters when status changes',
-                  'Embeddable widget — lightweight widget for customer products',
-                  'Board customisation — custom colors, logo, domain'
-                ]
-              },
-              {
-                label: 'Could have', color: '#fbbf24', bg: 'rgba(245,158,11,0.08)', items: [
-                  'Slack integration — notifications when new feedback arrives',
-                  'Impact scoring — weight feedback by user plan or revenue, not just votes'
-                ]
-              },
-              {
-                label: "Won't have (v1)", color: 'var(--muted)', bg: 'var(--bg3)', items: [
-                  'Public roadmap view — show planned features publicly (deferred to v2)'
-                ]
-              },
-            ].map((m) => (
-              <div key={m.label} style={{ background: m.bg, border: `1px solid ${m.color}33`, borderRadius: '12px', padding: '1.5rem' }}>
-                <div style={{ fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', color: m.color, marginBottom: '1rem' }}>{m.label}</div>
-                {m.items.map((item) => (
-                  <div key={item} style={{ display: 'flex', gap: '0.6rem', marginBottom: '0.6rem', alignItems: 'flex-start' }}>
-                    <div style={{ width: '5px', height: '5px', borderRadius: '50%', background: m.color, marginTop: '0.45rem', flexShrink: 0 }} />
-                    <span style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.7 }}>{item}</span>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── 9. INFORMATION ARCHITECTURE ─────────────────── */}
-      <div className="cs-section">
         <div className="inner-wide">
           <div className="section-tag reveal">Information Architecture</div>
-          <h2 className="cs-h2 reveal">Mapping the <em>structure</em></h2>
+          <h2 className="cs-h2 reveal">Structuring <em>the product</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
             FeedbackDrop has two entry points — the authenticated admin panel (4 screens) and the
-            unauthenticated public board (1 screen). I structured the IA before wireframing to
-            make sure no screen was designed in isolation.
+            public board (1 screen). I mapped the full IA before wireframing to make sure no screen
+            was designed in isolation.
           </p>
           <div style={{ marginTop: '3rem' }} className="reveal">
-            {/* IA diagram */}
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
               {/* Admin panel */}
               <div style={{ flex: '1', minWidth: '280px' }}>
                 <div style={{ background: `${fdPurple}22`, border: `1px solid ${fdPurple}44`, borderRadius: '10px', padding: '0.75rem 1rem', fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: '0.75rem', textAlign: 'center' }}>Admin Panel (authenticated)</div>
-                {[
-                  { n: '01', name: 'Dashboard', items: ['Feedback volume + KPIs', 'Top requests by votes', 'Status breakdown chart', 'Feedback trend (12 months)', 'Recent activity feed'] },
-                  { n: '02', name: 'Feedback Board', items: ['All items in list view', 'Filter by status / category', 'Sort: votes, date, comments', 'Search bar', 'Each item: vote, status, meta'] },
-                  { n: '03', name: 'Detail View', items: ['Full title + description', 'Vote count + voter avatars', 'Comment thread + admin badges', 'Admin sidebar: status / category', 'Notification count'] },
-                  { n: '04', name: 'Settings', items: ['Branding (name, color, domain)', 'Categories management', 'Widget embed code', 'Integrations (Slack, Linear)', 'Team management'] },
-                ].map((screen) => (
-                  <div key={screen.n} style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '10px', padding: '1rem', marginBottom: '0.75rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem' }}>
-                      <span style={{ fontSize: '0.6rem', color: '#a78bfa', fontWeight: 600, letterSpacing: '0.1em' }}>{screen.n}</span>
-                      <span style={{ fontSize: '0.82rem', fontWeight: 500 }}>{screen.name}</span>
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                  {[
+                    { n: '01', name: 'Dashboard' },
+                    { n: '02', name: 'Feedback Board' },
+                    { n: '03', name: 'Detail View' },
+                    { n: '04', name: 'Settings' },
+                  ].map((screen) => (
+                    <div key={screen.n} style={{ flex: 1, background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: '10px', padding: '1rem 0.75rem', textAlign: 'center' }}>
+                      <div style={{ fontSize: '0.58rem', color: '#a78bfa', fontWeight: 600, letterSpacing: '0.1em', marginBottom: '0.4rem' }}>{screen.n}</div>
+                      <div style={{ fontSize: '0.76rem', fontWeight: 500, color: 'var(--text)', lineHeight: 1.3 }}>{screen.name}</div>
                     </div>
-                    {screen.items.map((item) => (
-                      <div key={item} style={{ fontSize: '0.7rem', color: 'var(--muted)', marginBottom: '0.25rem', paddingLeft: '0.75rem', borderLeft: '1.5px solid var(--border2)' }}>{item}</div>
-                    ))}
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
               {/* Public board */}
-              <div style={{ flex: '0 0 240px', minWidth: '220px' }}>
-                <div style={{ background: 'rgba(16,185,129,0.08)', border: '1px solid rgba(16,185,129,0.25)', borderRadius: '10px', padding: '0.75rem 1rem', fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6ee7b7', marginBottom: '0.75rem', textAlign: 'center' }}>Public Board (unauthenticated)</div>
-                <div style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '10px', padding: '1rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem' }}>
-                    <span style={{ fontSize: '0.6rem', color: '#6ee7b7', fontWeight: 600, letterSpacing: '0.1em' }}>05</span>
-                    <span style={{ fontSize: '0.82rem', fontWeight: 500 }}>Public Feedback Board</span>
-                  </div>
-                  {['Branded header (customer logo + domain)', 'Hero title + description', 'Search bar', 'Sort tabs: Trending / New / Top', '"New Idea" CTA button', 'Feedback list with votes + status', '"Powered by FeedbackDrop" footer'].map((item) => (
-                    <div key={item} style={{ fontSize: '0.7rem', color: 'var(--muted)', marginBottom: '0.25rem', paddingLeft: '0.75rem', borderLeft: '1.5px solid rgba(16,185,129,0.3)' }}>{item}</div>
-                  ))}
+              <div style={{ flex: '0 0 160px', minWidth: '140px' }}>
+                <div style={{ background: 'rgba(16,185,129,0.08)', border: '1px solid rgba(16,185,129,0.25)', borderRadius: '10px', padding: '0.75rem 1rem', fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6ee7b7', marginBottom: '0.75rem', textAlign: 'center' }}>Public Board</div>
+                <div style={{ background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: '10px', padding: '1rem 0.75rem', textAlign: 'center' }}>
+                  <div style={{ fontSize: '0.58rem', color: '#6ee7b7', fontWeight: 600, letterSpacing: '0.1em', marginBottom: '0.4rem' }}>05</div>
+                  <div style={{ fontSize: '0.76rem', fontWeight: 500, color: 'var(--text)', lineHeight: 1.3 }}>Public Feedback Board</div>
                 </div>
               </div>
             </div>
           </div>
+          <p className="cs-body reveal" style={{ marginTop: '2rem', maxWidth: '680px' }}>
+            The admin panel flows left-to-right: Dashboard (overview) → Feedback (all items) → Detail (single item) → Settings (configuration). The public board is a standalone branded page accessible without login.
+          </p>
         </div>
       </div>
 
