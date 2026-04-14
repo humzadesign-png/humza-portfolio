@@ -315,6 +315,7 @@ section { padding: 6rem 3rem; }
   color: var(--muted); margin-bottom: 0.8rem;
 }
 .work-pill.client { border-color: rgba(200,255,110,0.35); color: var(--accent); }
+.work-pill.self { border-color: rgba(139,92,246,0.35); color: #a78bfa; }
 .work-title { font-family: var(--serif); font-size: 1.75rem; margin-bottom: 0.5rem; line-height: 1.2; }
 .work-desc { font-size: 0.79rem; color: var(--muted); line-height: 1.75; margin-bottom: 0; }
 .work-arrow {

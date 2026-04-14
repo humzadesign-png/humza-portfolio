@@ -291,6 +291,258 @@ export default function SmokinGrill() {
         </div>
       </div>
 
+      {/* ── INFORMATION ARCHITECTURE ── */}
+<div className="cs-section alt">
+  <div className="inner-wide">
+    <div className="section-tag reveal">Information Architecture</div>
+    <h2 className="cs-h2 reveal">Structuring <em>the app</em></h2>
+    <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
+      Before drawing a single screen, I mapped every route and decision point — making sure the
+      structure matched how users naturally think about ordering food. The app has two entry states:
+      unauthenticated (onboarding) and authenticated (the main experience).
+    </p>
+    <div style={{ marginTop: '3rem' }} className="reveal">
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+        {/* Auth flow */}
+        <div style={{ flex: '0 0 auto', minWidth: '200px' }}>
+          <div style={{ background: 'rgba(245,166,35,0.1)', border: '1px solid rgba(245,166,35,0.3)', borderRadius: '10px', padding: '0.6rem 1rem', fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '0.75rem', textAlign: 'center' }}>Unauthenticated</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            {[{ n: '01', name: 'Welcome Screen' }, { n: '02', name: 'Sign In' }, { n: '03', name: 'Sign Up' }].map(s => (
+              <div key={s.n} style={{ background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: '10px', padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                <span style={{ fontSize: '0.58rem', color: 'var(--orange)', fontWeight: 600, letterSpacing: '0.1em' }}>{s.n}</span>
+                <span style={{ fontSize: '0.78rem', fontWeight: 500 }}>{s.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Arrow */}
+        <div style={{ display: 'flex', alignItems: 'center', paddingTop: '2.5rem', color: 'var(--border2)', fontSize: '1.2rem', flexShrink: 0 }}>→</div>
+        {/* Main app */}
+        <div style={{ flex: 1, minWidth: '300px' }}>
+          <div style={{ background: 'rgba(245,166,35,0.1)', border: '1px solid rgba(245,166,35,0.3)', borderRadius: '10px', padding: '0.6rem 1rem', fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '0.75rem', textAlign: 'center' }}>Main App — 4 tab navigation</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
+            {[
+              { n: '04', name: 'Home', sub: 'Search · Categories · Most Popular' },
+              { n: '05', name: 'Menu / Category', sub: 'List view · Filtered by category' },
+              { n: '06', name: 'Item Detail', sub: 'Image · Size · Add to Cart' },
+              { n: '07', name: 'Favourites', sub: 'Saved items for quick reorder' },
+              { n: '08', name: 'Cart', sub: 'Items · Qty · Promo · Total' },
+              { n: '09', name: 'Checkout', sub: 'Address · Payment · Place Order' },
+              { n: '10', name: 'Order Confirmed', sub: 'Success state · Track CTA' },
+              { n: '11', name: 'Profile', sub: 'Addresses · Payment · Orders' },
+            ].map(s => (
+              <div key={s.n} style={{ background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: '10px', padding: '0.75rem 1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                  <span style={{ fontSize: '0.58rem', color: 'var(--orange)', fontWeight: 600, letterSpacing: '0.1em' }}>{s.n}</span>
+                  <span style={{ fontSize: '0.78rem', fontWeight: 500 }}>{s.name}</span>
+                </div>
+                <div style={{ fontSize: '0.65rem', color: 'var(--muted)', lineHeight: 1.4 }}>{s.sub}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+    <p className="cs-body reveal" style={{ marginTop: '2rem', maxWidth: '680px' }}>
+      The auth gate is a one-time barrier — once past it, the bottom tab bar keeps every core action
+      one tap away. The ordering flow (Home → Category → Item → Cart → Checkout) is linear by design
+      to reduce decision fatigue.
+    </p>
+  </div>
+</div>
+
+{/* ── WIREFRAMES ── */}
+<div className="cs-section">
+  <div className="inner-wide">
+    <div className="section-tag reveal">Wireframes</div>
+    <h2 className="cs-h2 reveal">Low-fidelity <em>wireframes</em></h2>
+    <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
+      I wireframed all 10 screens before opening the visual design file. Low-fidelity first meant
+      I could validate the layout and flow with the client without getting distracted by colour or
+      typography — and catch structural problems cheaply.
+    </p>
+
+    <div style={{ marginTop: '3rem' }} className="reveal">
+      {/* Row 1: Onboarding */}
+      <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <div style={{ width: 12, height: 1, background: 'var(--border2)' }} />Onboarding flow
+      </div>
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
+        {/* Welcome */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '10px 10px 20px', display: 'flex', flexDirection: 'column', gap: '6px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ width: '60%', height: 60, background: '#e0e0e0', border: '1px solid #ccc', margin: '0 auto 8px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '4px', flexShrink: 0 }}><div style={{ width: '80%', height: '80%', borderTop: '1px solid #aaa', borderBottom: '1px solid #aaa', position: 'relative' }}><div style={{ position: 'absolute', inset: 0, borderLeft: '1px solid #aaa', borderRight: '1px solid #aaa', background: 'linear-gradient(135deg, transparent 48%, #ccc 48%, #ccc 52%, transparent 52%), linear-gradient(225deg, transparent 48%, #ccc 48%, #ccc 52%, transparent 52%)' }} /></div></div>
+            <div style={{ border: '1px solid #888', borderRadius: '20px', padding: '3px 0', textAlign: 'center', fontSize: '6px', color: '#333', fontFamily: 'sans-serif', flexShrink: 0 }}>Sign In</div>
+            <div style={{ border: '1px solid #888', borderRadius: '20px', padding: '3px 0', textAlign: 'center', fontSize: '6px', color: '#333', fontFamily: 'sans-serif', flexShrink: 0 }}>Sign Up</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '4px', margin: '2px 0', flexShrink: 0 }}><div style={{ flex: 1, height: 1, background: '#ccc' }} /><span style={{ fontSize: '5px', color: '#999', fontFamily: 'sans-serif' }}>Or</span><div style={{ flex: 1, height: 1, background: '#ccc' }} /></div>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexShrink: 0 }}><div style={{ width: 14, height: 14, border: '1px solid #ccc', borderRadius: '50%' }} /><div style={{ width: 14, height: 14, border: '1px solid #ccc', borderRadius: '50%' }} /></div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Welcome</span>
+        </div>
+        {/* Sign In */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '10px 10px 20px', display: 'flex', flexDirection: 'column', gap: '5px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ fontSize: '7px', color: '#333', fontFamily: 'sans-serif', fontWeight: 700, margin: '4px 0 6px', flexShrink: 0 }}>Sign In</div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '20px', padding: '3px 6px', fontSize: '6px', color: '#aaa', fontFamily: 'sans-serif', flexShrink: 0 }}>Username</div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '20px', padding: '3px 6px', fontSize: '6px', color: '#aaa', fontFamily: 'sans-serif', flexShrink: 0 }}>Password</div>
+            <div style={{ background: '#555', borderRadius: '20px', padding: '3px 0', textAlign: 'center', fontSize: '6px', color: '#fff', fontFamily: 'sans-serif', flexShrink: 0 }}>Sign In</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '4px', margin: '2px 0', flexShrink: 0 }}><div style={{ flex: 1, height: 1, background: '#ccc' }} /><span style={{ fontSize: '5px', color: '#999', fontFamily: 'sans-serif' }}>Or</span><div style={{ flex: 1, height: 1, background: '#ccc' }} /></div>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexShrink: 0 }}><div style={{ width: 14, height: 14, border: '1px solid #ccc', borderRadius: '50%' }} /><div style={{ width: 14, height: 14, border: '1px solid #ccc', borderRadius: '50%' }} /></div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Sign In</span>
+        </div>
+        {/* Sign Up */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '10px 10px 20px', display: 'flex', flexDirection: 'column', gap: '5px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ fontSize: '7px', color: '#333', fontFamily: 'sans-serif', fontWeight: 700, margin: '4px 0 4px', flexShrink: 0 }}>Sign Up</div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '20px', padding: '3px 6px', fontSize: '6px', color: '#aaa', fontFamily: 'sans-serif', flexShrink: 0 }}>Enter Username</div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '20px', padding: '3px 6px', fontSize: '6px', color: '#aaa', fontFamily: 'sans-serif', flexShrink: 0 }}>Enter Password</div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '20px', padding: '3px 6px', fontSize: '6px', color: '#aaa', fontFamily: 'sans-serif', flexShrink: 0 }}>Re-Enter Password</div>
+            <div style={{ background: '#555', borderRadius: '20px', padding: '3px 0', textAlign: 'center', fontSize: '6px', color: '#fff', fontFamily: 'sans-serif', flexShrink: 0 }}>Sign Up</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '4px', margin: '1px 0', flexShrink: 0 }}><div style={{ flex: 1, height: 1, background: '#ccc' }} /><span style={{ fontSize: '5px', color: '#999', fontFamily: 'sans-serif' }}>Or</span><div style={{ flex: 1, height: 1, background: '#ccc' }} /></div>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexShrink: 0 }}><div style={{ width: 12, height: 12, border: '1px solid #ccc', borderRadius: '50%' }} /><div style={{ width: 12, height: 12, border: '1px solid #ccc', borderRadius: '50%' }} /></div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Sign Up</span>
+        </div>
+      </div>
+
+      {/* Row 2: Browsing */}
+      <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <div style={{ width: 12, height: 1, background: 'var(--border2)' }} />Browsing &amp; ordering flow
+      </div>
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
+        {/* Home */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '8px 8px 0', display: 'flex', flexDirection: 'column', gap: '4px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ fontSize: '7px', color: '#333', fontFamily: 'sans-serif', fontWeight: 600, flexShrink: 0 }}>Hi (User)!</div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '10px', padding: '2px 6px', fontSize: '5px', color: '#aaa', fontFamily: 'sans-serif', flexShrink: 0 }}>🔍 Search</div>
+            <div style={{ fontSize: '5.5px', color: '#555', fontFamily: 'sans-serif', fontWeight: 600, flexShrink: 0 }}>Categories</div>
+            <div style={{ display: 'flex', gap: '3px', flexShrink: 0 }}>{[0,1,2,3].map(i => <div key={i} style={{ width: 20, height: 20, background: '#e0e0e0', border: '1px solid #ccc', borderRadius: '4px' }} />)}</div>
+            <div style={{ fontSize: '5.5px', color: '#555', fontFamily: 'sans-serif', fontWeight: 600, flexShrink: 0 }}>Most Popular</div>
+            {[0,1].map(i => <div key={i} style={{ display: 'flex', gap: '4px', flexShrink: 0 }}><div style={{ width: 18, height: 18, background: '#e0e0e0', border: '1px solid #ccc', borderRadius: '2px', flexShrink: 0 }} /><div style={{ flex: 1 }}><div style={{ height: 3, background: '#d4d4d4', borderRadius: 1, marginBottom: 2 }} /><div style={{ height: 2, background: '#e8e8e8', borderRadius: 1, width: '70%' }} /></div></div>)}
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 18, background: '#fff', borderTop: '0.5px solid #ddd', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+              {['▲','☆','⊡','○'].map((ic, i) => <span key={i} style={{ fontSize: '6px', color: i===0?'#333':'#bbb' }}>{ic}</span>)}
+            </div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Home</span>
+        </div>
+        {/* Menu */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '8px 8px 0', display: 'flex', flexDirection: 'column', gap: '4px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ fontSize: '7px', color: '#333', fontFamily: 'sans-serif', fontWeight: 600, flexShrink: 0 }}>Pizza</div>
+            {[0,1,2,3].map(i => <div key={i} style={{ display: 'flex', gap: '4px', padding: '2px 0', borderBottom: '0.5px solid #eee', flexShrink: 0 }}><div style={{ width: 22, height: 22, background: '#e0e0e0', border: '1px solid #ccc', borderRadius: '2px', flexShrink: 0 }} /><div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '2px', justifyContent: 'center' }}><div style={{ height: 3, background: '#d4d4d4', borderRadius: 1 }} /><div style={{ height: 2, background: '#e8e8e8', borderRadius: 1, width: '70%' }} /></div></div>)}
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 18, background: '#fff', borderTop: '0.5px solid #ddd', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+              {['▲','☆','⊡','○'].map((ic, i) => <span key={i} style={{ fontSize: '6px', color: i===0?'#333':'#bbb' }}>{ic}</span>)}
+            </div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Menu</span>
+        </div>
+        {/* Item */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '8px 8px 0', display: 'flex', flexDirection: 'column', gap: '4px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ width: '100%', height: 55, background: '#e0e0e0', border: '1px solid #ccc', borderRadius: '4px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><div style={{ width: '70%', height: '70%', position: 'relative' }}><div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, transparent 48%, #ccc 48%, #ccc 52%, transparent 52%), linear-gradient(225deg, transparent 48%, #ccc 48%, #ccc 52%, transparent 52%)', border: '0.5px solid #bbb' }} /></div></div>
+            <div style={{ height: 3, background: '#d4d4d4', borderRadius: 1, width: '80%', flexShrink: 0 }} />
+            <div style={{ height: 2, background: '#e8e8e8', borderRadius: 1, flexShrink: 0 }} />
+            <div style={{ height: 2, background: '#e8e8e8', borderRadius: 1, width: '90%', flexShrink: 0 }} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto', flexShrink: 0 }}>
+              <div style={{ display: 'flex', gap: '3px', alignItems: 'center' }}><div style={{ width: 10, height: 10, border: '1px solid #999', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6px', color: '#555' }}>−</div><span style={{ fontSize: '6px', fontFamily: 'sans-serif', color: '#333' }}>1</span><div style={{ width: 10, height: 10, border: '1px solid #999', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6px', color: '#555' }}>+</div></div>
+              <div style={{ fontSize: '5.5px', color: '#555', fontFamily: 'sans-serif' }}>$$$</div>
+            </div>
+            <div style={{ background: '#555', borderRadius: '20px', padding: '3px 0', textAlign: 'center', fontSize: '5.5px', color: '#fff', fontFamily: 'sans-serif', flexShrink: 0 }}>Add to Cart</div>
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 18, background: '#fff', borderTop: '0.5px solid #ddd', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+              {['▲','☆','⊡','○'].map((ic, i) => <span key={i} style={{ fontSize: '6px', color: i===0?'#333':'#bbb' }}>{ic}</span>)}
+            </div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Item Detail</span>
+        </div>
+        {/* Favourites */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '8px 8px 0', display: 'flex', flexDirection: 'column', gap: '4px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ fontSize: '7px', color: '#333', fontFamily: 'sans-serif', fontWeight: 600, textAlign: 'center', flexShrink: 0 }}>My Favourite</div>
+            {[0,1,2].map(i => <div key={i} style={{ display: 'flex', gap: '4px', padding: '3px 0', borderBottom: '0.5px solid #eee', flexShrink: 0 }}><div style={{ width: 22, height: 22, background: '#e0e0e0', border: '1px solid #ccc', borderRadius: '2px', flexShrink: 0 }} /><div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '2px', justifyContent: 'center' }}><div style={{ height: 3, background: '#d4d4d4', borderRadius: 1 }} /><div style={{ height: 2, background: '#e8e8e8', borderRadius: 1, width: '60%' }} /></div></div>)}
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 18, background: '#fff', borderTop: '0.5px solid #ddd', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+              {['▲','★','⊡','○'].map((ic, i) => <span key={i} style={{ fontSize: '6px', color: i===1?'#333':'#bbb', fontWeight: i===1?'bold':'normal' }}>{ic}</span>)}
+            </div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Favourites</span>
+        </div>
+      </div>
+
+      {/* Row 3: Checkout */}
+      <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <div style={{ width: 12, height: 1, background: 'var(--border2)' }} />Checkout &amp; confirmation flow
+      </div>
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        {/* Cart */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '8px 8px 0', display: 'flex', flexDirection: 'column', gap: '4px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ fontSize: '7px', color: '#333', fontFamily: 'sans-serif', fontWeight: 600, textAlign: 'center', flexShrink: 0 }}>My Cart</div>
+            {[0,1].map(i => <div key={i} style={{ display: 'flex', gap: '3px', padding: '3px 0', borderBottom: '0.5px solid #eee', flexShrink: 0, alignItems: 'center' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', marginRight: 1 }}><div style={{ width: 8, height: 8, border: '0.5px solid #999', borderRadius: '1px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '5px', color: '#555' }}>+</div><span style={{ fontSize: '5px', color: '#333', fontFamily: 'sans-serif', textAlign: 'center' }}>1</span><div style={{ width: 8, height: 8, border: '0.5px solid #999', borderRadius: '1px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '5px', color: '#555' }}>-</div></div>
+              <div style={{ width: 18, height: 18, background: '#e0e0e0', border: '1px solid #ccc', borderRadius: '2px', flexShrink: 0 }} />
+              <div style={{ flex: 1 }}><div style={{ height: 3, background: '#d4d4d4', borderRadius: 1, marginBottom: 2 }} /><div style={{ height: 2, background: '#e8e8e8', borderRadius: 1, width: '70%' }} /></div>
+            </div>)}
+            <div style={{ marginTop: 'auto', flexShrink: 0 }}>
+              <div style={{ background: '#555', borderRadius: '20px', padding: '3px 0', textAlign: 'center', fontSize: '5.5px', color: '#fff', fontFamily: 'sans-serif' }}>Proceed to Checkout</div>
+            </div>
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 18, background: '#fff', borderTop: '0.5px solid #ddd', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+              {['▲','☆','⊡','○'].map((ic, i) => <span key={i} style={{ fontSize: '6px', color: i===2?'#333':'#bbb', fontWeight: i===2?'bold':'normal' }}>{ic}</span>)}
+            </div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Cart</span>
+        </div>
+        {/* Checkout */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '8px 8px 0', display: 'flex', flexDirection: 'column', gap: '4px', position: 'relative', flexShrink: 0 }}>
+            <div style={{ fontSize: '7px', color: '#333', fontFamily: 'sans-serif', fontWeight: 600, textAlign: 'center', flexShrink: 0 }}>Checkout</div>
+            <div style={{ fontSize: '5.5px', color: '#555', fontFamily: 'sans-serif', fontWeight: 600, flexShrink: 0 }}>Address</div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '6px', padding: '4px 5px', flexShrink: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><div style={{ width: 10, height: 10, border: '1px solid #555', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><div style={{ width: 5, height: 5, background: '#555', borderRadius: '50%' }} /></div><div style={{ flex: 1, height: 2, background: '#d4d4d4', borderRadius: 1 }} /></div>
+            </div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '6px', padding: '4px 5px', flexShrink: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><div style={{ width: 10, height: 10, border: '1px solid #ccc', borderRadius: '50%' }} /><div style={{ flex: 1, height: 2, background: '#d4d4d4', borderRadius: 1 }} /></div>
+            </div>
+            <div style={{ fontSize: '5.5px', color: '#555', fontFamily: 'sans-serif', fontWeight: 600, flexShrink: 0 }}>Payment</div>
+            <div style={{ border: '1px solid #ccc', borderRadius: '6px', padding: '4px 5px', flexShrink: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><div style={{ width: 10, height: 10, border: '1px solid #555', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><div style={{ width: 5, height: 5, background: '#555', borderRadius: '50%' }} /></div><div style={{ flex: 1, height: 2, background: '#d4d4d4', borderRadius: 1 }} /></div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto', flexShrink: 0 }}>
+              <div><div style={{ fontSize: '5px', color: '#888', fontFamily: 'sans-serif' }}>Total</div><div style={{ fontSize: '6px', color: '#333', fontFamily: 'sans-serif', fontWeight: 700 }}>$$$</div></div>
+              <div style={{ background: '#555', borderRadius: '10px', padding: '3px 7px', fontSize: '5.5px', color: '#fff', fontFamily: 'sans-serif' }}>Place Order</div>
+            </div>
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 18, background: '#fff', borderTop: '0.5px solid #ddd', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+              {['▲','☆','⊡','○'].map((ic, i) => <span key={i} style={{ fontSize: '6px', color: '#bbb' }}>{ic}</span>)}
+            </div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Checkout</span>
+        </div>
+        {/* Order placed */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 110, height: 190, background: '#fafafa', border: '1.5px solid #555', borderRadius: '14px', overflow: 'hidden', padding: '8px 8px 0', display: 'flex', flexDirection: 'column', gap: '6px', position: 'relative', flexShrink: 0, alignItems: 'center' }}>
+            <div style={{ width: '70%', height: 65, background: '#e0e0e0', border: '1px solid #ccc', borderRadius: '4px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><div style={{ width: '80%', height: '80%', position: 'relative' }}><div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, transparent 48%, #ccc 48%, #ccc 52%, transparent 52%), linear-gradient(225deg, transparent 48%, #ccc 48%, #ccc 52%, transparent 52%)', border: '0.5px solid #bbb' }} /></div></div>
+            <div style={{ fontSize: '6.5px', color: '#333', fontFamily: 'sans-serif', fontWeight: 600, textAlign: 'center', lineHeight: 1.4, flexShrink: 0 }}>Your order<br />is placed!</div>
+            <div style={{ height: 2, background: '#e8e8e8', borderRadius: 1, width: '80%', flexShrink: 0 }} />
+            <div style={{ height: 2, background: '#e8e8e8', borderRadius: 1, width: '60%', flexShrink: 0 }} />
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 18, background: '#fff', borderTop: '0.5px solid #ddd', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+              {['▲','☆','⊡','○'].map((ic, i) => <span key={i} style={{ fontSize: '6px', color: '#bbb' }}>{ic}</span>)}
+            </div>
+          </div>
+          <span style={{ fontSize: '0.62rem', color: 'var(--muted)', textAlign: 'center', maxWidth: 110 }}>Order Placed</span>
+        </div>
+      </div>
+    </div>
+
+    <div style={{ background: 'var(--bg2)', border: '1px solid var(--border2)', borderLeft: '2.5px solid var(--orange)', borderRadius: '0 12px 12px 0', padding: '1.25rem 1.5rem', marginTop: '2.5rem' }} className="reveal">
+      <div style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--orange)', marginBottom: '8px' }}>Why wireframe first</div>
+      <p style={{ fontSize: '0.88rem', fontStyle: 'italic', color: 'var(--muted)', lineHeight: 1.75, margin: 0 }}>
+        &ldquo;Wireframing before visual design let me test the structure with the client without either of us getting
+        distracted by colour or imagery. Two structural changes — moving search above categories and adding a
+        confirmation state — were caught here, not in the final UI.&rdquo;
+      </p>
+    </div>
+  </div>
+</div>
+
       {/* DESIGN DECISIONS */}
       <div className="cs-section">
         <div className="inner">

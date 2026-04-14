@@ -130,7 +130,7 @@ export default function Home() {
             <div className="work-year">2026</div>
             <div className="work-arrow">↗</div>
             <div className="work-content">
-              <span className="work-pill">Self-initiated &middot; SaaS</span>
+              <span className="work-pill self">Self-initiated &middot; SaaS</span>
               <div className="work-title">FeedbackDrop &mdash; SaaS product design</div>
               <p className="work-desc">
                 End-to-end product design for a customer feedback management platform —
@@ -149,7 +149,7 @@ export default function Home() {
             <div className="work-year">2024</div>
             <div className="work-arrow">↗</div>
             <div className="work-content">
-              <span className="work-pill">Self-initiated &middot; Brand Identity</span>
+              <span className="work-pill self">Self-initiated &middot; Brand Identity</span>
               <div className="work-title">Flaura &mdash; Brand identity redesign</div>
               <p className="work-desc">
                 A complete brand refresh to sharpen market positioning and stand out
