@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
@@ -83,8 +84,14 @@ export default function Home() {
         </div>
         <div className="hero-right">
           <div className="hero-img-wrap">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/hero-photo.jpg" alt="Humza Saeed" />
+            <Image
+              src="/hero-photo.jpg"
+              alt="Humza Saeed"
+              fill
+              priority
+              sizes="(max-width: 767px) 280px, 360px"
+              style={{ objectFit: 'cover', objectPosition: 'center 10%' }}
+            />
           </div>
         </div>
       </section>
@@ -104,8 +111,13 @@ export default function Home() {
           {/* 1 — Smokin Grill */}
           <a href="/smokin-grill" className="work-card reveal">
             <div className="work-thumb">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-smokin-grill.jpg" alt="Smokin Grill" />
+              <Image
+                src="/work-smokin-grill.jpg"
+                alt="Smokin Grill"
+                fill
+                sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px"
+                style={{ objectFit: 'cover' }}
+              />
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2023</div>
@@ -123,8 +135,13 @@ export default function Home() {
           {/* 2 — FeedbackDrop */}
           <a href="/feedback-drop" className="work-card reveal">
             <div className="work-thumb">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-feedback-drop.jpg" alt="FeedbackDrop" style={{ objectPosition: 'center 60%' }} />
+              <Image
+                src="/work-feedback-drop.jpg"
+                alt="FeedbackDrop"
+                fill
+                sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px"
+                style={{ objectFit: 'cover', objectPosition: 'center 60%' }}
+              />
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2026</div>
@@ -142,8 +159,13 @@ export default function Home() {
           {/* 3 — Flaura */}
           <a href="/flaura" className="work-card reveal">
             <div className="work-thumb">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/work-flaura.jpg" alt="Flaura" />
+              <Image
+                src="/work-flaura.jpg"
+                alt="Flaura"
+                fill
+                sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px"
+                style={{ objectFit: 'cover' }}
+              />
             </div>
             <div className="work-overlay"></div>
             <div className="work-year">2024</div>
@@ -277,8 +299,13 @@ export default function Home() {
         <div className="about-grid">
           <div className="about-img-wrap reveal">
             <div className="about-img-inner">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/about-photo.jpg" alt="Humza Saeed" />
+              <Image
+                src="/about-photo.jpg"
+                alt="Humza Saeed"
+                fill
+                sizes="(max-width: 767px) 100vw, 400px"
+                style={{ objectFit: 'cover', objectPosition: 'center top' }}
+              />
             </div>
             <div className="about-img-label">
               <div>
@@ -343,7 +370,7 @@ export default function Home() {
             <div className="review-author">
               <div className="review-avatar">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/review-1.png" alt="alexisdelap" />
+                <img src="/review-1.png" alt="alexisdelap" loading="lazy" />
               </div>
               <div>
                 <div className="review-name">alexisdelap</div>
@@ -357,7 +384,7 @@ export default function Home() {
             <div className="review-author">
               <div className="review-avatar">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/review-2.png" alt="lucymeggeson" />
+                <img src="/review-2.png" alt="lucymeggeson" loading="lazy" />
               </div>
               <div>
                 <div className="review-name">lucymeggeson</div>
@@ -371,7 +398,7 @@ export default function Home() {
             <div className="review-author">
               <div className="review-avatar">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/review-3.png" alt="heyraeven" />
+                <img src="/review-3.png" alt="heyraeven" loading="lazy" />
               </div>
               <div>
                 <div className="review-name">heyraeven</div>

@@ -606,15 +606,15 @@ export default function SmokinGrill() {
             <div className="flow-label">Onboarding flow</div>
             <div className="screens-row">
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-splash.jpg" alt="Splash" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-splash.jpg" alt="Splash" loading="lazy" /></div>
                 <div className="screen-caption">Splash — logo, Sign In &amp; Sign Up with social login</div>
               </div>
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-signin.jpg" alt="Sign In" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-signin.jpg" alt="Sign In" loading="lazy" /></div>
                 <div className="screen-caption">Sign In — username + password, social options</div>
               </div>
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-signup.jpg" alt="Sign Up" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-signup.jpg" alt="Sign Up" loading="lazy" /></div>
                 <div className="screen-caption">Sign Up — username, password, confirm</div>
               </div>
             </div>
@@ -624,19 +624,19 @@ export default function SmokinGrill() {
             <div className="flow-label">Browsing &amp; ordering flow</div>
             <div className="screens-row">
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-home.jpg" alt="Home" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-home.jpg" alt="Home" loading="lazy" /></div>
                 <div className="screen-caption">Home — greeting, search, categories, most popular</div>
               </div>
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-pizza.jpg" alt="Pizza" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-pizza.jpg" alt="Pizza" loading="lazy" /></div>
                 <div className="screen-caption">Category — Pizza with full menu listing</div>
               </div>
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-burgers.jpg" alt="Burgers" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-burgers.jpg" alt="Burgers" loading="lazy" /></div>
                 <div className="screen-caption">Category — Burgers with full menu listing</div>
               </div>
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-item.jpg" alt="Item detail" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-item.jpg" alt="Item detail" loading="lazy" /></div>
                 <div className="screen-caption">Item detail — image, description, sizes, Add to Cart</div>
               </div>
             </div>
@@ -646,15 +646,15 @@ export default function SmokinGrill() {
             <div className="flow-label">Checkout &amp; confirmation flow</div>
             <div className="screens-row">
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-cart.jpg" alt="Cart" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-cart.jpg" alt="Cart" loading="lazy" /></div>
                 <div className="screen-caption">Cart — items, quantity, promo code, order total</div>
               </div>
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-checkout.jpg" alt="Checkout" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-checkout.jpg" alt="Checkout" loading="lazy" /></div>
                 <div className="screen-caption">Checkout — saved addresses, payment, Place Order</div>
               </div>
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-confirmed.jpg" alt="Confirmed" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-confirmed.jpg" alt="Confirmed" loading="lazy" /></div>
                 <div className="screen-caption">Order confirmed — celebration, track order CTA</div>
               </div>
             </div>
@@ -664,11 +664,11 @@ export default function SmokinGrill() {
             <div className="flow-label">Additional screens</div>
             <div className="screens-row">
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-favourites.jpg" alt="Favourites" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-favourites.jpg" alt="Favourites" loading="lazy" /></div>
                 <div className="screen-caption">Favourites — saved items for quick repeat ordering</div>
               </div>
               <div className="screen-item">
-                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-profile.jpg" alt="Profile" /></div>
+                <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-profile.jpg" alt="Profile" loading="lazy" /></div>
                 <div className="screen-caption">Profile — payment, addresses, settings, orders</div>
               </div>
             </div>

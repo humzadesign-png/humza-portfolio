@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import { DM_Serif_Display, DM_Sans, Noto_Nastaliq_Urdu } from 'next/font/google';
 import './globals.css';
 
-export const runtime = 'edge';
-
 const dmSerif = DM_Serif_Display({
   weight: ['400'],
   style: ['normal', 'italic'],

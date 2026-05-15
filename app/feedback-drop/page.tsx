@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import Nav from '@/components/Nav';
 
 export default function FeedbackDrop() {
@@ -66,8 +67,14 @@ export default function FeedbackDrop() {
         <div className="cs-hero-right">
           <div style={{ position: 'relative' }}>
             <div style={{ position: 'absolute', inset: '-40px', background: 'radial-gradient(circle, rgba(109,40,217,0.2) 0%, transparent 70%)', pointerEvents: 'none' }} />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/fd-dashboard.png" alt="FeedbackDrop dashboard" style={{ width: '100%', maxWidth: '560px', borderRadius: '12px', border: '1px solid rgba(109,40,217,0.3)', boxShadow: '0 32px 80px rgba(0,0,0,0.55)', position: 'relative', zIndex: 1 }} />
+            <Image
+              src="/fd-dashboard.jpg"
+              alt="FeedbackDrop dashboard"
+              width={1440}
+              height={900}
+              priority
+              style={{ width: '100%', maxWidth: '560px', height: 'auto', borderRadius: '12px', border: '1px solid rgba(109,40,217,0.3)', boxShadow: '0 32px 80px rgba(0,0,0,0.55)', position: 'relative', zIndex: 1 }}
+            />
           </div>
         </div>
       </section>
@@ -538,11 +545,11 @@ export default function FeedbackDrop() {
             solves a specific job from the user journey.
           </p>
           {[
-            { n: '01', title: 'Dashboard', src: '/fd-dashboard.png', alt: 'FeedbackDrop dashboard', desc: "Lisa's home base. Four KPI metrics (total feedback, new this month, shipped, avg votes), top requests by votes with status pills, status breakdown bar chart, 12-month feedback trend, and a live activity feed — all on a single screen." },
-            { n: '02', title: 'Feedback Board', src: '/fd-feedback.png', alt: 'FeedbackDrop feedback board', desc: 'Full list of all feedback. Status filter pills at top (Under review · 64, Planned · 36, In progress · 18, Shipped · 12), search bar, sort control. Vote-first layout — every item leads with the upvote count on the left.' },
-            { n: '03', title: 'Detail View', src: '/fd-detail.png', alt: 'FeedbackDrop detail view', desc: 'Deep dive into a single request. Full description, 42 voter avatars, comment thread with admin badges. Right sidebar: status dropdown (with notification count "42 voters will be notified"), category, and metadata card.' },
-            { n: '04', title: 'Public Board', src: '/fd-public.png', alt: 'FeedbackDrop public board', desc: "The customer-facing page. White-labelled with Acme App's brand identity — logo, name, custom subdomain feedback.acme.com. Purple hero header, search + sort tabs, 'New Idea' CTA, ranked feedback list. 'Powered by FeedbackDrop' footer is the only FD brand mark." },
-            { n: '05', title: 'Settings', src: '/fd-settings.png', alt: 'FeedbackDrop settings', desc: "Admin configuration in a tabbed layout: Branding (name, description, brand color #6D28D9, custom domain with CNAME helper), Categories (chip management with + Add), Widget (embed <script> with copy button, toggle controls), Integrations (Slack connected, Linear + Intercom with Connect buttons)." },
+            { n: '01', title: 'Dashboard', src: '/fd-dashboard.jpg', alt: 'FeedbackDrop dashboard', desc: "Lisa's home base. Four KPI metrics (total feedback, new this month, shipped, avg votes), top requests by votes with status pills, status breakdown bar chart, 12-month feedback trend, and a live activity feed — all on a single screen." },
+            { n: '02', title: 'Feedback Board', src: '/fd-feedback.jpg', alt: 'FeedbackDrop feedback board', desc: 'Full list of all feedback. Status filter pills at top (Under review · 64, Planned · 36, In progress · 18, Shipped · 12), search bar, sort control. Vote-first layout — every item leads with the upvote count on the left.' },
+            { n: '03', title: 'Detail View', src: '/fd-detail.jpg', alt: 'FeedbackDrop detail view', desc: 'Deep dive into a single request. Full description, 42 voter avatars, comment thread with admin badges. Right sidebar: status dropdown (with notification count "42 voters will be notified"), category, and metadata card.' },
+            { n: '04', title: 'Public Board', src: '/fd-public.jpg', alt: 'FeedbackDrop public board', desc: "The customer-facing page. White-labelled with Acme App's brand identity — logo, name, custom subdomain feedback.acme.com. Purple hero header, search + sort tabs, 'New Idea' CTA, ranked feedback list. 'Powered by FeedbackDrop' footer is the only FD brand mark." },
+            { n: '05', title: 'Settings', src: '/fd-settings.jpg', alt: 'FeedbackDrop settings', desc: "Admin configuration in a tabbed layout: Branding (name, description, brand color #6D28D9, custom domain with CNAME helper), Categories (chip management with + Add), Widget (embed <script> with copy button, toggle controls), Integrations (Slack connected, Linear + Intercom with Connect buttons)." },
           ].map((s) => (
             <div key={s.n} style={{ marginTop: '4rem' }} className="reveal">
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.85rem' }}>
@@ -550,8 +557,14 @@ export default function FeedbackDrop() {
                 <span style={{ fontSize: '0.95rem', fontWeight: 500 }}>{s.title}</span>
               </div>
               <p className="cs-body" style={{ marginBottom: '1.25rem', maxWidth: '680px' }}>{s.desc}</p>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={s.src} alt={s.alt} style={{ width: '100%', borderRadius: '12px', border: '1px solid var(--border2)', display: 'block' }} />
+              <Image
+                src={s.src}
+                alt={s.alt}
+                width={1440}
+                height={900}
+                loading="lazy"
+                style={{ width: '100%', height: 'auto', borderRadius: '12px', border: '1px solid var(--border2)', display: 'block' }}
+              />
             </div>
           ))}
         </div>
