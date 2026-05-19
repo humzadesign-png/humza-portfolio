@@ -180,41 +180,29 @@ export default function Home() {
             </div>
           </a>
 
-          {/* 4 — Coming soon placeholder */}
-          <div className="work-card reveal" style={{ cursor: 'default', background: 'var(--bg2)' }}>
-            <div style={{
-              position: 'absolute', inset: 0,
-              backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(200,255,110,0.04) 0%, transparent 60%), radial-gradient(circle at 80% 70%, rgba(200,255,110,0.03) 0%, transparent 50%)',
-            }} />
-            {/* Animated dots grid */}
-            <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', opacity: 0.18 }}>
-              {Array.from({ length: 48 }).map((_, i) => (
-                <div key={i} style={{
-                  position: 'absolute',
-                  width: '3px', height: '3px',
-                  borderRadius: '50%',
-                  background: 'var(--accent)',
-                  left: `${(i % 8) * 14 + 4}%`,
-                  top: `${Math.floor(i / 8) * 18 + 6}%`,
-                  opacity: Math.random() > 0.5 ? 1 : 0.3,
-                }} />
-              ))}
+          {/* 4 — Nails by Mona */}
+          <a href="/nails-by-mona" className="work-card reveal">
+            <div className="work-thumb">
+              <Image
+                src="/work-nails-by-mona.jpg"
+                alt="Nails by Mona"
+                fill
+                sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px"
+                style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+              />
             </div>
-            <div className="work-content" style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'center', alignItems: 'flex-start', padding: '2.5rem' }}>
-              <div style={{
-                display: 'inline-flex', alignItems: 'center', gap: '6px',
-                border: '1px solid rgba(200,255,110,0.2)', borderRadius: '100px',
-                padding: '0.28rem 0.75rem', marginBottom: '1.75rem',
-              }}>
-                <div style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--accent)', animation: 'pulse 2s infinite' }} />
-                <span style={{ fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--accent)' }}>In progress</span>
-              </div>
-              <div className="work-title" style={{ fontSize: '1.5rem', color: 'var(--muted)', marginBottom: '0.75rem' }}>Next project<br />coming soon</div>
-              <p className="work-desc" style={{ maxWidth: '240px' }}>
-                Something new is in the works. Check back soon.
+            <div className="work-overlay"></div>
+            <div className="work-year">2026</div>
+            <div className="work-arrow">↗</div>
+            <div className="work-content">
+              <span className="work-pill client">Client work &middot; Web Design</span>
+              <div className="work-title">Nails by Mona &mdash; From DMs to e-commerce</div>
+              <p className="work-desc">
+                Full UX research, brand design, and production build for a press-on nail studio
+                in Pakistan. Live at nailsbymona.pk.
               </p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
