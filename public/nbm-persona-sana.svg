@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sana — working professional persona">
+  <!-- Background — purple-tinted from existing card -->
+  <rect width="64" height="64" rx="32" fill="#2a1f35"/>
+  <!-- Lavender hand silhouette (palm down, professional gesture) -->
+  <g transform="translate(0,2)">
+    <!-- Wrist/cuff -->
+    <rect x="22" y="46" width="20" height="9" rx="2" fill="#4a3656"/>
+    <!-- Palm -->
+    <path d="M22 35 Q22 28 32 27 Q42 28 42 35 L42 48 Q42 51 39 51 L25 51 Q22 51 22 48 Z" fill="#bfa4ce"/>
+    <!-- Fingers (4 + thumb), simplified -->
+    <rect x="23.5" y="18" width="3.6" height="14" rx="1.8" fill="#bfa4ce"/>
+    <rect x="28.5" y="14" width="3.6" height="18" rx="1.8" fill="#bfa4ce"/>
+    <rect x="33.5" y="16" width="3.6" height="16" rx="1.8" fill="#bfa4ce"/>
+    <rect x="38.2" y="22" width="3.5" height="11" rx="1.8" fill="#bfa4ce"/>
+    <!-- Thumb -->
+    <ellipse cx="20" cy="40" rx="3.2" ry="6" fill="#bfa4ce" transform="rotate(-30 20 40)"/>
+    <!-- Nail tips — darker lavender to show painted nails -->
+    <rect x="23.5" y="18" width="3.6" height="3.5" rx="1.5" fill="#9b7fb4"/>
+    <rect x="28.5" y="14" width="3.6" height="3.5" rx="1.5" fill="#9b7fb4"/>
+    <rect x="33.5" y="16" width="3.6" height="3.5" rx="1.5" fill="#9b7fb4"/>
+    <rect x="38.2" y="22" width="3.5" height="3.2" rx="1.5" fill="#9b7fb4"/>
+  </g>
+  <!-- Small "clock" accent — represents her time-pressured trigger -->
+  <circle cx="50" cy="14" r="6" fill="#e8d5f0" opacity="0.9"/>
+  <circle cx="50" cy="14" r="4.5" fill="#2a1f35"/>
+  <line x1="50" y1="14" x2="50" y2="11.2" stroke="#e8d5f0" stroke-width="1" stroke-linecap="round"/>
+  <line x1="50" y1="14" x2="52.4" y2="14" stroke="#e8d5f0" stroke-width="1" stroke-linecap="round"/>
+</svg>
