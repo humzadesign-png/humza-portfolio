@@ -188,7 +188,7 @@ export default function Home() {
                 alt="Nails by Mona — homepage hero rendered in a laptop mockup"
                 fill
                 sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px"
-                style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+                style={{ objectFit: 'cover', objectPosition: 'center 60%' }}
               />
             </div>
             <div className="work-overlay"></div>
