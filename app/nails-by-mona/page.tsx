@@ -101,19 +101,9 @@ export default function NailsByMona() {
     },
   ];
 
-  // ── 8-row wireframes grid ──────────────────────────────────
-  const wireframes = [
-    { src: '/nbm-wire-home.jpg',            label: 'Home', sub: 'Trust-first hero, 4-pillar promise.' },
-    { src: '/nbm-wire-shop.jpg',            label: 'Shop', sub: 'Tier filter visible by default.' },
-    { src: '/nbm-wire-product.jpg',         label: 'Product detail', sub: 'Bag, not "Order Now."' },
-    { src: '/nbm-wire-bridal.jpg',          label: 'Bridal', sub: 'Champagne-gold emotional world.' },
-    { src: '/nbm-wire-size-guide.jpg',      label: 'Size guide', sub: 'Coin-scale, good vs avoid.' },
-    { src: '/nbm-wire-sizing-capture.jpg',  label: 'Sizing capture', sub: 'Desktop → QR handoff to phone.' },
-    { src: '/nbm-wire-order-form.jpg',      label: 'Order form', sub: 'Three-step, separate URLs.' },
-    { src: '/nbm-wire-about.jpg',           label: 'About', sub: 'Hands at work, no founder face.' },
-  ];
-
   // ── final-design pages grid ────────────────────────────────
+  // Slim list — the 6 pages that earn their place in the case study.
+  // Blog-post, contact, and order-form were dropped (low signal vs page weight).
   const pages = [
     { src: '/nbm-page-shop.jpg',       label: 'Shop',           h: 3000, sub: 'Filter-by-default, tier badges, trust signals on every card.' },
     { src: '/nbm-page-product.jpg',    label: 'Product detail', h: 3400, sub: 'Bridal Trio Classic — bag CTA, FAQ schema, related sets.' },
@@ -121,8 +111,34 @@ export default function NailsByMona() {
     { src: '/nbm-page-size-guide.jpg', label: 'Size guide',     h: 3400, sub: 'Real photos replaced placeholders. Good vs Avoid gallery with corner pills.' },
     { src: '/nbm-page-about.jpg',      label: 'About',          h: 3400, sub: 'Hand-only hero. Founder named in copy; never shown in photography.' },
     { src: '/nbm-page-blog.jpg',       label: 'Journal',        h: 2600, sub: '5 cornerstone posts at launch — wudu post is the priority SEO bet.' },
-    { src: '/nbm-page-blog-post.jpg',  label: 'Journal post',   h: 3400, sub: 'Article + FAQPage + Breadcrumb schema. Related-products pivot.' },
-    { src: '/nbm-page-contact.jpg',    label: 'Help',           h: 2600, sub: 'Labelled "Help," not "Contact." WhatsApp brand-addressed.' },
+  ];
+
+  // ── 6-step process timeline ────────────────────────────────
+  const processSteps = [
+    {
+      n: '01', when: 'Week 1', title: 'Plan in Claude Code',
+      body: 'Started not with a Figma file but a 90-minute planning session with Claude Code as a thinking partner. Output: a 34-section CLAUDE.md project bible covering business context, fixed decisions, brand rules, scope cuts, and explicit non-goals. That document remained the source of truth across every session that followed.',
+    },
+    {
+      n: '02', when: 'Week 1', title: 'Review & revise the plan',
+      body: 'Three follow-up sessions stress-tested the plan: competitor research, payment-method trade-offs, photography rules, and what to deliberately NOT build. Locked the Fixed Decisions table — Laravel + Filament, manual payments at MVP (no SafePay until Phase 6), hand-only photography, no AI image generation, no founder face anywhere.',
+    },
+    {
+      n: '03', when: 'Week 2', title: 'UX research & strategy',
+      body: '3 personas (Sana, Hira, Ayesha), 3 journey maps, a 6-stage service blueprint, IA card-sort plan, pain-points → opportunities matrix, and a UX principles deck. All documented in /docs/ux/ (13 markdown files) before any UI was drawn. Real research, written down, reviewable.',
+    },
+    {
+      n: '04', when: 'Week 2', title: 'Wireframes & mockups in Pencil',
+      body: 'Used Claude Design (Pencil) for low-fi sketchy wireframes with annotations — the kind of margin notes that get lost in Figma. Then promoted the strongest artboards to a hi-fi canvas at full pixel resolution. Both canvases shown below.',
+    },
+    {
+      n: '05', when: 'Weeks 3–4', title: 'Frontend build',
+      body: 'Laravel 11 + Blade + Tailwind v4 + jQuery — server-rendered, no React. 13 public pages live-camera state machine in vanilla JS. Six transactional email templates. Lighthouse mobile ≥ 90 on every page. Bag drawer + localStorage + multi-step checkout with separate URLs for back-button safety on Pakistan-mobile 4G.',
+    },
+    {
+      n: '06', when: 'Weeks 5–6', title: 'Backend admin, SEO & ship',
+      body: 'Filament v4 admin panel with 11 resources (orders, products, customers, blog, FAQs, settings, finance, expenses, etc.). 5 cornerstone blog posts seeded. Sitemap + RSS + Schema.org JSON-LD across every page. Deployed to nailsbymona.pk on DigitalOcean with Certbot SSL and a supervised queue worker.',
+    },
   ];
 
   // ── admin captures ─────────────────────────────────────────
@@ -215,7 +231,7 @@ export default function NailsByMona() {
         <div className="inner-wide">
           <div className="ov-grid reveal">
             <div className="ov-card"><div className="ov-label">My Role</div><div className="ov-val">UX Designer + Developer</div></div>
-            <div className="ov-card"><div className="ov-label">Duration</div><div className="ov-val">2 wks research · 4-phase build</div></div>
+            <div className="ov-card"><div className="ov-label">Duration</div><div className="ov-val">6 wks · plan → ship</div></div>
             <div className="ov-card"><div className="ov-label">Stack</div><div className="ov-val">Laravel · Filament · Tailwind</div></div>
             <div className="ov-card"><div className="ov-label">Live</div><div className="ov-val"><a href="https://nailsbymona.pk" target="_blank" rel="noopener noreferrer" style={{ color: mauve, textDecoration: 'none' }}>nailsbymona.pk ↗</a></div></div>
           </div>
@@ -241,7 +257,40 @@ export default function NailsByMona() {
         </div>
       </div>
 
-      {/* ── 3. RESEARCH — competitive landscape ─────────── */}
+      {/* ── 3. PROCESS — chronological narrative ────────── */}
+      <div className="cs-section">
+        <div className="inner-wide">
+          <div className="section-tag reveal">Process · how I worked</div>
+          <h2 className="cs-h2 reveal">Six weeks. Six phases.<br /><em>Plan first. Then design. Then code.</em></h2>
+          <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
+            Before any pixel or template, I spent the first week writing the plan with Claude Code as a
+            thinking partner. The plan was reviewed and revised three times before I drew a single
+            wireframe — that&apos;s the work that prevents Frankensteining 60% of the way through a build.
+            Only then did I move to UX research, then to Pencil wireframes, then to the Laravel build.
+          </p>
+
+          <div className="reveal" style={{ marginTop: '2.5rem', display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '1rem' }}>
+            {processSteps.map((step) => (
+              <div key={step.n} style={{ background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', padding: '1.6rem 1.75rem', position: 'relative' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.85rem' }}>
+                  <div style={{ fontSize: '0.62rem', letterSpacing: '0.14em', color: mauve, fontWeight: 700 }}>{step.n}</div>
+                  <div style={{ fontSize: '0.68rem', color: 'var(--muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>{step.when}</div>
+                </div>
+                <div style={{ fontSize: '0.98rem', fontWeight: 600, marginBottom: '0.6rem' }}>{step.title}</div>
+                <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{step.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="cs-body reveal" style={{ marginTop: '2rem', maxWidth: '720px', fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--muted)' }}>
+            Tools across the project: Claude Code (planning, code), Claude Design / Pencil (wireframes &amp;
+            mockups), Figma &amp; FigJam (research artefacts), Laravel + Filament (build), DigitalOcean +
+            Certbot (deploy).
+          </p>
+        </div>
+      </div>
+
+      {/* ── 4. RESEARCH — competitive landscape ─────────── */}
       <div className="cs-section">
         <div className="inner">
           <div className="section-tag reveal">Research</div>
@@ -502,36 +551,59 @@ export default function NailsByMona() {
         </div>
       </div>
 
-      {/* ── 9. WIREFRAMES ───────────────────────────────── */}
+      {/* ── 10. WIREFRAMES & MOCKUPS IN PENCIL ──────────── */}
       <div className="cs-section">
         <div className="inner-wide">
-          <div className="section-tag reveal">Wireframes · designed in code</div>
-          <h2 className="cs-h2 reveal">No Figma layer.<br /><em>Wireframes were working HTML.</em></h2>
+          <div className="section-tag reveal">Wireframes &amp; mockups · made in Pencil</div>
+          <h2 className="cs-h2 reveal">From sketch to hi-fi —<br /><em>all on one canvas.</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
-            Instead of static Figma frames, I built the 13-page prototype directly in HTML + Tailwind with
-            Claude Code as a pair. The advantage: every wireframe is already responsive, every interaction
-            (bag drawer, accordion, camera state machine) was real before the Laravel app existed. The
-            final design is a Blade port of these prototypes, not a separate translation.
+            I used <strong>Claude Design (Pencil)</strong> to wireframe the entire product on one infinite
+            canvas. The low-fi pass focused on layout, hierarchy, and annotated decisions — the kind of
+            margin notes that get lost in Figma comments. Once the structure was right I promoted the
+            strongest artboards to a second canvas at full hi-fi resolution. Both canvases (shown below)
+            became the source of truth for the build that followed.
           </p>
 
-          <div className="reveal" style={{ marginTop: '2.5rem', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.25rem' }}>
-            {wireframes.map((w) => (
-              <figure key={w.src} style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
-                <Image
-                  src={w.src}
-                  alt={`${w.label} wireframe — Nails by Mona`}
-                  width={1440}
-                  height={2200}
-                  loading="lazy"
-                  style={{ width: '100%', height: 'auto', display: 'block', borderBottom: '1px solid var(--border)' }}
-                />
-                <figcaption style={{ padding: '1rem 1.25rem' }}>
-                  <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--fg)' }}>{w.label}</div>
-                  <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: '0.2rem' }}>{w.sub}</div>
-                </figcaption>
-              </figure>
-            ))}
+          {/* Low-fi wireframes canvas */}
+          <div className="reveal" style={{ marginTop: '2.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '0.85rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve }}>Low-fi · sketchy mid-fi · 18 artboards</div>
+              <div style={{ fontSize: '0.72rem', color: 'var(--muted)' }}>2 hero variants per page · annotated decisions</div>
+            </div>
+            <figure style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
+              <Image
+                src="/nbm-pencil-wireframes.jpg"
+                alt="Low-fi wireframes on the Pencil canvas — annotated sketches of every page including Home, Shop, Product, Bridal, and the Order flow"
+                width={2400}
+                height={2400}
+                loading="lazy"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </figure>
           </div>
+
+          {/* Hi-fi mockups canvas */}
+          <div className="reveal" style={{ marginTop: '2rem' }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '0.85rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve }}>Hi-fi · 10 final artboards</div>
+              <div style={{ fontSize: '0.72rem', color: 'var(--muted)' }}>Fraunces + DM Sans · final palette · pixel-locked</div>
+            </div>
+            <figure style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
+              <Image
+                src="/nbm-pencil-mockups.jpg"
+                alt="Hi-fi mockups on the Pencil canvas — final pixel-perfect designs for Home, Shop, Product detail, Bridal, and the full 6-step checkout flow"
+                width={2400}
+                height={2400}
+                loading="lazy"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </figure>
+          </div>
+
+          <p className="cs-body reveal" style={{ marginTop: '1.5rem', maxWidth: '720px' }}>
+            The hi-fi canvas became the brief for the Laravel Blade port. Side-by-side as I coded, every
+            screen got built as a pixel-perfect implementation rather than a loose interpretation.
+          </p>
         </div>
       </div>
 
@@ -819,40 +891,7 @@ export default function NailsByMona() {
         </div>
       </div>
 
-      {/* ── 14. UX PRINCIPLES ───────────────────────────── */}
-      <div className="cs-section alt">
-        <div className="inner">
-          <div className="section-tag reveal">10 UX Principles</div>
-          <h2 className="cs-h2 reveal">Opinionated rules that<br /><em>resolve real trade-offs</em></h2>
-          <p className="cs-body reveal">
-            The project has 10 product-specific UX principles — each one names what we deliberately
-            <em> don&apos;t</em> do. Generic principles (&ldquo;be consistent&rdquo;) are useless when a real decision splits
-            a team. These are decision tools.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '0.75rem', marginTop: '2rem' }}>
-            {[
-              'Show the craft, never the maker\'s face.',
-              'Bag, not "Order Now."',
-              'The camera is the differentiator — make it feel safe, not scary.',
-              'WhatsApp is help, not checkout.',
-              'Bridal time-pressure is real — surface the 4-week rule everywhere.',
-              'Returning customers get rewarded, not re-onboarded.',
-              'Trust is earned with proof, not promises.',
-              'Pakistan-mobile first, desktop second.',
-              'Brand voice is warm, not chatty.',
-              'When in doubt, route to a human.',
-            ].map((p, i) => (
-              <div key={i} className="reveal" style={{ display: 'flex', gap: '0.75rem', padding: '1rem 1.25rem', background: 'var(--bg)', borderRadius: '10px', border: '1px solid var(--border)', alignItems: 'flex-start' }}>
-                <span style={{ fontSize: '0.62rem', color: mauve, fontWeight: 600, paddingTop: '0.15rem', flexShrink: 0 }}>{String(i + 1).padStart(2, '0')}</span>
-                <span style={{ fontSize: '0.85rem', lineHeight: 1.5 }}>{p}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── 15. OUTCOMES ────────────────────────────────── */}
+      {/* ── 14. OUTCOMES ────────────────────────────────── */}
       <div className="cs-section">
         <div className="inner">
           <div className="section-tag reveal">Outcomes to measure</div>
