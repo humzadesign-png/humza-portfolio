@@ -132,7 +132,31 @@ export default function Home() {
             </div>
           </a>
 
-          {/* 2 — FeedbackDrop */}
+          {/* 2 — Nails by Mona */}
+          <a href="/nails-by-mona" className="work-card reveal">
+            <div className="work-thumb">
+              <Image
+                src="/work-nails-by-mona.jpg"
+                alt="Nails by Mona — homepage hero rendered in a laptop mockup"
+                fill
+                sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px"
+                style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+              />
+            </div>
+            <div className="work-overlay"></div>
+            <div className="work-year">2026</div>
+            <div className="work-arrow">↗</div>
+            <div className="work-content">
+              <span className="work-pill client">Client work &middot; Web Design</span>
+              <div className="work-title">Nails by Mona &mdash; From DMs to e-commerce</div>
+              <p className="work-desc">
+                Full UX research, brand design, and production build for a press-on nail studio
+                in Pakistan. Live at nailsbymona.pk.
+              </p>
+            </div>
+          </a>
+
+          {/* 3 — FeedbackDrop */}
           <a href="/feedback-drop" className="work-card reveal">
             <div className="work-thumb">
               <Image
@@ -156,7 +180,7 @@ export default function Home() {
             </div>
           </a>
 
-          {/* 3 — Flaura */}
+          {/* 4 — Flaura */}
           <a href="/flaura" className="work-card reveal">
             <div className="work-thumb">
               <Image
@@ -176,30 +200,6 @@ export default function Home() {
               <p className="work-desc">
                 A complete brand refresh to sharpen market positioning and stand out
                 from competitors in the floral space.
-              </p>
-            </div>
-          </a>
-
-          {/* 4 — Nails by Mona */}
-          <a href="/nails-by-mona" className="work-card reveal">
-            <div className="work-thumb">
-              <Image
-                src="/work-nails-by-mona.jpg"
-                alt="Nails by Mona — homepage hero rendered in a laptop mockup"
-                fill
-                sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px"
-                style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
-              />
-            </div>
-            <div className="work-overlay"></div>
-            <div className="work-year">2026</div>
-            <div className="work-arrow">↗</div>
-            <div className="work-content">
-              <span className="work-pill client">Client work &middot; Web Design</span>
-              <div className="work-title">Nails by Mona &mdash; From DMs to e-commerce</div>
-              <p className="work-desc">
-                Full UX research, brand design, and production build for a press-on nail studio
-                in Pakistan. Live at nailsbymona.pk.
               </p>
             </div>
           </a>
