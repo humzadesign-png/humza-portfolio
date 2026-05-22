@@ -128,8 +128,8 @@ export default function NailsByMona() {
       body: '3 personas (Sana, Hira, Ayesha), 3 journey maps, a 6-stage service blueprint, IA card-sort plan, pain-points → opportunities matrix, and a UX principles deck. All documented in /docs/ux/ (13 markdown files) before any UI was drawn. Real research, written down, reviewable.',
     },
     {
-      n: '04', when: 'Week 2', title: 'Wireframes & mockups in Pencil',
-      body: 'Used Claude Design (Pencil) for low-fi sketchy wireframes with annotations — the kind of margin notes that get lost in Figma. Then promoted the strongest artboards to a hi-fi canvas at full pixel resolution. Both canvases shown below.',
+      n: '04', when: 'Week 2', title: 'Wireframes in Claude Design',
+      body: 'Used Claude Design for low-fi sketchy wireframes with annotations — the kind of margin notes that get lost in Figma comments. 18 artboards on one infinite canvas, including 2 hero variants for every key page so layout decisions could be compared side-by-side.',
     },
     {
       n: '05', when: 'Weeks 3–4', title: 'Frontend build',
@@ -266,7 +266,7 @@ export default function NailsByMona() {
             Before any pixel or template, I spent the first week writing the plan with Claude Code as a
             thinking partner. The plan was reviewed and revised three times before I drew a single
             wireframe — that&apos;s the work that prevents Frankensteining 60% of the way through a build.
-            Only then did I move to UX research, then to Pencil wireframes, then to the Laravel build.
+            Only then did I move to UX research, then to wireframes in Claude Design, then to the Laravel build.
           </p>
 
           <div className="reveal" style={{ marginTop: '2.5rem', display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '1rem' }}>
@@ -283,9 +283,9 @@ export default function NailsByMona() {
           </div>
 
           <p className="cs-body reveal" style={{ marginTop: '2rem', maxWidth: '720px', fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--muted)' }}>
-            Tools across the project: Claude Code (planning, code), Claude Design / Pencil (wireframes &amp;
-            mockups), Figma &amp; FigJam (research artefacts), Laravel + Filament (build), DigitalOcean +
-            Certbot (deploy).
+            Tools across the project: Claude Code (planning, code), Claude Design (wireframes),
+            Figma &amp; FigJam (research artefacts), Laravel + Filament (build), DigitalOcean + Certbot
+            (deploy).
           </p>
         </div>
       </div>
@@ -551,29 +551,28 @@ export default function NailsByMona() {
         </div>
       </div>
 
-      {/* ── 10. WIREFRAMES & MOCKUPS IN PENCIL ──────────── */}
+      {/* ── 10. WIREFRAMES IN CLAUDE DESIGN ─────────────── */}
       <div className="cs-section">
         <div className="inner-wide">
-          <div className="section-tag reveal">Wireframes &amp; mockups · made in Pencil</div>
-          <h2 className="cs-h2 reveal">From sketch to hi-fi —<br /><em>all on one canvas.</em></h2>
+          <div className="section-tag reveal">Wireframes · made in Claude Design</div>
+          <h2 className="cs-h2 reveal">Eighteen artboards.<br /><em>One infinite canvas.</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
-            I used <strong>Claude Design (Pencil)</strong> to wireframe the entire product on one infinite
-            canvas. The low-fi pass focused on layout, hierarchy, and annotated decisions — the kind of
-            margin notes that get lost in Figma comments. Once the structure was right I promoted the
-            strongest artboards to a second canvas at full hi-fi resolution. Both canvases (shown below)
-            became the source of truth for the build that followed.
+            I used <strong>Claude Design</strong> to wireframe the entire product on one infinite canvas.
+            The mid-fi sketchy style kept the focus on layout, hierarchy, and annotated decisions — the
+            kind of margin notes that get lost in Figma comments. Two hero variants for every key page so
+            layout calls could be compared side-by-side before the build began. The board below became
+            the brief for the Laravel + Blade port that followed.
           </p>
 
-          {/* Low-fi wireframes canvas */}
           <div className="reveal" style={{ marginTop: '2.5rem' }}>
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '0.85rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve }}>Low-fi · sketchy mid-fi · 18 artboards</div>
+              <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve }}>Wireframes · 18 artboards</div>
               <div style={{ fontSize: '0.72rem', color: 'var(--muted)' }}>2 hero variants per page · annotated decisions</div>
             </div>
             <figure style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
               <Image
-                src="/nbm-pencil-wireframes.jpg"
-                alt="Low-fi wireframes on the Pencil canvas — annotated sketches of every page including Home, Shop, Product, Bridal, and the Order flow"
+                src="/nbm-wireframes.jpg"
+                alt="Wireframes on the Claude Design canvas — annotated sketches of every page including Home, Shop, Product, Bridal, and the Order flow"
                 width={2400}
                 height={2400}
                 loading="lazy"
@@ -581,29 +580,6 @@ export default function NailsByMona() {
               />
             </figure>
           </div>
-
-          {/* Hi-fi mockups canvas */}
-          <div className="reveal" style={{ marginTop: '2rem' }}>
-            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '0.85rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve }}>Hi-fi · 10 final artboards</div>
-              <div style={{ fontSize: '0.72rem', color: 'var(--muted)' }}>Fraunces + DM Sans · final palette · pixel-locked</div>
-            </div>
-            <figure style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
-              <Image
-                src="/nbm-pencil-mockups.jpg"
-                alt="Hi-fi mockups on the Pencil canvas — final pixel-perfect designs for Home, Shop, Product detail, Bridal, and the full 6-step checkout flow"
-                width={2400}
-                height={2400}
-                loading="lazy"
-                style={{ width: '100%', height: 'auto', display: 'block' }}
-              />
-            </figure>
-          </div>
-
-          <p className="cs-body reveal" style={{ marginTop: '1.5rem', maxWidth: '720px' }}>
-            The hi-fi canvas became the brief for the Laravel Blade port. Side-by-side as I coded, every
-            screen got built as a pixel-perfect implementation rather than a loose interpretation.
-          </p>
         </div>
       </div>
 
