@@ -1,29 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hira — bride-to-be persona">
-  <!-- Background — blue-grey from existing card -->
+  <!-- Background — navy-blue tinted to match card -->
   <rect width="64" height="64" rx="32" fill="#1f2535"/>
-  <!-- Lavender hand silhouette with bridal pose (fingers slightly fanned) -->
-  <g transform="translate(0,2)">
-    <!-- Wrist -->
-    <rect x="22" y="46" width="20" height="9" rx="2" fill="#3a3f4f"/>
-    <!-- Palm -->
-    <path d="M22 35 Q22 28 32 27 Q42 28 42 35 L42 48 Q42 51 39 51 L25 51 Q22 51 22 48 Z" fill="#bfa4ce"/>
-    <!-- Fingers — taller, more graceful pose -->
-    <rect x="23.5" y="15" width="3.6" height="17" rx="1.8" fill="#bfa4ce"/>
-    <rect x="28.5" y="11" width="3.6" height="21" rx="1.8" fill="#bfa4ce"/>
-    <rect x="33.5" y="13" width="3.6" height="19" rx="1.8" fill="#bfa4ce"/>
-    <rect x="38.2" y="19" width="3.5" height="13" rx="1.8" fill="#bfa4ce"/>
-    <!-- Thumb -->
-    <ellipse cx="20" cy="40" rx="3.2" ry="6" fill="#bfa4ce" transform="rotate(-30 20 40)"/>
-    <!-- Nail tips in deep burgundy (bridal tier) -->
-    <rect x="23.5" y="15" width="3.6" height="3.8" rx="1.5" fill="#7a1f2a"/>
-    <rect x="28.5" y="11" width="3.6" height="3.8" rx="1.5" fill="#7a1f2a"/>
-    <rect x="33.5" y="13" width="3.6" height="3.8" rx="1.5" fill="#7a1f2a"/>
-    <rect x="38.2" y="19" width="3.5" height="3.5" rx="1.5" fill="#7a1f2a"/>
-  </g>
-  <!-- Wedding ring on ring finger — gold accent -->
-  <circle cx="35.3" cy="20" r="2.6" fill="none" stroke="#d4a948" stroke-width="1.6"/>
-  <circle cx="35.3" cy="18" r="1.1" fill="#f1ce6e"/>
-  <!-- Henna swirl accent at top-right corner -->
-  <path d="M48 14 Q52 12 54 16 Q56 20 52 22 Q50 23 50 20" stroke="#d4a948" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.85"/>
-  <circle cx="52" cy="14" r="1" fill="#d4a948" opacity="0.8"/>
+
+  <!-- Dupatta back drape (behind body) — soft lavender -->
+  <path d="M11 64 Q11 38 32 34 Q53 38 53 64 Z" fill="#9b7fb4"/>
+
+  <!-- Shoulders / front bust -->
+  <path d="M14 64 Q14 43 32 41 Q50 43 50 64 Z" fill="#bfa4ce"/>
+
+  <!-- Gold thread highlight across the dupatta — bridal cue -->
+  <path d="M16 56 Q32 51 48 56" stroke="#d4a948" stroke-width="0.7" fill="none" opacity="0.85"/>
+  <path d="M18 60 Q32 55 46 60" stroke="#d4a948" stroke-width="0.5" fill="none" opacity="0.55"/>
+
+  <!-- Neck -->
+  <rect x="29.2" y="35" width="5.6" height="6" fill="#e8d2bf"/>
+
+  <!-- Face — warm-tan skin tone -->
+  <ellipse cx="32" cy="26" rx="9" ry="10.5" fill="#f0d8c0"/>
+
+  <!-- Hair updo (compact bun on top) -->
+  <ellipse cx="32" cy="14" rx="7.5" ry="5" fill="#2d1810"/>
+  <ellipse cx="32" cy="12" rx="4.8" ry="3" fill="#2d1810"/>
+  <!-- Front parted hair -->
+  <path d="M23 22 Q24 14 32 13 Q40 14 41 22 Q37 19 32 19 Q27 19 23 22 Z" fill="#2d1810"/>
+
+  <!-- Dupatta layer over the head, soft veil -->
+  <path d="M21 18 Q21 11 32 10 Q43 11 43 18 L43 30 Q38 28 32 28 Q26 28 21 30 Z"
+        fill="#d9c8e8" opacity="0.55"/>
+
+  <!-- Bindi -->
+  <circle cx="32" cy="20.4" r="0.9" fill="#a83a4a"/>
+
+  <!-- Eyebrows — fuller, bridal makeup -->
+  <path d="M26.8 24.8 Q28.5 23.9 30.2 24.6" stroke="#2a1810" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M33.8 24.6 Q35.5 23.9 37.2 24.8" stroke="#2a1810" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes with kohl -->
+  <ellipse cx="28.5" cy="27.2" rx="1.1" ry="0.8" fill="#2a1810"/>
+  <ellipse cx="35.5" cy="27.2" rx="1.1" ry="0.8" fill="#2a1810"/>
+
+  <!-- Lips — deep red (bridal) -->
+  <path d="M29.8 31.6 Q32 33 34.2 31.6" stroke="#a83a4a" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+  <!-- Earring — gold drop -->
+  <circle cx="22.5" cy="29" r="0.9" fill="#d4a948"/>
+  <ellipse cx="22.5" cy="32" rx="0.7" ry="1.4" fill="#d4a948"/>
+  <circle cx="41.5" cy="29" r="0.9" fill="#d4a948"/>
+  <ellipse cx="41.5" cy="32" rx="0.7" ry="1.4" fill="#d4a948"/>
+
+  <!-- Crescent moon — wedding-evening trigger -->
+  <path d="M55 13 A6 6 0 1 0 55 19 A4 4 0 1 1 55 13 Z" fill="#e8d5f0" opacity="0.95"/>
 </svg>
