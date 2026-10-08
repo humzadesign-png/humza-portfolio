@@ -662,6 +662,10 @@ h2.cs-h2 em { font-style: italic; color: var(--muted); }
 .nbm-phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; max-width: 760px; margin: 0 auto; }
 .nbm-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 .nbm-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.cs-g2 { display: grid; grid-template-columns: repeat(2, 1fr); }
+.cs-g3 { display: grid; grid-template-columns: repeat(3, 1fr); }
+.cs-g4 { display: grid; grid-template-columns: repeat(4, 1fr); }
+.cs-g5 { display: grid; grid-template-columns: repeat(5, 1fr); }
 .nbm-row { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 1rem; padding: 1rem 1.5rem; font-size: 0.85rem; align-items: center; }
 
 /* ── Case Study — Tablet ── */
@@ -705,6 +709,8 @@ h2.cs-h2 em { font-style: italic; color: var(--muted); }
   .next-title { font-size: 1.5rem; }
   .nbm-split, .nbm-pair, .nbm-cards { grid-template-columns: 1fr; }
   .nbm-stats { grid-template-columns: 1fr 1fr; }
+  .cs-g2, .cs-g3 { grid-template-columns: 1fr; }
+  .cs-g4, .cs-g5 { grid-template-columns: repeat(2, 1fr); }
   .nbm-phones { gap: 0.6rem; }
   .nbm-row { grid-template-columns: 1.3fr 1fr 1fr; gap: 0.6rem; padding: 0.85rem 1rem; font-size: 0.76rem; }
 }

@@ -278,7 +278,7 @@ export default function NailsByMona() {
             After launch, the work shifted from planning to measuring and iterating.
           </p>
 
-          <div className="reveal" style={{ marginTop: '2.5rem', display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '1rem' }}>
+          <div className="cs-g2 reveal" style={{ marginTop: '2.5rem', gap: '1rem' }}>
             {processSteps.map((step) => (
               <div key={step.n} style={{ background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', padding: '1.6rem 1.75rem', position: 'relative' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.85rem' }}>
@@ -314,7 +314,7 @@ export default function NailsByMona() {
           {/* Stats strip */}
           <div style={{ marginTop: '2.5rem', background: 'var(--bg2)', borderRadius: '16px', border: '1px solid var(--border2)', padding: '2rem' }} className="reveal">
             <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '1.25rem' }}>Competitive landscape</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.5rem' }}>
+            <div className="cs-g3" style={{ gap: '1.5rem' }}>
               {[
                 { stat: '8', label: 'Pakistani brands already running' },
                 { stat: '4', label: 'at 20–43k followers (20–40× Mona\'s reach)' },
@@ -363,7 +363,7 @@ export default function NailsByMona() {
             brand&apos;s no-face discipline, the avatars are hand-and-symbol illustrations rather than portraits.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.25rem', marginTop: '2.5rem' }} className="reveal">
+          <div style={{ gap: '1.25rem', marginTop: '2.5rem' }} className="cs-g3 reveal">
             {personas.map((p) => (
               <div key={p.name} style={{ background: p.color, borderRadius: '16px', border: '1px solid var(--border2)', padding: '1.75rem' }}>
                 <Image src={p.avatar} alt={`${p.name} persona avatar`} width={64} height={64} loading="lazy" style={{ width: 64, height: 64, marginBottom: '1.2rem', borderRadius: '50%' }} />
@@ -463,7 +463,7 @@ export default function NailsByMona() {
           {/* Public storefront tree */}
           <div className="reveal" style={{ marginTop: '2.5rem' }}>
             <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '1rem' }}>Public storefront</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem' }}>
+            <div className="cs-g4" style={{ gap: '0.75rem' }}>
               {[
                 { p: 'Home', sub: '/' },
                 { p: 'Shop', sub: '/shop' },
@@ -504,7 +504,7 @@ export default function NailsByMona() {
           {/* Admin tree */}
           <div className="reveal" style={{ marginTop: '2rem' }}>
             <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '1rem' }}>Admin panel (Filament, authenticated)</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem' }}>
+            <div className="cs-g4" style={{ gap: '0.75rem' }}>
               {['Dashboard', 'Orders + kanban', 'Products + UGC photos', 'Customers + sizing CRM', 'Blog posts', 'FAQs', 'Messages', 'Subscribers', 'Finance overview', 'Expenses', 'Settings'].map((screen) => (
                 <div key={screen} style={{ background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: '10px', padding: '0.7rem 1rem', fontSize: '0.83rem', fontWeight: 500 }}>{screen}</div>
               ))}
@@ -614,7 +614,7 @@ export default function NailsByMona() {
           {/* Palette */}
           <div className="reveal" style={{ marginTop: '2.5rem' }}>
             <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '1rem' }}>Palette tokens</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '0.75rem' }}>
+            <div className="cs-g5" style={{ gap: '0.75rem' }}>
               {palette.map((c) => (
                 <div key={c.hex} style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border2)' }}>
                   <div style={{ background: c.hex, height: 84, color: c.light ? '#fff' : '#1C1727', display: 'flex', alignItems: 'flex-end', padding: '0.6rem 0.75rem', fontSize: '0.7rem', fontFamily: 'monospace', letterSpacing: '0.04em' }}>{c.hex}</div>
@@ -630,7 +630,7 @@ export default function NailsByMona() {
           {/* Typography */}
           <div className="reveal" style={{ marginTop: '2.5rem' }}>
             <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '1rem' }}>Typography</div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="cs-g2" style={{ gap: '1rem' }}>
               <div style={{ background: 'var(--bg)', borderRadius: '12px', border: '1px solid var(--border2)', padding: '2rem' }}>
                 <div style={{ fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '0.8rem' }}>Display · Fraunces (variable serif)</div>
                 <div style={{ fontFamily: '"Fraunces", "Cormorant Garamond", serif', fontSize: '3rem', lineHeight: 1.0, fontWeight: 300, letterSpacing: '-0.02em' }}>Custom-fit, made by hand.</div>
@@ -649,7 +649,7 @@ export default function NailsByMona() {
           {/* Brand rules / no-go zone */}
           <div className="reveal" style={{ marginTop: '2.5rem' }}>
             <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '1rem' }}>Non-negotiable brand rules</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '0.75rem' }}>
+            <div className="cs-g2" style={{ gap: '0.75rem' }}>
               {[
                 { do: 'Hand-only photography', dont: 'Founder face anywhere' },
                 { do: '"Hello Nails by Mona…" WhatsApp prefills', dont: '"DM Mona" / "Ask Mona" copy' },
@@ -705,7 +705,7 @@ export default function NailsByMona() {
         </div>
 
         {/* 2-col pages grid */}
-        <div className="inner-wide" style={{ marginTop: '2rem', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.25rem' }}>
+        <div className="cs-g2 inner-wide" style={{ marginTop: '2rem', gap: '1.25rem' }}>
           {pages.map((p) => (
             <figure key={p.src} className="reveal" style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
               <Image
@@ -726,7 +726,7 @@ export default function NailsByMona() {
 
         {/* Product photo (kept from original) */}
         <div className="inner" style={{ marginTop: '3rem' }}>
-          <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', alignItems: 'center' }}>
+          <div className="cs-g2 reveal" style={{ gap: '1.25rem', alignItems: 'center' }}>
             <Image
               src="/nbm-product.jpg"
               alt="Nails by Mona product: deep burgundy with gold accent"
@@ -762,7 +762,7 @@ export default function NailsByMona() {
           </p>
 
           {/* 4-state phone frames */}
-          <div className="reveal" style={{ marginTop: '3rem', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.25rem' }}>
+          <div className="cs-g4 reveal" style={{ marginTop: '3rem', gap: '1.25rem' }}>
             {[
               { state: '01 · Explainer', frame: (
                 <div style={frameStyleSoft(mauveGlow)}>
@@ -807,7 +807,7 @@ export default function NailsByMona() {
           </div>
 
           <p className="cs-body reveal" style={{ marginTop: '2.5rem', maxWidth: '720px' }}>
-            The state machine lives at a single URL, so camera permission is requested <strong>once</strong> for
+            The state machine lives at a single URL, so camera permission is requested <strong>once</strong>{' '}for
             the whole flow. Brightness sampling runs every 500ms; a Sobel-style edge-contrast heuristic
             paints the overlay green when something looks right, red when it doesn&apos;t. The thumb state
             uses halved thresholds (fewer edges by definition). Desktop users hit a QR-handoff state with
@@ -815,7 +815,7 @@ export default function NailsByMona() {
           </p>
 
           {/* Fallback row */}
-          <div className="reveal" style={{ marginTop: '2.5rem', background: 'var(--bg)', borderRadius: '14px', border: '1px solid var(--border2)', padding: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }}>
+          <div className="cs-g3 reveal" style={{ marginTop: '2.5rem', background: 'var(--bg)', borderRadius: '14px', border: '1px solid var(--border2)', padding: '1.5rem', gap: '1.25rem' }}>
             {[
               { title: 'Live camera', body: 'Default for mobile users with permission granted.' },
               { title: 'File upload fallback', body: 'Permission denied or no rear camera: same 2-photo schema.' },
@@ -863,7 +863,7 @@ export default function NailsByMona() {
             documentation needed.
           </p>
 
-          <div className="reveal" style={{ marginTop: '3rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+          <div className="cs-g2 reveal" style={{ marginTop: '3rem', gap: '1.25rem' }}>
             {adminShots.map((a) => (
               <figure key={a.src} style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
                 <Image

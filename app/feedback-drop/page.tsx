@@ -119,7 +119,7 @@ export default function FeedbackDrop() {
           </p>
 
           {/* Market data */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1rem', marginTop: '2.5rem', marginBottom: '3rem' }} className="reveal">
+          <div style={{ gap: '1rem', marginTop: '2.5rem', marginBottom: '3rem' }} className="cs-g3 reveal">
             {[
               { num: '22%', label: 'Higher retention for companies that invest in customer experience (Zendesk 2025)' },
               { num: '81%', label: 'Of workers prioritise employers who support feedback-driven development' },
