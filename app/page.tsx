@@ -50,7 +50,7 @@ export default function Home() {
             <em>Designer.</em>
           </h1>
           <p className="hero-desc">
-            I design digital experiences that feel effortless to use —{' '}
+            I design digital experiences that feel effortless to use,{' '}
             backed by real research and grounded in what users actually need.
           </p>
           <div className="hero-actions">
@@ -101,7 +101,7 @@ export default function Home() {
         <div className="works-header reveal">
           <div>
             <div className="section-tag">Selected work</div>
-            <h2 className="section-title">Projects that<br /><em>shipped</em></h2>
+            <h2 className="section-title">Projects</h2>
           </div>
           <a href="#" className="btn-ghost" style={{ color: 'var(--muted)' }}>
             All projects <span className="arr">→</span>
@@ -124,7 +124,7 @@ export default function Home() {
             <div className="work-arrow">↗</div>
             <div className="work-content">
               <span className="work-pill client">Client project &middot; Mobile App</span>
-              <div className="work-title">Smokin Grill &mdash; Food ordering experience</div>
+              <div className="work-title">Smokin Grill: Food ordering experience</div>
               <p className="work-desc">
                 End-to-end mobile ordering for a real restaurant client. Research, competitive audit,
                 persona &amp; user journey through to final UI.
@@ -137,7 +137,7 @@ export default function Home() {
             <div className="work-thumb">
               <Image
                 src="/work-nails-by-mona.jpg"
-                alt="Nails by Mona — homepage hero rendered in a laptop mockup"
+                alt="Nails by Mona homepage hero in a laptop mockup"
                 fill
                 sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px"
                 style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
@@ -148,7 +148,7 @@ export default function Home() {
             <div className="work-arrow">↗</div>
             <div className="work-content">
               <span className="work-pill client">Client work &middot; Web Design</span>
-              <div className="work-title">Nails by Mona &mdash; From DMs to e-commerce</div>
+              <div className="work-title">Nails by Mona: From DMs to e-commerce</div>
               <p className="work-desc">
                 Full UX research, brand design, and production build for a press-on nail studio
                 in Pakistan. Live at nailsbymona.pk.
@@ -172,9 +172,9 @@ export default function Home() {
             <div className="work-arrow">↗</div>
             <div className="work-content">
               <span className="work-pill self">Self-initiated &middot; SaaS</span>
-              <div className="work-title">FeedbackDrop &mdash; SaaS product design</div>
+              <div className="work-title">FeedbackDrop: SaaS product design</div>
               <p className="work-desc">
-                End-to-end product design for a customer feedback management platform —
+                End-to-end product design for a customer feedback management platform:
                 public voting board, admin dashboard, and embeddable widget.
               </p>
             </div>
@@ -196,7 +196,7 @@ export default function Home() {
             <div className="work-arrow">↗</div>
             <div className="work-content">
               <span className="work-pill self">Self-initiated &middot; Brand Identity</span>
-              <div className="work-title">Flaura &mdash; Brand identity redesign</div>
+              <div className="work-title">Flaura: Brand identity redesign</div>
               <p className="work-desc">
                 A complete brand refresh to sharpen market positioning and stand out
                 from competitors in the floral space.
@@ -225,7 +225,7 @@ export default function Home() {
             </div>
             <div className="service-name">UX Design &amp; Research</div>
             <p className="service-desc">
-              From discovery through testing &mdash; experiences grounded in how people actually behave,
+              From discovery through testing. Experiences grounded in how people actually behave,
               not how we assume they do.
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function Home() {
             </div>
             <div className="service-name">Graphic &amp; Visual Design</div>
             <p className="service-desc">
-              Supporting teams with visuals that communicate clearly &mdash; from marketing assets
+              Supporting teams with visuals that communicate clearly, from marketing assets
               to product illustrations.
             </p>
           </div>
@@ -311,9 +311,9 @@ export default function Home() {
             <h2 className="section-title">Designer.<br /><em>Researcher.</em><br />Problem solver.</h2>
             <p className="about-bio">
               I&apos;m a UX &amp; UI Designer with roots in graphic design going back to <strong>2016</strong>.
-              That background taught me visual craft — UX taught me that great design only works when it works
+              That background taught me visual craft. UX taught me that great design only works when it works
               for <strong>real people</strong>.<br /><br />
-              I approach every project with research first — understanding who uses it, where they get stuck,
+              I approach every project with research first: understanding who uses it, where they get stuck,
               and what they actually need. Then I translate that into wireframes, prototypes, and polished
               interfaces that are <strong>clear, consistent, and pleasant to use</strong>.<br /><br />
               Currently open to <strong>working student roles</strong> in UX/UI where I can contribute to
@@ -321,11 +321,11 @@ export default function Home() {
             </p>
             <div className="timeline">
               <div className="tl-item">
-                <div className="tl-role">UX / UI Designer &mdash; Freelance</div>
+                <div className="tl-role">UX / UI Designer &middot; Freelance</div>
                 <div className="tl-meta">Project-based &middot; 2023 &ndash; Present</div>
               </div>
               <div className="tl-item">
-                <div className="tl-role">Graphic Designer &mdash; Fiverr</div>
+                <div className="tl-role">Graphic Designer &middot; Fiverr</div>
                 <div className="tl-meta">2016 &ndash; Present</div>
               </div>
             </div>
@@ -405,7 +405,7 @@ export default function Home() {
           <h2>Got a project<br />in <em>mind?</em></h2>
           <p style={{ color: 'var(--muted)', fontSize: '0.91rem', marginTop: '1rem', lineHeight: 1.85 }}>
             Whether it&apos;s a working student role, a freelance project,<br />
-            or just a conversation about design &mdash; I&apos;d love to hear from you.
+            or just a conversation about design, I&apos;d love to hear from you.
           </p>
           <a href="mailto:humzadesign@gmail.com" className="cta-email">
             humzadesign@gmail.com ↗

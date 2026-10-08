@@ -42,12 +42,12 @@ export default function SmokinGrill() {
         <div className="cs-hero-left">
           <div className="cs-pill">Client project · 2023</div>
           <h1>
-            Smokin Grill &mdash;<br />
+            Smokin Grill:<br />
             <em>Food ordering</em><br />
             app design
           </h1>
           <p className="cs-hero-desc">
-            Designing a frictionless mobile ordering experience for a real local restaurant —
+            Designing a frictionless mobile ordering experience for a real local restaurant,
             from UX research through to final UI, grounded in what users actually need.
           </p>
           <div className="meta-chips">
@@ -81,12 +81,12 @@ export default function SmokinGrill() {
             <h2 className="cs-h2 reveal">The <em>problem</em></h2>
             <p className="cs-body reveal">
               Smokin Grill is a local restaurant run by a friend. Customers were placing orders entirely by
-              phone — a process plagued by miscommunication, forgotten delivery instructions, and no way to
+              phone, a process plagued by miscommunication, forgotten delivery instructions, and no way to
               track where your food was. The restaurant was losing customers to competitors who had apps.
             </p>
             <p className="cs-body reveal">
               My challenge was to design a mobile ordering experience that gets a hungry user from opening
-              the app to a confirmed order — with their exact preferences — in as few steps as possible,
+              the app to a confirmed order, with their exact preferences, in as few steps as possible,
               while addressing the core frustrations users had with the existing phone-based system.
             </p>
           </div>
@@ -122,7 +122,7 @@ export default function SmokinGrill() {
           <div style={{ background: 'var(--bg2)', border: '1px solid var(--border2)', borderLeft: '2.5px solid var(--accent)', borderRadius: '0 12px 12px 0', padding: '1.25rem 1.5rem', marginTop: '2rem' }} className="reveal">
             <div style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent)', marginBottom: '8px' }}>Key insight</div>
             <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--muted)', lineHeight: 1.75 }}>
-              &ldquo;Users didn&apos;t just want speed — they wanted{' '}
+              &ldquo;Users didn&apos;t just want speed. They wanted{' '}
               <strong style={{ color: 'var(--text)', fontWeight: 400 }}>control and confirmation</strong>.
               The biggest pain point wasn&apos;t the wait; it was the uncertainty of not knowing if their
               order was received correctly.&rdquo;
@@ -148,7 +148,7 @@ export default function SmokinGrill() {
               </div>
               <div>
                 <div className="persona-name">Aaraiz</div>
-                <div className="persona-sub">Primary user persona — Smokin Grill app</div>
+                <div className="persona-sub">Primary user persona · Smokin Grill app</div>
                 <div>
                   <span className="persona-tag">23 years old</span>
                   <span className="persona-tag">BS Finance</span>
@@ -278,7 +278,7 @@ export default function SmokinGrill() {
               <div className="gap-item">No competitor has a smooth end-to-end mobile ordering flow</div>
               <div className="gap-item">Real-time order tracking absent across all three</div>
               <div className="gap-item">Loyalty and repeat-customer features missing everywhere</div>
-              <div className="gap-item">Accessibility ignored — no screen reader support</div>
+              <div className="gap-item">Accessibility ignored: no screen reader support</div>
             </div>
             <div className="opp-box">
               <div className="gap-title opp-t">Opportunities for Smokin Grill</div>
@@ -297,7 +297,7 @@ export default function SmokinGrill() {
     <div className="section-tag reveal">Information Architecture</div>
     <h2 className="cs-h2 reveal">Structuring <em>the app</em></h2>
     <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
-      Before drawing a single screen, I mapped every route and decision point — making sure the
+      Before drawing a single screen, I mapped every route and decision point, making sure the
       structure matched how users naturally think about ordering food. The app has two entry states:
       unauthenticated (onboarding) and authenticated (the main experience).
     </p>
@@ -319,7 +319,7 @@ export default function SmokinGrill() {
         <div style={{ display: 'flex', alignItems: 'center', paddingTop: '2.5rem', color: 'var(--border2)', fontSize: '1.2rem', flexShrink: 0 }}>→</div>
         {/* Main app */}
         <div style={{ flex: 1, minWidth: '300px' }}>
-          <div style={{ background: 'rgba(245,166,35,0.1)', border: '1px solid rgba(245,166,35,0.3)', borderRadius: '10px', padding: '0.6rem 1rem', fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '0.75rem', textAlign: 'center' }}>Main App — 4 tab navigation</div>
+          <div style={{ background: 'rgba(245,166,35,0.1)', border: '1px solid rgba(245,166,35,0.3)', borderRadius: '10px', padding: '0.6rem 1rem', fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '0.75rem', textAlign: 'center' }}>Main App · 4 tab navigation</div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
             {[
               { n: '04', name: 'Home', sub: 'Search · Categories · Most Popular' },
@@ -344,7 +344,7 @@ export default function SmokinGrill() {
       </div>
     </div>
     <p className="cs-body reveal" style={{ marginTop: '2rem', maxWidth: '680px' }}>
-      The auth gate is a one-time barrier — once past it, the bottom tab bar keeps every core action
+      The auth gate is a one-time barrier. Once past it, the bottom tab bar keeps every core action
       one tap away. The ordering flow (Home → Category → Item → Cart → Checkout) is linear by design
       to reduce decision fatigue.
     </p>
@@ -359,7 +359,7 @@ export default function SmokinGrill() {
     <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
       I wireframed all 10 screens before opening the visual design file. Low-fidelity first meant
       I could validate the layout and flow with the client without getting distracted by colour or
-      typography — and catch structural problems cheaply.
+      typography, and catch structural problems cheaply.
     </p>
 
     <div style={{ marginTop: '3rem' }} className="reveal">
@@ -536,8 +536,8 @@ export default function SmokinGrill() {
       <div style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--orange)', marginBottom: '8px' }}>Why wireframe first</div>
       <p style={{ fontSize: '0.88rem', fontStyle: 'italic', color: 'var(--muted)', lineHeight: 1.75, margin: 0 }}>
         &ldquo;Wireframing before visual design let me test the structure with the client without either of us getting
-        distracted by colour or imagery. Two structural changes — moving search above categories and adding a
-        confirmation state — were caught here, not in the final UI.&rdquo;
+        distracted by colour or imagery. Two structural changes (moving search above categories and adding a
+        confirmation state) were caught here, not in the final UI.&rdquo;
       </p>
     </div>
   </div>
@@ -556,7 +556,7 @@ export default function SmokinGrill() {
             <div className="decision">
               <div className="d-num">1</div>
               <div>
-                <div className="d-title">Shallow navigation — 2 taps maximum</div>
+                <div className="d-title">Shallow navigation: 2 taps maximum</div>
                 <div className="d-desc">Research showed users dropped off when menus felt deep. Category tabs at the top with a persistent search bar keep any item reachable within two taps from home.</div>
               </div>
             </div>
@@ -585,7 +585,7 @@ export default function SmokinGrill() {
               <div className="d-num">5</div>
               <div>
                 <div className="d-title">Favourites tab for repeat ordering</div>
-                <div className="d-desc">Zero competitors offered this. A Favourites tab lets frequent users reorder in seconds without browsing the full menu again — directly addressing Aaraiz&apos;s daily ordering habit.</div>
+                <div className="d-desc">Zero competitors offered this. A Favourites tab lets frequent users reorder in seconds without browsing the full menu again, directly addressing Aaraiz&apos;s daily ordering habit.</div>
               </div>
             </div>
           </div>
@@ -598,7 +598,7 @@ export default function SmokinGrill() {
           <div className="section-tag reveal">Final Design</div>
           <h2 className="cs-h2 reveal">The <em>screens</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '700px' }}>
-            19 screens designed end-to-end in Figma — from splash screen through to order confirmation.
+            19 screens designed end-to-end in Figma, from splash screen through to order confirmation.
             Here are the key flows.
           </p>
 
@@ -607,15 +607,15 @@ export default function SmokinGrill() {
             <div className="screens-row">
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-splash.jpg" alt="Splash" loading="lazy" /></div>
-                <div className="screen-caption">Splash — logo, Sign In &amp; Sign Up with social login</div>
+                <div className="screen-caption">Splash: logo, Sign In &amp; Sign Up with social login</div>
               </div>
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-signin.jpg" alt="Sign In" loading="lazy" /></div>
-                <div className="screen-caption">Sign In — username + password, social options</div>
+                <div className="screen-caption">Sign In: username + password, social options</div>
               </div>
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-signup.jpg" alt="Sign Up" loading="lazy" /></div>
-                <div className="screen-caption">Sign Up — username, password, confirm</div>
+                <div className="screen-caption">Sign Up: username, password, confirm</div>
               </div>
             </div>
           </div>
@@ -625,19 +625,19 @@ export default function SmokinGrill() {
             <div className="screens-row">
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-home.jpg" alt="Home" loading="lazy" /></div>
-                <div className="screen-caption">Home — greeting, search, categories, most popular</div>
+                <div className="screen-caption">Home: greeting, search, categories, most popular</div>
               </div>
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-pizza.jpg" alt="Pizza" loading="lazy" /></div>
-                <div className="screen-caption">Category — Pizza with full menu listing</div>
+                <div className="screen-caption">Category: Pizza with full menu listing</div>
               </div>
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-burgers.jpg" alt="Burgers" loading="lazy" /></div>
-                <div className="screen-caption">Category — Burgers with full menu listing</div>
+                <div className="screen-caption">Category: Burgers with full menu listing</div>
               </div>
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-item.jpg" alt="Item detail" loading="lazy" /></div>
-                <div className="screen-caption">Item detail — image, description, sizes, Add to Cart</div>
+                <div className="screen-caption">Item detail: image, description, sizes, Add to Cart</div>
               </div>
             </div>
           </div>
@@ -647,15 +647,15 @@ export default function SmokinGrill() {
             <div className="screens-row">
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-cart.jpg" alt="Cart" loading="lazy" /></div>
-                <div className="screen-caption">Cart — items, quantity, promo code, order total</div>
+                <div className="screen-caption">Cart: items, quantity, promo code, order total</div>
               </div>
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-checkout.jpg" alt="Checkout" loading="lazy" /></div>
-                <div className="screen-caption">Checkout — saved addresses, payment, Place Order</div>
+                <div className="screen-caption">Checkout: saved addresses, payment, Place Order</div>
               </div>
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-confirmed.jpg" alt="Confirmed" loading="lazy" /></div>
-                <div className="screen-caption">Order confirmed — celebration, track order CTA</div>
+                <div className="screen-caption">Order confirmed: celebration, track order CTA</div>
               </div>
             </div>
           </div>
@@ -665,11 +665,11 @@ export default function SmokinGrill() {
             <div className="screens-row">
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-favourites.jpg" alt="Favourites" loading="lazy" /></div>
-                <div className="screen-caption">Favourites — saved items for quick repeat ordering</div>
+                <div className="screen-caption">Favourites: saved items for quick repeat ordering</div>
               </div>
               <div className="screen-item">
                 <div className="phone-sm">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/sg-profile.jpg" alt="Profile" loading="lazy" /></div>
-                <div className="screen-caption">Profile — payment, addresses, settings, orders</div>
+                <div className="screen-caption">Profile: payment, addresses, settings, orders</div>
               </div>
             </div>
           </div>
@@ -690,17 +690,17 @@ export default function SmokinGrill() {
             <div className="reflect-card">
               <div className="reflect-icon">✓</div>
               <div className="reflect-title">Real clients change how you design</div>
-              <div className="reflect-text">Working for a real friend&apos;s restaurant pushed me beyond aesthetics. Every decision had a real person on the other end — that accountability made me a more intentional designer.</div>
+              <div className="reflect-text">Working for a real friend&apos;s restaurant pushed me beyond aesthetics. Every decision had a real person on the other end, and that accountability made me a more intentional designer.</div>
             </div>
             <div className="reflect-card">
               <div className="reflect-icon">↻</div>
               <div className="reflect-title">What I&apos;d do differently</div>
-              <div className="reflect-text">I&apos;d run usability testing on the item customisation screen — the most complex step and most likely to cause drop-off. I&apos;d also build for accessibility from day one, not as an afterthought.</div>
+              <div className="reflect-text">I&apos;d run usability testing on the item customisation screen, the most complex step and most likely to cause drop-off. I&apos;d also build for accessibility from day one, not as an afterthought.</div>
             </div>
             <div className="reflect-card">
               <div className="reflect-icon">→</div>
               <div className="reflect-title">Next steps</div>
-              <div className="reflect-text">A loyalty and rewards system was an opportunity no competitor had taken. If this project continued, that would be the next feature — it could meaningfully increase repeat orders.</div>
+              <div className="reflect-text">A loyalty and rewards system was an opportunity no competitor had taken. If this project continued, that would be the next feature. It could meaningfully increase repeat orders.</div>
             </div>
           </div>
         </div>
@@ -710,7 +710,7 @@ export default function SmokinGrill() {
       <div className="next-cta">
         <div>
           <div className="next-label">Next project</div>
-          <div className="next-title">Flaura — Brand identity redesign</div>
+          <div className="next-title">Flaura: Brand identity redesign</div>
         </div>
         <a href="/flaura" className="btn-primary">View case study →</a>
       </div>

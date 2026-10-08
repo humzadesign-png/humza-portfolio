@@ -656,6 +656,14 @@ h2.cs-h2 em { font-style: italic; color: var(--muted); }
 .next-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
 .next-title { font-family: var(--serif); font-size: 2rem; color: var(--text); }
 
+/* ── Nails by Mona: post-launch blocks ── */
+.nbm-split { display: grid; grid-template-columns: 1fr 1.6fr; gap: 1.25rem; }
+.nbm-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.nbm-phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; max-width: 760px; margin: 0 auto; }
+.nbm-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.nbm-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.nbm-row { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 1rem; padding: 1rem 1.5rem; font-size: 0.85rem; align-items: center; }
+
 /* ── Case Study — Tablet ── */
 @media (min-width: 768px) and (max-width: 1024px) {
   .cs-hero { grid-template-columns: 1fr; padding: 7rem 2.5rem 3.5rem; }
@@ -695,4 +703,8 @@ h2.cs-h2 em { font-style: italic; color: var(--muted); }
   .d-num { font-size: 1.2rem; }
   .next-cta { flex-direction: column; gap: 1.5rem; text-align: center; padding: 3rem 1.25rem; }
   .next-title { font-size: 1.5rem; }
+  .nbm-split, .nbm-pair, .nbm-cards { grid-template-columns: 1fr; }
+  .nbm-stats { grid-template-columns: 1fr 1fr; }
+  .nbm-phones { gap: 0.6rem; }
+  .nbm-row { grid-template-columns: 1.3fr 1fr 1fr; gap: 0.6rem; padding: 0.85rem 1rem; font-size: 0.76rem; }
 }

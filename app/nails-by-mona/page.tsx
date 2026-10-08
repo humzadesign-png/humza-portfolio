@@ -47,7 +47,7 @@ export default function NailsByMona() {
       role: 'Marketing manager at a tech startup',
       trigger: 'Acrylic damage',
       quote: '"I love acrylics but my real nails are destroyed. I want something that looks salon-finished without the 3-hour trip."',
-      job: 'Volume buyer — reorders every 4–6 weeks.',
+      job: 'Volume buyer: reorders every 4–6 weeks.',
       color: '#2a1f35',
     },
     {
@@ -56,8 +56,8 @@ export default function NailsByMona() {
       age: '26 · Karachi',
       role: 'Bride-to-be, wedding in 6 weeks',
       trigger: 'Wedding date',
-      quote: '"I need three coordinated looks — Mehendi, Baraat, Valima — that I can trust completely."',
-      job: 'Bridal buyer — single high-stakes purchase, high emotional investment.',
+      quote: '"I need three coordinated looks (Mehendi, Baraat, Valima) that I can trust completely."',
+      job: 'Bridal buyer: single high-stakes purchase, high emotional investment.',
       color: '#1f2535',
     },
     {
@@ -66,8 +66,8 @@ export default function NailsByMona() {
       age: '31 · Rawalpindi',
       role: 'Teacher, practicing Muslim',
       trigger: 'Wudu conflict',
-      quote: '"I can\'t wear regular polish — water can\'t reach my nail bed during ablution. Press-ons solve this exactly."',
-      job: 'Values buyer — buys on fit with religious practice.',
+      quote: '"I can\'t wear regular polish. Water can\'t reach my nail bed during ablution. Press-ons solve this exactly."',
+      job: 'Values buyer: buys on fit with religious practice.',
       color: '#1f2e25',
     },
   ];
@@ -77,17 +77,17 @@ export default function NailsByMona() {
     {
       n: '01',
       title: '"Custom" is meaningless until you show the measurement.',
-      body: 'Every competitor uses the word "custom." None demonstrate it. The differentiator isn\'t being custom — it\'s looking custom. That\'s why we invested in a guided live-camera capture with SVG overlays: 2 close-up photos (fingers + thumb), a green/red alignment heuristic, and macro framing that reads each nail width directly off a coin reference.',
+      body: 'Every competitor uses the word "custom." None demonstrate it. The differentiator isn\'t being custom, it\'s looking custom. That\'s why we invested in a guided live-camera capture with SVG overlays: 2 close-up photos (fingers + thumb), a green/red alignment heuristic, and macro framing that reads each nail width directly off a coin reference.',
     },
     {
       n: '02',
       title: 'The wudu pain point is invisible to non-Muslim designers.',
-      body: 'Practicing Muslim women cannot wear traditional polish — water can\'t reach the nail bed during ablution. Press-ons solve this exactly: they remove cleanly. Mona started this business for that reason. Surfacing it as the 4th brand pillar opens a content moat with zero competition on the exact-match search query.',
+      body: 'Practicing Muslim women cannot wear traditional polish: water can\'t reach the nail bed during ablution. Press-ons solve this exactly: they remove cleanly. Mona started this business for that reason. Surfacing it as the 4th brand pillar opens a content moat with zero competition on the exact-match search query.',
     },
     {
       n: '03',
       title: 'The brand is "Nails by Mona," not Mona personally.',
-      body: 'A face on the website would invite DM spam, conflate the brand with the person, and cap scaling. The discipline is hand-only photography and brand-addressed WhatsApp pre-fills ("Hello Nails by Mona…"). A small detail that compounds — every customer interaction reinforces a brand, not a phone number.',
+      body: 'A face on the website would invite DM spam, conflate the brand with the person, and cap scaling. The discipline is hand-only photography and brand-addressed WhatsApp pre-fills ("Hello Nails by Mona…"). A small detail that compounds: every customer interaction reinforces a brand, not a phone number.',
     },
     {
       n: '04',
@@ -97,20 +97,20 @@ export default function NailsByMona() {
     {
       n: '05',
       title: 'Pakistan-mobile is the design constraint, not a responsive afterthought.',
-      body: 'A 3-year-old Android on patchy 4G, in landscape, in a salon waiting room. Lighthouse mobile ≥ 90 isn\'t a polish goal — it\'s a market-fit requirement. Every flow has a graceful degradation path. The live camera itself falls back to file upload, which falls back to "send via WhatsApp."',
+      body: 'A 3-year-old Android on patchy 4G, in landscape, in a salon waiting room. Speed isn\'t a polish goal here, it\'s a market-fit requirement. Every flow has a graceful degradation path. The live camera itself falls back to file upload, which falls back to "send via WhatsApp."',
     },
   ];
 
   // ── final-design pages grid ────────────────────────────────
-  // Slim list — the 6 pages that earn their place in the case study.
+  // Slim list: the 6 pages that earn their place in the case study.
   // Blog-post, contact, and order-form were dropped (low signal vs page weight).
   const pages = [
-    { src: '/nbm-page-shop.jpg',       label: 'Shop',           h: 3000, sub: 'Filter-by-default, tier badges, trust signals on every card.' },
-    { src: '/nbm-page-product.jpg',    label: 'Product detail', h: 3400, sub: 'Bridal Trio Classic — bag CTA, FAQ schema, related sets.' },
-    { src: '/nbm-page-bridal.jpg',     label: 'Bridal',         h: 3400, sub: 'Champagne hero. "Order 4 weeks before mehendi" in the H1 paragraph.' },
+    { src: '/nbm-page-shop.jpg',       label: 'Shop',           h: 3000, sub: 'Search and filter pills in one sticky toolbar, price and tier on every card.' },
+    { src: '/nbm-page-product.jpg',    label: 'Product detail', h: 3400, sub: 'Bridal Trio Classic. Add to bag sits right under the price, with the three sets linked below.' },
+    { src: '/nbm-page-bridal.jpg',     label: 'Bridal',         h: 3400, sub: 'Real wedding photos, one flat Rs. 10,000 price, each night linked to its set.' },
     { src: '/nbm-page-size-guide.jpg', label: 'Size guide',     h: 3400, sub: 'Real photos replaced placeholders. Good vs Avoid gallery with corner pills.' },
-    { src: '/nbm-page-about.jpg',      label: 'About',          h: 3400, sub: 'Hand-only hero. Founder named in copy; never shown in photography.' },
-    { src: '/nbm-page-blog.jpg',       label: 'Journal',        h: 2600, sub: '5 cornerstone posts at launch — wudu post is the priority SEO bet.' },
+    { src: '/nbm-page-about.jpg',      label: 'About',          h: 2400, sub: 'Hand-only hero. Founder named in copy, never shown in photography.' },
+    { src: '/nbm-page-blog.jpg',       label: 'Journal',        h: 2600, sub: 'Cornerstone posts with cover images. The wudu post is the priority SEO bet.' },
   ];
 
   // ── 6-step process timeline ────────────────────────────────
@@ -121,7 +121,7 @@ export default function NailsByMona() {
     },
     {
       n: '02', when: 'Week 1', title: 'Review & revise the plan',
-      body: 'Three follow-up sessions stress-tested the plan: competitor research, payment-method trade-offs, photography rules, and what to deliberately NOT build. Locked the Fixed Decisions table — Laravel + Filament, manual payments at MVP (no SafePay until Phase 6), hand-only photography, no AI image generation, no founder face anywhere.',
+      body: 'Three follow-up sessions stress-tested the plan: competitor research, payment-method trade-offs, photography rules, and what to deliberately NOT build. Locked the Fixed Decisions table: Laravel + Filament, manual payments at MVP (no SafePay until Phase 6), hand-only photography, no AI image generation for products, no founder face anywhere.',
     },
     {
       n: '03', when: 'Week 2', title: 'UX research & strategy',
@@ -129,26 +129,34 @@ export default function NailsByMona() {
     },
     {
       n: '04', when: 'Week 2', title: 'Wireframes in Claude Design',
-      body: 'Used Claude Design for low-fi sketchy wireframes with annotations — the kind of margin notes that get lost in Figma comments. 18 artboards on one infinite canvas, including 2 hero variants for every key page so layout decisions could be compared side-by-side.',
+      body: 'Used Claude Design for low-fi sketchy wireframes with annotations, the kind of margin notes that get lost in Figma comments. 18 artboards on one infinite canvas, including 2 hero variants for every key page so layout decisions could be compared side-by-side.',
     },
     {
       n: '05', when: 'Weeks 3–4', title: 'Frontend build',
-      body: 'Laravel 11 + Blade + Tailwind v4 + jQuery — server-rendered, no React. 13 public pages live-camera state machine in vanilla JS. Six transactional email templates. Lighthouse mobile ≥ 90 on every page. Bag drawer + localStorage + multi-step checkout with separate URLs for back-button safety on Pakistan-mobile 4G.',
+      body: 'Laravel + Blade + Tailwind v4 + jQuery: server-rendered, no React. 13 public pages and a live-camera state machine in vanilla JS. Six transactional email templates. Bag drawer + localStorage + multi-step checkout with separate URLs for back-button safety on Pakistan-mobile 4G.',
     },
     {
       n: '06', when: 'Weeks 5–6', title: 'Backend admin, SEO & ship',
       body: 'Filament v4 admin panel with 11 resources (orders, products, customers, blog, FAQs, settings, finance, expenses, etc.). 5 cornerstone blog posts seeded. Sitemap + RSS + Schema.org JSON-LD across every page. Deployed to nailsbymona.pk on DigitalOcean with Certbot SSL and a supervised queue worker.',
     },
+    {
+      n: '07', when: 'After launch', title: 'Measure real usage',
+      body: 'Added GA4 funnel events (add to bag, checkout, sizing completed, purchase), Microsoft Clarity session recordings, Search Console and server-log checks. For the first time I could see who actually arrived and where they dropped off, instead of guessing from personas.',
+    },
+    {
+      n: '08', when: 'Sep – Oct 2026', title: 'Iterate with the client',
+      body: 'Rebuilt the home page around the data, moved Add to bag up on product pages, added site-wide search, and shipped workflow changes Mona asked for once she was running the business on it every day. Then a speed, SEO and security pass.',
+    },
   ];
 
   // ── admin captures ─────────────────────────────────────────
   const adminShots = [
-    { src: '/nbm-admin-dashboard.jpg', label: 'Dashboard',  desc: 'Stat cards + recent orders + "Orders needing attention" — designed for Mona\'s morning glance.', h: 2200 },
+    { src: '/nbm-admin-dashboard.jpg', label: 'Dashboard',  desc: 'Stat cards + recent orders + "Orders needing attention", designed for Mona\'s morning glance.', h: 2200 },
     { src: '/nbm-admin-orders.jpg',    label: 'Orders',     desc: 'SLA badges (green/amber/red by age). One-tap confirm, WhatsApp row action, bulk confirm for the overnight stack.', h: 2000 },
-    { src: '/nbm-admin-products.jpg',  label: 'Products',   desc: '9 active sets across 5 tiers. Slug, price, stock status, active toggle — all editable inline.', h: 1800 },
+    { src: '/nbm-admin-products.jpg',  label: 'Products',   desc: 'Every set across 5 tiers. Slug, price, stock status and active toggle, all editable inline. Optional shape, length, finish and colour details feed the product page.', h: 1800 },
     { src: '/nbm-admin-customers.jpg', label: 'Customers',  desc: 'Saved sizing on file. Pakistani phone normalisation: +92 / 92 / 0 all resolve to the same customer.', h: 1600 },
     { src: '/nbm-admin-blog.jpg',      label: 'Blog editor', desc: 'Rich-text editor, category, target keyword, view counter, related-products pivot, scheduled publish.', h: 1600 },
-    { src: '/nbm-admin-settings.jpg',  label: 'Settings',   desc: 'Single source of truth: WhatsApp number, payment account details, lead times, deposit %, reorder discount %.', h: 2600 },
+    { src: '/nbm-admin-settings.jpg',  label: 'Settings',   desc: 'Single source of truth: WhatsApp number, payment account details, a show/hide switch per payment method, lead times, reorder discount %.', h: 2600 },
   ];
 
   // ── design-system palette tokens ───────────────────────────
@@ -157,7 +165,7 @@ export default function NailsByMona() {
     { hex: '#FBF8F2', name: 'paper',  role: 'Cards' },
     { hex: '#EAE3D9', name: 'shell',  role: 'Alt sections' },
     { hex: '#BFA4CE', name: 'lavender', role: 'Accent · CTAs', light: true },
-    { hex: '#9B7FB4', name: 'lavender-dark', role: 'Hover · pressed', light: true },
+    { hex: '#8A6CA5', name: 'lavender-dark', role: 'All lilac text · icons', light: true },
     { hex: '#EDE2C8', name: 'bridal bg', role: 'Bridal hero' },
     { hex: '#D4A948', name: 'gold', role: 'Bridal accent', light: true },
     { hex: '#2C1F2E', name: 'aubergine', role: 'Footer', light: true },
@@ -178,14 +186,14 @@ export default function NailsByMona() {
             Client work · UX Research, UI Design &amp; Full-Stack Build · 2026
           </div>
           <h1>
-            Nails by Mona &mdash;<br />
+            Nails by Mona:<br />
             <em>From Instagram DMs</em><br />
             to a full digital service
           </h1>
           <p className="cs-hero-desc">
-            End-to-end UX and product build for a one-woman press-on nail studio in Mirpur, Pakistan
-            — research, wireframes, design system, live storefront, and a Filament admin panel that
-            Mona runs herself.
+            End-to-end UX and product build for a one-woman press-on nail studio in Mirpur, Pakistan:
+            research, wireframes, design system, live storefront, and a Filament admin panel that
+            Mona runs herself. Since launch, redesigned and refined using real usage data.
           </p>
           <div className="meta-chips">
             <span className="chip highlight">UX Research</span>
@@ -216,7 +224,7 @@ export default function NailsByMona() {
             <div style={{ position: 'absolute', inset: '-40px', background: `radial-gradient(circle, ${mauveGlow} 0%, transparent 70%)`, pointerEvents: 'none' }} />
             <Image
               src="/nbm-hero.jpg"
-              alt="Nails by Mona homepage hero — Custom-fit press-on nails, made for your hands"
+              alt="Nails by Mona homepage hero: custom-fit press-on nails, made for your hands"
               width={1440}
               height={1800}
               priority
@@ -231,7 +239,7 @@ export default function NailsByMona() {
         <div className="inner-wide">
           <div className="ov-grid reveal">
             <div className="ov-card"><div className="ov-label">My Role</div><div className="ov-val">UX Designer + Developer</div></div>
-            <div className="ov-card"><div className="ov-label">Duration</div><div className="ov-val">6 wks · plan → ship</div></div>
+            <div className="ov-card"><div className="ov-label">Duration</div><div className="ov-val">6 wks to launch + ongoing iteration</div></div>
             <div className="ov-card"><div className="ov-label">Stack</div><div className="ov-val">Laravel · Filament · Tailwind</div></div>
             <div className="ov-card"><div className="ov-label">Live</div><div className="ov-val"><a href="https://nailsbymona.pk" target="_blank" rel="noopener noreferrer" style={{ color: mauve, textDecoration: 'none' }}>nailsbymona.pk ↗</a></div></div>
           </div>
@@ -242,13 +250,13 @@ export default function NailsByMona() {
             <p className="cs-body reveal">
               Mona is a Fine Arts graduate running a handmade press-on nail studio out of her home in
               Mirpur, Azad Kashmir. With ~1,000 followers, two years of word-of-mouth, and ~30 monthly
-              orders — all handled via voice notes and back-and-forth WhatsApp photos — the business had
+              orders, all handled via voice notes and back-and-forth WhatsApp photos, the business had
               real craft but no infrastructure. No website, no checkout, no way to be discovered outside
               Instagram.
             </p>
             <p className="cs-body reveal">
               But &ldquo;build a website&rdquo; was the wrong frame. Eight Pakistani competitors already have
-              websites — generic Shopify storefronts that haven&apos;t moved the needle. The real challenge was
+              websites: generic Shopify storefronts that haven&apos;t moved the needle. The real challenge was
               to design a <strong>digital service that earns trust on the first visit</strong>, makes the artisan
               craft visible, and removes the friction that today only Mona-on-WhatsApp can resolve.
               That meant starting with users, not pages.
@@ -261,12 +269,13 @@ export default function NailsByMona() {
       <div className="cs-section">
         <div className="inner-wide">
           <div className="section-tag reveal">Process · how I worked</div>
-          <h2 className="cs-h2 reveal">Six weeks. Six phases.<br /><em>Plan first. Then design. Then code.</em></h2>
+          <h2 className="cs-h2 reveal">Six weeks to launch.<br /><em>Then real usage took over.</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
             Before any pixel or template, I spent the first week writing the plan with Claude Code as a
             thinking partner. The plan was reviewed and revised three times before I drew a single
-            wireframe — that&apos;s the work that prevents Frankensteining 60% of the way through a build.
+            wireframe. That&apos;s the work that prevents Frankensteining 60% of the way through a build.
             Only then did I move to UX research, then to wireframes in Claude Design, then to the Laravel build.
+            After launch, the work shifted from planning to measuring and iterating.
           </p>
 
           <div className="reveal" style={{ marginTop: '2.5rem', display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '1rem' }}>
@@ -284,8 +293,8 @@ export default function NailsByMona() {
 
           <p className="cs-body reveal" style={{ marginTop: '2rem', maxWidth: '720px', fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--muted)' }}>
             Tools across the project: Claude Code (planning, code), Claude Design (wireframes),
-            Figma &amp; FigJam (research artefacts), Laravel + Filament (build), DigitalOcean + Certbot
-            (deploy).
+            Figma &amp; FigJam (research artefacts), Laravel + Filament (build), DigitalOcean + Cloudflare
+            (deploy), GA4, Microsoft Clarity &amp; Search Console (measure).
           </p>
         </div>
       </div>
@@ -297,7 +306,7 @@ export default function NailsByMona() {
           <h2 className="cs-h2 reveal">The category was crowded<br /><em>but undifferentiated</em></h2>
           <p className="cs-body reveal">
             I audited 8 Pakistani press-on competitors across Instagram, websites, pricing, and DM reviews.
-            Three signals jumped out — every brand says <em>&ldquo;custom&rdquo;</em> but none demonstrate it; bridal
+            Three signals jumped out: every brand says <em>&ldquo;custom&rdquo;</em> but none demonstrate it; bridal
             is over-promised and under-served; and not one brand owns the religious-fit angle that Mona
             stumbled into for personal reasons.
           </p>
@@ -349,8 +358,8 @@ export default function NailsByMona() {
           <h2 className="cs-h2 reveal">Three women.<br /><em>Three completely different clocks.</em></h2>
           <p className="cs-body reveal">
             I synthesised three personas from competitor IG reviews, Mona&apos;s DM records, and market data
-            on Pakistani working women. I chose the personas with the most distinct <strong>trigger moments</strong>
-            — not the most distinct demographics — because the trigger shapes the whole journey. Per the
+            on Pakistani working women. I chose the personas with the most distinct <strong>trigger moments</strong>,
+            not the most distinct demographics, because the trigger shapes the whole journey. Per the
             brand&apos;s no-face discipline, the avatars are hand-and-symbol illustrations rather than portraits.
           </p>
 
@@ -415,7 +424,7 @@ export default function NailsByMona() {
           </div>
 
           <p className="cs-body reveal" style={{ marginTop: '1.5rem', maxWidth: '720px' }}>
-            Stage 3 is the moment most Pakistani brands lose her — and it&apos;s also where craft can break through.
+            Stage 3 is the moment most Pakistani brands lose her, and it&apos;s also where craft can break through.
             Naming Mirpur, naming Mona, and showing the studio (without showing the person) does more for trust
             than any badge or testimonial.
           </p>
@@ -477,7 +486,7 @@ export default function NailsByMona() {
 
           {/* Order flow */}
           <div className="reveal" style={{ marginTop: '2rem' }}>
-            <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '1rem' }}>Order flow (guest checkout — no accounts)</div>
+            <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '1rem' }}>Order flow (guest checkout, no accounts)</div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
               {['Bag drawer', '→', 'Sizing capture', '→', 'Order details', '→', 'Payment', '→', 'Confirmation', '→', 'Tracking'].map((step, i) => (
                 step === '→'
@@ -486,7 +495,7 @@ export default function NailsByMona() {
               ))}
             </div>
             <p className="cs-body" style={{ marginTop: '1rem' }}>
-              Each step is its own URL with server-rendered state — back-button safe on patchy Pakistan
+              Each step is its own URL with server-rendered state, so it&apos;s back-button safe on patchy Pakistan
               4G. Returning customers (matched by phone + email, normalised across <code style={{ background: 'var(--bg2)', padding: '0.1rem 0.4rem', borderRadius: '4px', fontSize: '0.8rem' }}>+92</code> /
               <code style={{ background: 'var(--bg2)', padding: '0.1rem 0.4rem', borderRadius: '4px', fontSize: '0.8rem' }}> 0</code> prefixes) skip sizing and get a 5% reorder discount surfaced immediately.
             </p>
@@ -511,7 +520,7 @@ export default function NailsByMona() {
           <h2 className="cs-h2 reveal">Three flows.<br /><em>Each one a deliberate split-path.</em></h2>
           <p className="cs-body reveal">
             I mapped three end-to-end flows to validate the IA before any UI was built. Each one has at
-            least one graceful-degradation branch — Pakistan-mobile-first means assuming things will fail.
+            least one graceful-degradation branch. Pakistan-mobile-first means assuming things will fail.
           </p>
 
           <div style={{ marginTop: '2.5rem' }}>
@@ -524,12 +533,12 @@ export default function NailsByMona() {
               {
                 n: '2',
                 title: 'Hira buys the Bridal Trio (high-stakes, first-time)',
-                steps: ['Google "bridal press on nails Pakistan"', 'Bridal page', '"Order 4 weeks before mehendi" rule visible', 'Add Trio to bag', 'Sizing — live camera', 'Fingers photo', 'Thumb photo', 'Optional: other hand', 'Submit', 'Details', 'Full advance · Bank transfer', 'Proof upload', 'Admin verifies <24h ✓'],
+                steps: ['Google "bridal press on nails Pakistan"', 'Bridal page', '"Order 4 weeks before mehendi" rule visible', 'Add Trio to bag', 'Sizing: live camera', 'Fingers photo', 'Thumb photo', 'Optional: other hand', 'Submit', 'Details', 'Full advance · Bank transfer', 'Proof upload', 'Admin verifies <24h ✓'],
               },
               {
                 n: '3',
                 title: 'Ayesha lands on the wudu blog post (organic-first journey)',
-                steps: ['Google "press on nails wudu"', 'Cornerstone blog post', 'Reads "Yes — remove before, reapply after"', 'Internal link → Shop', 'Browses', 'Reads care guide', 'Wishlists', 'Returns 2 weeks later', 'Buys everyday set'],
+                steps: ['Google "press on nails wudu"', 'Cornerstone blog post', 'Reads "Yes: remove before, reapply after"', 'Internal link → Shop', 'Browses', 'Reads care guide', 'Wishlists', 'Returns 2 weeks later', 'Buys everyday set'],
               },
             ].map((flow) => (
               <div key={flow.n} className="reveal" style={{ display: 'flex', gap: '1.5rem', padding: '1.5rem 0', borderBottom: '1px solid var(--border)' }}>
@@ -558,7 +567,7 @@ export default function NailsByMona() {
           <h2 className="cs-h2 reveal">Eighteen artboards.<br /><em>One infinite canvas.</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
             I used <strong>Claude Design</strong> to wireframe the entire product on one infinite canvas.
-            The mid-fi sketchy style kept the focus on layout, hierarchy, and annotated decisions — the
+            The mid-fi sketchy style kept the focus on layout, hierarchy, and annotated decisions: the
             kind of margin notes that get lost in Figma comments. Two hero variants for every key page so
             layout calls could be compared side-by-side before the build began. The board below became
             the brief for the Laravel + Blade port that followed.
@@ -572,7 +581,7 @@ export default function NailsByMona() {
             <figure style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
               <Image
                 src="/nbm-wireframes.jpg"
-                alt="Wireframes on the Claude Design canvas — annotated sketches of every page including Home, Shop, Product, Bridal, and the Order flow"
+                alt="Wireframes on the Claude Design canvas: annotated sketches of every page including Home, Shop, Product, Bridal, and the Order flow"
                 width={2400}
                 height={2400}
                 loading="lazy"
@@ -587,12 +596,19 @@ export default function NailsByMona() {
       <div className="cs-section alt">
         <div className="inner-wide">
           <div className="section-tag reveal">Design System</div>
-          <h2 className="cs-h2 reveal">A warm-neutral atelier system —<br /><em>lavender used only as accent</em></h2>
+          <h2 className="cs-h2 reveal">A warm-neutral atelier system,<br /><em>lavender used only as accent</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
             The discipline that holds the brand together is restraint. The page is bone-coloured; cards
             are paper; alt sections are shell. Lavender (the logo colour, <code style={{ background: 'var(--bg)', padding: '0.1rem 0.4rem', borderRadius: '4px', fontSize: '0.8rem' }}>#BFA4CE</code>) appears in eight specific
-            spots only — CTAs, focus rings, prices, active nav, step indicators, accent rules under H2s,
+            spots only: CTAs, focus rings, prices, active nav, step indicators, accent rules under H2s,
             selected payment tiles, and eyebrow labels. Nowhere else. Saturation is what makes accents work.
+          </p>
+          <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
+            A consistency pass after launch tightened it further. Plain lavender text was only about 1.8:1
+            against the shell background, so every lilac word and line icon now uses one darker shade,
+            <code style={{ background: 'var(--bg)', padding: '0.1rem 0.4rem', borderRadius: '4px', fontSize: '0.8rem' }}>#8A6CA5</code>,
+            and the logo lilac is kept for fills. Every icon was redrawn as an outline at one line weight, with
+            one icon per meaning across the whole site.
           </p>
 
           {/* Palette */}
@@ -625,7 +641,7 @@ export default function NailsByMona() {
                 <div style={{ fontSize: '0.95rem', lineHeight: 1.7 }}>
                   Handmade gel sets, sized from two close-up photos of your fingers and thumb. Wudu-friendly. Reusable three to five times. Shipped across Pakistan.
                 </div>
-                <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: '1rem', letterSpacing: '0.04em' }}>Rs. 2,500 — Made to Order · Ships in 5–7 days</div>
+                <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: '1rem', letterSpacing: '0.04em' }}>Rs. 2,500 · Made to Order · Ships in 5–7 days</div>
               </div>
             </div>
           </div>
@@ -664,10 +680,10 @@ export default function NailsByMona() {
           <div className="section-tag reveal">Final Designs</div>
           <h2 className="cs-h2 reveal">Live at <a href="https://nailsbymona.pk" target="_blank" rel="noopener noreferrer" style={{ color: mauve, textDecoration: 'none' }}>nailsbymona.pk</a></h2>
           <p className="cs-body reveal">
-            Built in Laravel + Blade + Tailwind v4 + jQuery. No JS framework on the public storefront —
+            Built in Laravel + Blade + Tailwind v4 + jQuery. No JS framework on the public storefront:
             Pakistan-mobile means smaller JS bundles, faster TTI, fewer hydration costs. Every page is
             server-rendered with Schema.org JSON-LD (Organization, Product, Article, FAQPage,
-            BreadcrumbList). Lighthouse mobile targets ≥ 90 across the board.
+            BreadcrumbList). The screens below are the current live site, after the post-launch redesign.
           </p>
         </div>
 
@@ -676,14 +692,14 @@ export default function NailsByMona() {
           <figure className="reveal" style={{ margin: 0 }}>
             <Image
               src="/nbm-page-home.jpg"
-              alt="Nails by Mona homepage — final design"
+              alt="Nails by Mona homepage, current design"
               width={1440}
               height={3400}
               loading="lazy"
               style={{ width: '100%', height: 'auto', borderRadius: '16px', border: '1px solid var(--border2)', display: 'block' }}
             />
             <figcaption style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: '0.75rem', textAlign: 'center', fontStyle: 'italic' }}>
-              Homepage — hero, 4-pillar trust strip, fit-difference deep dive, featured sets, bridal callout, blog teaser, dark aubergine footer.
+              Homepage: uncovered hero photo with a starting price, the collection with prices straight after, fit in 3 steps, why press-ons, Bridal Trio banner.
             </figcaption>
           </figure>
         </div>
@@ -694,7 +710,7 @@ export default function NailsByMona() {
             <figure key={p.src} className="reveal" style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
               <Image
                 src={p.src}
-                alt={`${p.label} — Nails by Mona final design`}
+                alt={`${p.label} page, Nails by Mona`}
                 width={1440}
                 height={p.h}
                 loading="lazy"
@@ -713,7 +729,7 @@ export default function NailsByMona() {
           <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', alignItems: 'center' }}>
             <Image
               src="/nbm-product.jpg"
-              alt="Nails by Mona product — deep burgundy with gold accent"
+              alt="Nails by Mona product: deep burgundy with gold accent"
               width={1400}
               height={1400}
               loading="lazy"
@@ -725,7 +741,7 @@ export default function NailsByMona() {
               <p className="cs-body">
                 Gel base, colour layers, and topcoat applied by hand. Custom measurements read from
                 coin-scale photos. A free first refit guarantee backs every order. The photography brief:
-                hands only, never faces — disciplined brand identity disguised as aesthetic choice.
+                hands only, never faces. Disciplined brand identity disguised as aesthetic choice.
               </p>
             </div>
           </div>
@@ -741,7 +757,7 @@ export default function NailsByMona() {
             Eight competitors say &ldquo;custom.&rdquo; None show how. So I designed and built a guided
             live-camera capture: two close-up photos (fingers row + thumb) inside a single permission
             session, with per-state SVG overlays and a green/red alignment heuristic. Sizing is the most
-            common DM question Mona gets — turning it into a 90-second guided flow turns the most
+            common DM question Mona gets, so a 90-second guided flow turns the most
             error-prone moment into the most differentiated one.
           </p>
 
@@ -791,25 +807,46 @@ export default function NailsByMona() {
           </div>
 
           <p className="cs-body reveal" style={{ marginTop: '2.5rem', maxWidth: '720px' }}>
-            The state machine lives at a single URL — camera permission is requested <strong>once</strong> for
+            The state machine lives at a single URL, so camera permission is requested <strong>once</strong> for
             the whole flow. Brightness sampling runs every 500ms; a Sobel-style edge-contrast heuristic
             paints the overlay green when something looks right, red when it doesn&apos;t. The thumb state
             uses halved thresholds (fewer edges by definition). Desktop users hit a QR-handoff state with
-            a wa.me deep-link instead — laptop webcams face the user, not the nails.
+            a wa.me deep-link instead, because laptop webcams face the user, not the nails.
           </p>
 
           {/* Fallback row */}
           <div className="reveal" style={{ marginTop: '2.5rem', background: 'var(--bg)', borderRadius: '14px', border: '1px solid var(--border2)', padding: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }}>
             {[
               { title: 'Live camera', body: 'Default for mobile users with permission granted.' },
-              { title: 'File upload fallback', body: 'Permission denied or no rear camera — same 2-photo schema.' },
-              { title: 'WhatsApp later', body: 'Customer overwhelmed — opt out, send photos to Mona, order continues.' },
+              { title: 'File upload fallback', body: 'Permission denied or no rear camera: same 2-photo schema.' },
+              { title: 'WhatsApp later', body: 'Customer overwhelmed: opt out, send photos to Mona, order continues.' },
             ].map((b, i) => (
               <div key={b.title} style={{ borderLeft: i === 0 ? `2px solid ${mauve}` : '2px solid var(--border)', paddingLeft: '1rem' }}>
                 <div style={{ fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.4rem' }}>{b.title}</div>
                 <div style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.6 }}>{b.body}</div>
               </div>
             ))}
+          </div>
+
+          {/* After launch: adoption + the iPhone upload fix */}
+          <div className="reveal nbm-split" style={{ marginTop: '2.5rem' }}>
+            <div style={{ background: mauveGlow, border: `1px solid ${mauveDark}`, borderRadius: '14px', padding: '1.75rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <div style={{ fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '0.75rem' }}>After launch</div>
+              <div style={{ fontSize: '2.6rem', fontWeight: 700, color: mauve, lineHeight: 1 }}>100%</div>
+              <div style={{ fontSize: '0.85rem', marginTop: '0.6rem', lineHeight: 1.55 }}>of orders so far were sized with the live camera. Nobody needed the fallbacks.</div>
+            </div>
+            <div style={{ background: 'var(--bg)', border: '1px solid var(--border2)', borderRadius: '14px', padding: '1.75rem' }}>
+              <div style={{ fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '0.75rem' }}>The bug real users found</div>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.6rem' }}>&ldquo;Stuck on Submitting&hellip;&rdquo; on iPhone Chrome</div>
+              <p style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>
+                Customers on iPhone Chrome waited about a minute after taking their photos. Server logs showed
+                the server handled the upload in under half a second, so the delay was on the phone. The cause:
+                the page was still holding the camera on the review screen, and iOS slows uploads while capture
+                is active. Releasing the camera as soon as the last photo is taken brought the upload from
+                <strong style={{ color: 'var(--fg)' }}> ~66 seconds to ~3 seconds</strong>. Errors now show inline
+                with an &ldquo;upload from my gallery instead&rdquo; link, rather than a silent spinner.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -820,7 +857,7 @@ export default function NailsByMona() {
           <div className="section-tag reveal">Admin Dashboard · for Mona</div>
           <h2 className="cs-h2 reveal">Mona runs the whole business<br /><em>from one screen.</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
-            Built on Filament v4 — a Laravel admin framework. Every resource was scoped to Mona&apos;s actual
+            Built on Filament v4, a Laravel admin framework. Every resource was scoped to Mona&apos;s actual
             workflow: morning glance at orders needing attention, one-tap WhatsApp prefills, a payment-age
             SLA badge that turns red after 24 hours, bulk-confirm for the overnight stack. No training
             documentation needed.
@@ -847,15 +884,19 @@ export default function NailsByMona() {
 
           {/* Engineering callouts */}
           <div className="reveal" style={{ marginTop: '3rem', borderRadius: '16px', border: '1px solid var(--border2)', overflow: 'hidden', background: 'var(--bg2)' }}>
-            <div style={{ padding: '1.25rem 1.5rem', borderBottom: '1px solid var(--border)', fontSize: '0.72rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: mauve }}>Production hardening — things that aren&apos;t visible but matter</div>
-            <div style={{ padding: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
+            <div style={{ padding: '1.25rem 1.5rem', borderBottom: '1px solid var(--border)', fontSize: '0.72rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: mauve }}>Production hardening: things that aren&apos;t visible but matter</div>
+            <div className="nbm-cards" style={{ padding: '1.5rem', gap: '1.5rem' }}>
               {[
                 ['Bag-tampering closed', 'Cart prices re-fetched server-side by slug at order creation. A customer setting localStorage `price_pkr: 1` cannot place a Bridal Trio for Rs. 1.'],
                 ['Race-safe order numbers', '`Order::generateOrderNumber()` wraps in `DB::transaction` + `lockForUpdate` + 5-retry on unique-violation. Soft-deletes use `withTrashed()` checks.'],
-                ['Private file storage', 'Payment proofs + sizing photos on the `local` disk — never web-accessible. Only readable via an auth-gated admin route with path-traversal guards.'],
+                ['Private file storage', 'Payment proofs + sizing photos on the `local` disk, never web-accessible. Only readable via an auth-gated admin route with path-traversal guards.'],
                 ['Order-page authorisation', 'Confirm/track URLs use UUID, not integer ID. A session allowlist controls access. UUID alone is not enough.'],
                 ['Pakistan-phone normalisation', '`+92 300…`, `0300…`, `923…` all resolve to the same customer for returning-customer lookup.'],
-                ['Queued notifications', 'All admin notifications `implements ShouldQueue` — never block the request thread, never `User::all()`.'],
+                ['Queued notifications', 'All admin notifications `implements ShouldQueue`, so they never block the request thread.'],
+                ['Cloudflare in front', 'Static files served from the edge in well under a second instead of 1.5–2 s from Singapore. Real visitor IPs restored so per-route rate limits on checkout and uploads hit the right person.'],
+                ['Backups + server lockdown', 'Nightly database dump on the server plus a weekly off-site copy. SSH key-only, firewall, fail2ban and security headers after logs showed thousands of password attempts a day.'],
+                ['Automated test suite', 'Feature tests cover every checkout path (tampered prices, returning customers, custom links, photo upload) and every admin page. Run before each deploy.'],
+                ['Spam guard on the contact form', 'Honeypot field, timer token, fixed subject list and a duplicate filter. Invisible to real customers, no CAPTCHA.'],
               ].map(([t, b]) => (
                 <div key={t}>
                   <div style={{ fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.4rem' }}>{t}</div>
@@ -867,55 +908,180 @@ export default function NailsByMona() {
         </div>
       </div>
 
-      {/* ── 14. OUTCOMES ────────────────────────────────── */}
+      {/* ── 14. AFTER LAUNCH: DATA-DRIVEN REDESIGN ───────── */}
+      <div className="cs-section alt">
+        <div className="inner-wide">
+          <div className="section-tag reveal">After launch · what real usage changed</div>
+          <h2 className="cs-h2 reveal">The visitor who arrived<br /><em>wasn&apos;t the one I designed for.</em></h2>
+          <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
+            The personas assumed someone researching press-ons: reading about fit, comparing brands,
+            taking her time. Analytics and Clarity recordings told a different story. Most visitors came
+            from Instagram ads, browsing inside Instagram&apos;s in-app browser on a phone, and left the home page
+            within seconds having scrolled only a fraction of it.
+          </p>
+
+          <div className="reveal nbm-stats" style={{ marginTop: '2rem' }}>
+            {[
+              { stat: '~60%', label: 'of visitors came from Instagram ads' },
+              { stat: '~80%', label: 'browsed in Instagram’s in-app browser' },
+              { stat: '~6 s', label: 'spent on the home page' },
+              { stat: '~12%', label: 'of the home page scrolled' },
+            ].map((s) => (
+              <div key={s.label} style={{ background: 'var(--bg)', borderRadius: '14px', border: '1px solid var(--border2)', padding: '1.4rem 1.25rem' }}>
+                <div style={{ fontSize: '1.9rem', fontWeight: 700, color: mauve, lineHeight: 1 }}>{s.stat}</div>
+                <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: '0.5rem', lineHeight: 1.5 }}>{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <p className="cs-body reveal" style={{ maxWidth: '720px', marginTop: '2rem' }}>
+            On a phone, the first design and its first price sat about four screens down. The average ad
+            visitor scrolled about two, so <strong>most people saw no nails and no prices</strong>. She tapped
+            a Reel of a design she liked; in the first five seconds she needs to know: is this the thing from
+            the ad, how much is it, will it fit, and can I trust this shop? The old page answered those in the
+            reverse order.
+          </p>
+
+          {/* Before / after: desktop home */}
+          <div className="reveal nbm-pair" style={{ marginTop: '2.5rem' }}>
+            {[
+              { src: '/nbm-home-before.jpg', label: 'Before', sub: 'Frosted card covers the nails. Trust strip and sizing explainer come before any product.' },
+              { src: '/nbm-home-after.jpg', label: 'After', sub: 'Photo uncovered, “Sets from Rs. 2,000” in the hero, eight designs with prices straight after.' },
+            ].map((f) => (
+              <figure key={f.src} style={{ margin: 0, background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', overflow: 'hidden' }}>
+                <Image src={f.src} alt={`Nails by Mona home page, ${f.label.toLowerCase()} the redesign`} width={1440} height={2000} loading="lazy" style={{ width: '100%', height: 'auto', display: 'block', borderBottom: '1px solid var(--border)' }} />
+                <figcaption style={{ padding: '1rem 1.25rem' }}>
+                  <div style={{ fontSize: '0.82rem', fontWeight: 600, color: f.label === 'After' ? mauve : 'var(--fg)' }}>{f.label}</div>
+                  <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: '0.25rem', lineHeight: 1.55 }}>{f.sub}</div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+
+          <h3 className="reveal" style={{ fontSize: '1.05rem', fontWeight: 600, marginTop: '3rem', marginBottom: '1rem' }}>What changed</h3>
+          <div className="reveal nbm-cards">
+            {[
+              { t: 'Home: product in the first screen', b: 'Compact hero with the photo uncovered and a starting price, then a two-column grid of designs with prices and quick Add to bag. Fit, price-vs-salon and trust each got one short block, in the order the objections come up. Half the length.' },
+              { t: 'Product page: buy button up front', b: 'Add to bag moved directly under the price, above the description, with four short buy facts beside it. On phones, a sticky price-and-button bar appears whenever the main button scrolls away.' },
+              { t: 'Shop: search + one sticky toolbar', b: 'A search box that understands local spellings (mehndi/mehendi, walima/valima, shaadi → bridal), sort, and every category as visible pills. Hidden categories in a sideways-scrolling row weren’t being discovered.' },
+              { t: 'Search on every page', b: 'Full-screen on phones, a dropdown on desktop. Shows matching designs with prices plus relevant guides, and offers a custom set over WhatsApp when nothing matches.' },
+            ].map((c) => (
+              <div key={c.t} style={{ background: 'var(--bg)', borderRadius: '14px', border: '1px solid var(--border2)', padding: '1.4rem 1.5rem' }}>
+                <div style={{ fontSize: '0.92rem', fontWeight: 600, marginBottom: '0.5rem' }}>{c.t}</div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{c.b}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Phone first screens */}
+          <div className="reveal" style={{ marginTop: '3rem' }}>
+            <div style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: mauve, marginBottom: '1rem', textAlign: 'center' }}>The first phone screen, after the redesign</div>
+            <div className="nbm-phones">
+              {[
+                { src: '/nbm-phone-home.jpg', label: 'Home' },
+                { src: '/nbm-phone-shop.jpg', label: 'Shop' },
+                { src: '/nbm-phone-product.jpg', label: 'Product' },
+              ].map((p) => (
+                <figure key={p.src} style={{ margin: 0, textAlign: 'center' }}>
+                  <Image src={p.src} alt={`Nails by Mona ${p.label.toLowerCase()} page on a phone`} width={780} height={1688} loading="lazy" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '18px', border: '1px solid var(--border2)' }} />
+                  <figcaption style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: '0.6rem', letterSpacing: '0.06em' }}>{p.label}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ── 15. ITERATING WITH THE CLIENT ────────────────── */}
       <div className="cs-section">
+        <div className="inner-wide">
+          <div className="section-tag reveal">Iterating with Mona</div>
+          <h2 className="cs-h2 reveal">Running the business on it<br /><em>showed what the plan missed.</em></h2>
+          <p className="cs-body reveal" style={{ maxWidth: '720px' }}>
+            Once Mona was handling real orders every day, her feedback became the best usability test.
+            Each change below came from something that slowed her down or confused a customer.
+          </p>
+
+          <div className="reveal nbm-cards" style={{ marginTop: '2.5rem' }}>
+            {[
+              { t: 'Custom order links', pain: 'Designs agreed in Instagram DMs were invisible to the system', b: 'Mona creates a private link from the admin with the agreed sets and price. The customer sizes and pays through the normal checkout, so custom orders show up in revenue, tracking and saved sizing like any other order.' },
+              { t: 'Full payment up front', pain: 'Chasing a second payment by email', b: 'Every set is made to measure and can’t be resold, and many customers never read the balance-due email. The advance-then-balance flow was replaced with one payment before production. Older orders keep their original terms.' },
+              { t: 'Payment methods on/off', pain: 'No way to hide a method without deleting its details', b: 'Each payment method has a “Show on checkout” switch. The checkout, the order rules on the server and every line of payment copy on the site follow whatever is switched on.' },
+              { t: 'Fewer manual messages', pain: 'A WhatsApp message for every order stage', b: 'Per-stage WhatsApp prompts were built, then trimmed back at Mona’s request. Emails are the automatic channel; WhatsApp stays as an optional button.' },
+              { t: 'Honest bridal offer', pain: 'Claims the business couldn’t back yet', b: 'One flat Rs. 10,000 Trio with real wedding photos, each night linked to its real set. A price comparison that no longer matched the shop and packaging that wasn’t ready yet were removed.' },
+              { t: 'Admin that keeps up', pain: 'Missing new payment proofs', b: 'A bell and push notification when a customer uploads a payment proof, whole rows tappable on a phone, and a faster dashboard that no longer refreshes every few seconds.' },
+            ].map((c) => (
+              <div key={c.t} style={{ background: 'var(--bg2)', borderRadius: '14px', border: '1px solid var(--border2)', padding: '1.4rem 1.5rem' }}>
+                <div style={{ fontSize: '0.92rem', fontWeight: 600, marginBottom: '0.35rem' }}>{c.t}</div>
+                <div style={{ fontSize: '0.72rem', color: '#e8b4a8', marginBottom: '0.6rem' }}>Pain: {c.pain}</div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{c.b}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="cs-body reveal" style={{ maxWidth: '720px', marginTop: '2rem' }}>
+            In parallel: a speed pass (photos resized into phone-sized versions, self-hosted fonts, analytics
+            loaded after the page), SEO work (unique product titles, product details, Google Merchant Center
+            feed, old product links redirected instead of 404ing) and a site-wide consistency pass on copy,
+            colour and icons.
+          </p>
+        </div>
+      </div>
+
+      {/* ── 16. RESULTS ─────────────────────────────────── */}
+      <div className="cs-section alt">
         <div className="inner">
-          <div className="section-tag reveal">Outcomes to measure</div>
-          <h2 className="cs-h2 reveal">The numbers that tell us<br /><em>whether the design landed</em></h2>
+          <div className="section-tag reveal">Results so far</div>
+          <h2 className="cs-h2 reveal">Measured, then improved.<br /><em>Before and after.</em></h2>
           <p className="cs-body reveal">
-            The site launched recently. These are the 12-month targets — not Dribbble likes or Lighthouse
-            scores, but the business metrics the design decisions were built to move.
+            Approximate figures from Lighthouse, Search Console, server logs and on-device tests,
+            comparing the launch version with today&apos;s site.
           </p>
 
           <div style={{ marginTop: '2.5rem', borderRadius: '16px', border: '1px solid var(--border2)', overflow: 'hidden' }} className="reveal">
-            <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', padding: '0.85rem 1.5rem', background: 'var(--bg2)', fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>
-              <div>Metric</div><div>Baseline (DM era)</div><div style={{ color: mauve }}>12-month target</div>
+            <div className="nbm-row" style={{ padding: '0.85rem 1.5rem', background: 'var(--bg)', fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>
+              <div>Measure</div><div>At launch</div><div style={{ color: mauve }}>Now</div>
             </div>
             {[
-              { metric: 'Organic search visitors / month', baseline: '0', target: '5,000–15,000' },
-              { metric: 'Live-camera adoption (first-time orders)', baseline: 'n/a', target: '≥ 60%' },
-              { metric: 'Refit-request rate', baseline: 'n/a', target: '≤ 6%' },
-              { metric: 'Repeat-customer rate', baseline: '~10% qualitative', target: '≥ 25%' },
-              { metric: 'Bridal Trio share of revenue', baseline: '~0%', target: '25–35%' },
-              { metric: 'Average order value', baseline: 'PKR ~2,200', target: 'PKR 2,800–3,500' },
-              { metric: 'Lighthouse mobile (every page)', baseline: 'n/a', target: '≥ 90' },
+              { m: 'Home page length on a phone', before: '~18 screens', after: '~8 screens' },
+              { m: 'First design + price on the phone home page', before: '~4 screens down', after: 'First screen' },
+              { m: 'Add to bag on a phone product page', before: '~1.5 screens down', after: 'First screen + sticky bar' },
+              { m: 'Mobile PageSpeed score (home)', before: '~67', after: '~80 (desktop ~99)' },
+              { m: 'Shop page download on a phone', before: '~20 MB', after: '~1 MB' },
+              { m: 'Sizing photo upload, iPhone Chrome', before: '~66 s', after: '~3 s' },
+              { m: 'Pages indexed by Google', before: '~20', after: '~40' },
+              { m: 'Orders sized with the live camera', before: 'Untested', after: '100%' },
             ].map((row, i) => (
-              <div key={row.metric} style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', padding: '1rem 1.5rem', background: i % 2 === 0 ? 'var(--bg2)' : 'transparent', borderTop: '1px solid var(--border)', fontSize: '0.85rem' }}>
-                <div style={{ color: 'var(--fg)' }}>{row.metric}</div>
-                <div style={{ color: 'var(--muted)' }}>{row.baseline}</div>
-                <div style={{ color: mauve, fontWeight: 500 }}>{row.target}</div>
+              <div key={row.m} className="nbm-row" style={{ background: i % 2 === 0 ? 'var(--bg2)' : 'transparent', borderTop: '1px solid var(--border)' }}>
+                <div style={{ color: 'var(--fg)' }}>{row.m}</div>
+                <div style={{ color: 'var(--muted)' }}>{row.before}</div>
+                <div style={{ color: mauve, fontWeight: 500 }}>{row.after}</div>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* ── 16. REFLECTION + CTA ────────────────────────── */}
-      <div className="cs-section alt">
+      {/* ── 17. REFLECTION + CTA ────────────────────────── */}
+      <div className="cs-section">
         <div className="inner" style={{ maxWidth: '720px', margin: '0 auto' }}>
           <div className="section-tag reveal" style={{ textAlign: 'center' }}>Reflection</div>
-          <h2 className="cs-h2 reveal" style={{ textAlign: 'center' }}>The thing I&apos;m most<br /><em>proud of isn&apos;t a screen.</em></h2>
+          <h2 className="cs-h2 reveal" style={{ textAlign: 'center' }}>Launch wasn&apos;t the finish line.<br /><em>It was the first real research.</em></h2>
           <p className="cs-body reveal" style={{ textAlign: 'center' }}>
-            It&apos;s the discipline of what we deliberately did not build. No &ldquo;Order Now&rdquo; buttons, no AI chatbot,
-            no founder face, no payment gateway at launch. Each &ldquo;no&rdquo; was a decision, not an oversight.
-            Premature features are the enemy of a one-woman studio that needs to ship and survive.
+            I&apos;m still proud of the discipline of what we deliberately did not build. No &ldquo;Order Now&rdquo; buttons,
+            no AI chatbot, no founder face, no payment gateway at launch. Each &ldquo;no&rdquo; was a decision, not an
+            oversight, and it kept a one-woman studio able to ship.
           </p>
           <p className="cs-body reveal" style={{ textAlign: 'center' }}>
-            What I&apos;m least certain about is live-camera adoption. The whole sizing differentiation rests
-            on it. If only 20% of customers grant permission and the rest fall back to upload, we still
-            ship a working product — but the wedge gets smaller. That&apos;s why <code style={{ background: 'var(--bg)', padding: '0.1rem 0.4rem', borderRadius: '4px', fontSize: '0.8rem' }}>sizing_capture_method</code> is
-            tracked in the schema from day one, and the first round of usability testing is scoped for the
-            week the first 20 organic orders land.
+            The risk I worried about most turned out fine: every order so far has used the live camera, so
+            the sizing wedge holds. What I got wrong was the visitor. Personas built from research described
+            a careful shopper; the data showed someone arriving from an ad with a thumb on the back button.
+            The biggest improvements came from watching real behaviour and from listening to the person
+            running the business, not from the original plan.
+          </p>
+          <p className="cs-body reveal" style={{ textAlign: 'center' }}>
+            Next: real customer reviews with photos, category landing pages for the designs people search
+            for most, and a usability test of the new home page with first-time visitors.
           </p>
 
           <div className="reveal" style={{ textAlign: 'center', marginTop: '3rem' }}>

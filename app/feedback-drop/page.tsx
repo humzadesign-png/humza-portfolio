@@ -48,12 +48,12 @@ export default function FeedbackDrop() {
             Self-initiated · UX &amp; UI · 2026
           </div>
           <h1>
-            FeedbackDrop &mdash;<br />
+            FeedbackDrop:<br />
             <em>Customer feedback,</em><br />
             prioritized
           </h1>
           <p className="cs-hero-desc">
-            Designing a focused feedback board for SaaS teams — from competitive research and user
+            Designing a focused feedback board for SaaS teams, from competitive research and user
             personas through to a complete high-fidelity UI system, grounded in real PM workflows.
           </p>
           <div className="meta-chips">
@@ -90,7 +90,7 @@ export default function FeedbackDrop() {
           </div>
           <div className="inner" style={{ marginTop: '3rem' }}>
             <div className="section-tag reveal">The Problem</div>
-            <h2 className="cs-h2 reveal">Feedback is <em>everywhere</em> — and nowhere</h2>
+            <h2 className="cs-h2 reveal">Feedback is <em>everywhere</em>, and nowhere</h2>
             <p className="cs-body reveal">
               Product managers and founders at early-stage SaaS companies (5–30 people) track customer
               feedback across Slack threads, spreadsheets, emails, and sticky notes. Feature requests get
@@ -123,7 +123,7 @@ export default function FeedbackDrop() {
             {[
               { num: '22%', label: 'Higher retention for companies that invest in customer experience (Zendesk 2025)' },
               { num: '81%', label: 'Of workers prioritise employers who support feedback-driven development' },
-              { num: '$399', label: 'Monthly cost before Canny unlocks "real" features — the pricing gap FeedbackDrop fills' },
+              { num: '$399', label: 'Monthly cost before Canny unlocks "real" features: the pricing gap FeedbackDrop fills' },
             ].map((s) => (
               <div key={s.num} style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1.5rem' }}>
                 <div style={{ fontFamily: 'var(--serif)', fontSize: '2rem', color: '#a78bfa', lineHeight: 1, marginBottom: '0.6rem' }}>{s.num}</div>
@@ -156,17 +156,17 @@ export default function FeedbackDrop() {
           <div className="gaps-row reveal" style={{ marginTop: '2rem' }}>
             <div className="gap-box">
               <div className="gap-title gap-t">Design gaps identified</div>
-              <div className="gap-item">No competitor has a real admin dashboard — Nolt and Fider have none, Canny&apos;s is cluttered</div>
-              <div className="gap-item">Feedback-to-action loop is broken — collecting is easy, knowing what to build next is the hard part</div>
-              <div className="gap-item">Onboarding is always too slow — none can get a PM from signup to first feedback in under 5 min</div>
-              <div className="gap-item">Public boards look generic — no tool lets you make it feel like part of your own product</div>
+              <div className="gap-item">No competitor has a real admin dashboard. Nolt and Fider have none, Canny&apos;s is cluttered</div>
+              <div className="gap-item">Feedback-to-action loop is broken: collecting is easy, knowing what to build next is the hard part</div>
+              <div className="gap-item">Onboarding is always too slow. None can get a PM from signup to first feedback in under 5 min</div>
+              <div className="gap-item">Public boards look generic. No tool lets you make it feel like part of your own product</div>
             </div>
             <div className="opp-box">
               <div className="gap-title opp-t">Opportunities for FeedbackDrop</div>
-              <div className="gap-item">Own the &quot;best admin dashboard&quot; position — make data-driven prioritisation fast</div>
-              <div className="gap-item">Close the loop automatically — status changes notify voters, no manual follow-up</div>
+              <div className="gap-item">Own the &quot;best admin dashboard&quot; position: make data-driven prioritisation fast</div>
+              <div className="gap-item">Close the loop automatically: status changes notify voters, no manual follow-up</div>
               <div className="gap-item">5-minute onboarding as a core feature, not an afterthought</div>
-              <div className="gap-item">White-label board — customer&apos;s brand first, &quot;Powered by FeedbackDrop&quot; footer only</div>
+              <div className="gap-item">White-label board: customer&apos;s brand first, &quot;Powered by FeedbackDrop&quot; footer only</div>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function FeedbackDrop() {
           <div className="section-tag reveal">User Personas</div>
           <h2 className="cs-h2 reveal">Two users, <em>one product</em></h2>
           <p className="cs-body reveal">
-            FeedbackDrop serves two completely different people simultaneously — the admin managing
+            FeedbackDrop serves two completely different people at once: the admin managing
             the product, and the end user submitting ideas. I created a primary and secondary persona
             to keep both in view throughout every design decision.
           </p>
@@ -190,7 +190,7 @@ export default function FeedbackDrop() {
               <img src="/fd-persona-lisa.svg" alt="Lisa Richter" className="persona-avatar" style={{ objectFit: 'cover' }} />
               <div>
                 <div className="persona-name">Lisa Richter</div>
-                <div className="persona-sub">Primary persona — Admin / Product Manager</div>
+                <div className="persona-sub">Primary persona · Admin / Product Manager</div>
                 <div>
                   <span className="persona-tag">32 years old</span>
                   <span className="persona-tag">Product Manager</span>
@@ -205,7 +205,7 @@ export default function FeedbackDrop() {
                 <div className="p-col-title p-goal">Goals</div>
                 <div className="p-item"><div className="dot-g"></div><span>See all feedback in one place, not scattered across tools</span></div>
                 <div className="p-item"><div className="dot-g"></div><span>Know which requests have the most business impact</span></div>
-                <div className="p-item"><div className="dot-g"></div><span>Close the loop — tell users when their request ships</span></div>
+                <div className="p-item"><div className="dot-g"></div><span>Close the loop: tell users when their request ships</span></div>
                 <div className="p-item"><div className="dot-g"></div><span>Justify roadmap decisions to stakeholders with data</span></div>
               </div>
               <div className="p-col">
@@ -217,7 +217,7 @@ export default function FeedbackDrop() {
               </div>
             </div>
             <div className="persona-quote">
-              <p>&ldquo;I have feedback scattered across 4 tools and my own memory. Every quarter I spend a full week just trying to figure out what to build next — and I&apos;m still not confident I picked right.&rdquo;</p>
+              <p>&ldquo;I have feedback scattered across 4 tools and my own memory. Every quarter I spend a full week just trying to figure out what to build next, and I&apos;m still not confident I picked right.&rdquo;</p>
               <span>— Lisa, user persona</span>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function FeedbackDrop() {
               <img src="/fd-persona-jake.svg" alt="Jake Torres" className="persona-avatar" style={{ objectFit: 'cover' }} />
               <div>
                 <div className="persona-name">Jake Torres</div>
-                <div className="persona-sub">Secondary persona — Solo Founder / End User</div>
+                <div className="persona-sub">Secondary persona · Solo Founder / End User</div>
                 <div>
                   <span className="persona-tag">27 years old</span>
                   <span className="persona-tag">Solo Founder</span>
@@ -256,7 +256,7 @@ export default function FeedbackDrop() {
               </div>
             </div>
             <div className="persona-quote">
-              <p>&ldquo;My users DM me on Twitter with feature requests. I &apos;heart&apos; them and then forget. I need something so simple that I&apos;ll actually use it — not another tool I sign up for and abandon.&rdquo;</p>
+              <p>&ldquo;My users DM me on Twitter with feature requests. I &apos;heart&apos; them and then forget. I need something so simple that I&apos;ll actually use it. Not another tool I sign up for and abandon.&rdquo;</p>
               <span>— Jake, user persona</span>
             </div>
           </div>
@@ -269,7 +269,7 @@ export default function FeedbackDrop() {
           <div className="section-tag reveal">User Journey</div>
           <h2 className="cs-h2 reveal">Mapping Lisa&apos;s <em>pain points</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
-            I mapped Lisa&apos;s end-to-end feedback workflow to find where the pain is worst — then
+            I mapped Lisa&apos;s end-to-end feedback workflow to find where the pain is worst, then
             reframed each pain point as a design opportunity.
           </p>
           <div style={{ overflowX: 'auto', marginTop: '2.5rem' }} className="reveal">
@@ -328,9 +328,9 @@ export default function FeedbackDrop() {
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {[
-                { n: '1', q: 'HMW help PMs see which feedback actually matters — not just which has the most votes?' },
+                { n: '1', q: 'HMW help PMs see which feedback actually matters, not just which has the most votes?' },
                 { n: '2', q: 'HMW make the feedback board feel like part of the customer\'s own product?' },
-                { n: '3', q: 'HMW close the loop — so users who gave feedback know their voice was heard?' },
+                { n: '3', q: 'HMW close the loop so users who gave feedback know their voice was heard?' },
                 { n: '4', q: 'HMW get a new user from signup to first feedback in under 5 minutes?' },
               ].map((h) => (
                 <div key={h.n} style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start', padding: '1rem 1.25rem', background: 'var(--bg)', border: '1px solid var(--border2)', borderRadius: '10px', borderLeft: `3px solid ${fdPurple}` }}>
@@ -350,7 +350,7 @@ export default function FeedbackDrop() {
           <h2 className="cs-h2 reveal">Building <em>less</em> on purpose</h2>
           <p className="cs-body reveal">
             Not every feature belongs in v1. I used MoSCoW prioritisation to scope FeedbackDrop
-            to four core features — each one mapped to a specific pain point from the user journey.
+            to four core features, each one mapped to a specific pain point from the user journey.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '2.5rem' }} className="reveal">
             {[
@@ -368,7 +368,7 @@ export default function FeedbackDrop() {
           </div>
           <p className="cs-body reveal" style={{ marginTop: '1.75rem', fontSize: '0.82rem' }}>
             Deferred to v2: email notifications, embeddable widget, board customisation, Slack integration,
-            impact scoring, and public roadmap — each validated by research but not essential for the core feedback loop.
+            impact scoring, and public roadmap. Each was validated by research but not essential for the core feedback loop.
           </p>
         </div>
       </div>
@@ -379,7 +379,7 @@ export default function FeedbackDrop() {
           <div className="section-tag reveal">Information Architecture</div>
           <h2 className="cs-h2 reveal">Structuring <em>the product</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
-            FeedbackDrop has two entry points — the authenticated admin panel (4 screens) and the
+            FeedbackDrop has two entry points: the authenticated admin panel (4 screens) and the
             public board (1 screen). I mapped the full IA before wireframing to make sure no screen
             was designed in isolation.
           </p>
@@ -465,7 +465,7 @@ export default function FeedbackDrop() {
           <h2 className="cs-h2 reveal">Building the <em>visual language</em></h2>
           <p className="cs-body reveal" style={{ maxWidth: '680px' }}>
             I built the design system before touching any screens so components could be created once
-            and reused everywhere — ensuring visual consistency across all 5 views.
+            and reused everywhere, ensuring visual consistency across all 5 views.
           </p>
 
           {/* Colors */}
@@ -510,7 +510,7 @@ export default function FeedbackDrop() {
 
           {/* Typography */}
           <div style={{ marginTop: '2.5rem' }} className="reveal">
-            <h3 style={{ fontSize: '0.82rem', fontWeight: 500, marginBottom: '1.25rem' }}>Typography scale <span style={{ color: 'var(--muted)', fontWeight: 400 }}>— Inter / Satoshi</span></h3>
+            <h3 style={{ fontSize: '0.82rem', fontWeight: 500, marginBottom: '1.25rem' }}>Typography scale <span style={{ color: 'var(--muted)', fontWeight: 400 }}>· Inter / Satoshi</span></h3>
             <div style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '12px', overflow: 'hidden' }}>
               {[
                 { style: 'Page title', size: '20px', weight: '500' },
@@ -545,10 +545,10 @@ export default function FeedbackDrop() {
             solves a specific job from the user journey.
           </p>
           {[
-            { n: '01', title: 'Dashboard', src: '/fd-dashboard.jpg', alt: 'FeedbackDrop dashboard', desc: "Lisa's home base. Four KPI metrics (total feedback, new this month, shipped, avg votes), top requests by votes with status pills, status breakdown bar chart, 12-month feedback trend, and a live activity feed — all on a single screen." },
-            { n: '02', title: 'Feedback Board', src: '/fd-feedback.jpg', alt: 'FeedbackDrop feedback board', desc: 'Full list of all feedback. Status filter pills at top (Under review · 64, Planned · 36, In progress · 18, Shipped · 12), search bar, sort control. Vote-first layout — every item leads with the upvote count on the left.' },
+            { n: '01', title: 'Dashboard', src: '/fd-dashboard.jpg', alt: 'FeedbackDrop dashboard', desc: "Lisa's home base. Four KPI metrics (total feedback, new this month, shipped, avg votes), top requests by votes with status pills, status breakdown bar chart, 12-month feedback trend, and a live activity feed, all on a single screen." },
+            { n: '02', title: 'Feedback Board', src: '/fd-feedback.jpg', alt: 'FeedbackDrop feedback board', desc: 'Full list of all feedback. Status filter pills at top (Under review · 64, Planned · 36, In progress · 18, Shipped · 12), search bar, sort control. Vote-first layout: every item leads with the upvote count on the left.' },
             { n: '03', title: 'Detail View', src: '/fd-detail.jpg', alt: 'FeedbackDrop detail view', desc: 'Deep dive into a single request. Full description, 42 voter avatars, comment thread with admin badges. Right sidebar: status dropdown (with notification count "42 voters will be notified"), category, and metadata card.' },
-            { n: '04', title: 'Public Board', src: '/fd-public.jpg', alt: 'FeedbackDrop public board', desc: "The customer-facing page. White-labelled with Acme App's brand identity — logo, name, custom subdomain feedback.acme.com. Purple hero header, search + sort tabs, 'New Idea' CTA, ranked feedback list. 'Powered by FeedbackDrop' footer is the only FD brand mark." },
+            { n: '04', title: 'Public Board', src: '/fd-public.jpg', alt: 'FeedbackDrop public board', desc: "The customer-facing page. White-labelled with Acme App's brand identity: logo, name, custom subdomain feedback.acme.com. Purple hero header, search + sort tabs, 'New Idea' CTA, ranked feedback list. 'Powered by FeedbackDrop' footer is the only FD brand mark." },
             { n: '05', title: 'Settings', src: '/fd-settings.jpg', alt: 'FeedbackDrop settings', desc: "Admin configuration in a tabbed layout: Branding (name, description, brand color #6D28D9, custom domain with CNAME helper), Categories (chip management with + Add), Widget (embed <script> with copy button, toggle controls), Integrations (Slack connected, Linear + Intercom with Connect buttons)." },
           ].map((s) => (
             <div key={s.n} style={{ marginTop: '4rem' }} className="reveal">
@@ -579,13 +579,13 @@ export default function FeedbackDrop() {
           <div className="decision-list reveal">
             {[
               { n: '1', title: 'Purple as primary colour', desc: 'Purple (#6D28D9) was chosen to differentiate from the blue-heavy SaaS landscape. Competitors Canny, Nolt, and Featurebase all use blue. Purple feels modern, premium, and stands out in product screenshots and case studies.' },
-              { n: '2', title: 'Dark sidebar navigation', desc: 'A dark sidebar (#111827) creates clear visual separation between navigation and content. It mirrors patterns users are familiar with from Linear, Notion, and Slack — the exact tools our target users already live in daily.' },
-              { n: '3', title: 'Vote-first layout on every feedback item', desc: "Every feedback item leads with the vote count on the left. This is intentional — the most important signal for prioritisation should be the first thing Lisa sees when scanning the list. The hierarchy Vote → Title → Status → Category → Meta was derived directly from the user journey pain point: 'I need to see what matters, fast.'" },
+              { n: '2', title: 'Dark sidebar navigation', desc: 'A dark sidebar (#111827) creates clear visual separation between navigation and content. It mirrors patterns users are familiar with from Linear, Notion, and Slack, the exact tools our target users already live in daily.' },
+              { n: '3', title: 'Vote-first layout on every feedback item', desc: "Every feedback item leads with the vote count on the left. This is intentional: the most important signal for prioritisation should be the first thing Lisa sees when scanning the list. The hierarchy Vote → Title → Status → Category → Meta was derived directly from the user journey pain point: 'I need to see what matters, fast.'" },
               { n: '4', title: 'Status pills with semantic colours', desc: 'Each status gets a distinct bg/text colour pair: amber for Under review (needs attention), purple for Planned (committed), blue for In progress (active work), green for Shipped (done), grey for Closed. These match intuitive associations so Lisa never has to read the text to understand status at a glance.' },
-              { n: '5', title: 'Admin controls in a right sidebar (detail view)', desc: "On the detail view, admin controls (status and category dropdowns) sit in a right sidebar rather than inline. This keeps the feedback content clean and readable. The notification card 'X voters will be notified' reinforces the consequence — every status change closes the loop." },
-              { n: '6', title: 'Public board as a branded experience', desc: "The public board uses the customer's brand colour in the header, not FeedbackDrop's purple. This directly addresses the competitive gap: 'no tool lets you make the board feel like part of your own product.' The 'Powered by FeedbackDrop' footer is subtle — it's the customer's space, not ours." },
-              { n: '7', title: 'Settings with a ready-to-copy embed code', desc: "The settings page shows a ready-to-copy script tag because Jake needs to go from signup to live feedback in 5 minutes. Showing the exact code with a copy button removes friction — he doesn't need to read docs or find an API key." },
-              { n: '8', title: 'Five screens, not fifteen', desc: 'We deliberately scoped to 5 screens instead of designing every edge case. This shows product thinking — knowing what to include in v1 and what to defer. The MoSCoW table backs every inclusion and exclusion decision.' },
+              { n: '5', title: 'Admin controls in a right sidebar (detail view)', desc: "On the detail view, admin controls (status and category dropdowns) sit in a right sidebar rather than inline. This keeps the feedback content clean and readable. The notification card 'X voters will be notified' reinforces the consequence: every status change closes the loop." },
+              { n: '6', title: 'Public board as a branded experience', desc: "The public board uses the customer's brand colour in the header, not FeedbackDrop's purple. This directly addresses the competitive gap: 'no tool lets you make the board feel like part of your own product.' The 'Powered by FeedbackDrop' footer is subtle. It's the customer's space, not ours." },
+              { n: '7', title: 'Settings with a ready-to-copy embed code', desc: "The settings page shows a ready-to-copy script tag because Jake needs to go from signup to live feedback in 5 minutes. Showing the exact code with a copy button removes friction, so he doesn't need to read docs or find an API key." },
+              { n: '8', title: 'Five screens, not fifteen', desc: 'We deliberately scoped to 5 screens instead of designing every edge case. This shows product thinking: knowing what to include in v1 and what to defer. The MoSCoW table backs every inclusion and exclusion decision.' },
             ].map((d) => (
               <div key={d.n} className="decision">
                 <div className="d-num">{d.n}</div>
@@ -608,19 +608,19 @@ export default function FeedbackDrop() {
             <div className="reflect-card">
               <div className="d-title" style={{ marginBottom: '0.75rem', color: '#a78bfa' }}>✓ What went well</div>
               <div className="d-desc" style={{ lineHeight: 1.85 }}>
-                Research-first approach shaped every decision — competitive gaps directly became our features. Keeping scope tight made the project focused and credible. The design system ensured consistency across all 5 screens — components were built once and reused everywhere.
+                Research-first approach shaped every decision. Competitive gaps directly became our features. Keeping scope tight made the project focused and credible. The design system ensured consistency across all 5 screens: components were built once and reused everywhere.
               </div>
             </div>
             <div className="reflect-card">
               <div className="d-title" style={{ marginBottom: '0.75rem', color: '#6ee7b7' }}>★ What I learned</div>
               <div className="d-desc" style={{ lineHeight: 1.85 }}>
-                Designing for B2B SaaS requires thinking about two users simultaneously — the public board and admin dashboard serve completely different needs. Competitive auditing revealed specific UX failures that became design opportunities. Scoping matters — a focused product demonstrates better thinking than an overscoped platform.
+                Designing for B2B SaaS requires thinking about two users at once. The public board and admin dashboard serve completely different needs. Competitive auditing revealed specific UX failures that became design opportunities. Scoping matters: a focused product demonstrates better thinking than an overscoped platform.
               </div>
             </div>
             <div className="reflect-card">
               <div className="d-title" style={{ marginBottom: '0.75rem', color: '#fbbf24' }}>↻ What I&apos;d do differently</div>
               <div className="d-desc" style={{ lineHeight: 1.85 }}>
-                Run usability testing on the feedback submission flow — it&apos;s the highest-friction step for end users. Design the empty states — the first-time experience is critical for onboarding. Explore a mobile responsive version since PMs often check dashboards on their phones.
+                Run usability testing on the feedback submission flow, since it&apos;s the highest-friction step for end users. Design the empty states, because the first-time experience is critical for onboarding. Explore a mobile responsive version since PMs often check dashboards on their phones.
               </div>
             </div>
             <div className="reflect-card">
@@ -635,7 +635,7 @@ export default function FeedbackDrop() {
           <div style={{ background: 'var(--bg)', border: '1px solid var(--border2)', borderLeft: `2.5px solid ${fdPurpleLight}`, borderRadius: '0 12px 12px 0', padding: '1.25rem 1.5rem', marginTop: '2.5rem' }} className="reveal">
             <div style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#a78bfa', marginBottom: '8px' }}>Key takeaway</div>
             <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--muted)', lineHeight: 1.75 }}>
-              &ldquo;In B2B design, the best UX is often <strong style={{ color: 'var(--text)', fontWeight: 400 }}>invisible density</strong> — surfacing exactly the right information at the right moment, without the user feeling overwhelmed. The hardest part isn&apos;t adding features. It&apos;s deciding which 5 screens to build and which 15 to leave for v2.&rdquo;
+              &ldquo;In B2B design, the best UX is often <strong style={{ color: 'var(--text)', fontWeight: 400 }}>invisible density</strong>: surfacing exactly the right information at the right moment, without the user feeling overwhelmed. The hardest part isn&apos;t adding features. It&apos;s deciding which 5 screens to build and which 15 to leave for v2.&rdquo;
             </p>
           </div>
         </div>
@@ -647,7 +647,7 @@ export default function FeedbackDrop() {
           <div className="next-cta reveal">
             <div>
               <div className="next-label">Next project</div>
-              <div className="next-title">Smokin Grill — Food ordering experience</div>
+              <div className="next-title">Smokin Grill: Food ordering experience</div>
             </div>
             <a href="/smokin-grill" className="btn-primary" style={{ flexShrink: 0 }}>View case study ↗</a>
           </div>

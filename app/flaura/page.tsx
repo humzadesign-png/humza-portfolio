@@ -30,7 +30,7 @@ export default function Flaura() {
         <div className="cs-hero-left" style={{ maxWidth: '600px', margin: '0 auto' }}>
           <div className="cs-pill">Self-initiated · 2024</div>
           <h1>
-            Flaura &mdash;<br />
+            Flaura:<br />
             <em>Brand identity</em><br />
             redesign
           </h1>
