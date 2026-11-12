@@ -220,23 +220,23 @@ export default function NailsByMona() {
           </a>
         </div>
         <div className="cs-hero-right">
-          {/* Live home page, desktop in a browser frame with the phone view overlapping */}
+          {/* Live home page, desktop on a MacBook with the phone view overlapping */}
           <div className="nbm-stage">
             <div style={{ position: 'absolute', inset: '-60px', background: `radial-gradient(circle, ${mauveGlow} 0%, transparent 70%)`, pointerEvents: 'none' }} />
-            <div className="nbm-browser">
-              <div className="nbm-browser-bar" aria-hidden>
-                <i /><i /><i />
-                <span className="nbm-browser-url">nailsbymona.pk</span>
+            <div className="nbm-macbook">
+              <div className="nbm-mac-screen">
+                <span className="nbm-mac-cam" aria-hidden />
+                <Image
+                  src="/nbm-hero.jpg"
+                  alt="Nails by Mona home page on desktop: press-on nails, made to fit your hands, sets from Rs. 2,000"
+                  width={1440}
+                  height={900}
+                  priority
+                  sizes="600px"
+                  style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '2px' }}
+                />
               </div>
-              <Image
-                src="/nbm-hero.jpg"
-                alt="Nails by Mona home page on desktop: press-on nails, made to fit your hands, sets from Rs. 2,000"
-                width={1440}
-                height={900}
-                priority
-                sizes="640px"
-                style={{ width: '100%', height: 'auto', display: 'block' }}
-              />
+              <div className="nbm-mac-base" aria-hidden><span className="nbm-mac-lip" /></div>
             </div>
             <div className="nbm-phone">
               <Image
