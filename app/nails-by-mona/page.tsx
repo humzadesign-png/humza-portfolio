@@ -220,16 +220,35 @@ export default function NailsByMona() {
           </a>
         </div>
         <div className="cs-hero-right">
-          <div style={{ position: 'relative' }}>
-            <div style={{ position: 'absolute', inset: '-40px', background: `radial-gradient(circle, ${mauveGlow} 0%, transparent 70%)`, pointerEvents: 'none' }} />
-            <Image
-              src="/nbm-hero.jpg"
-              alt="Nails by Mona homepage hero: custom-fit press-on nails, made for your hands"
-              width={1440}
-              height={1800}
-              priority
-              style={{ width: '100%', maxWidth: '520px', height: 'auto', borderRadius: '12px', border: '1px solid rgba(191,164,206,0.2)', boxShadow: '0 32px 80px rgba(0,0,0,0.6)', position: 'relative', zIndex: 1 }}
-            />
+          {/* Live home page, desktop in a browser frame with the phone view overlapping */}
+          <div className="nbm-stage">
+            <div style={{ position: 'absolute', inset: '-60px', background: `radial-gradient(circle, ${mauveGlow} 0%, transparent 70%)`, pointerEvents: 'none' }} />
+            <div className="nbm-browser">
+              <div className="nbm-browser-bar" aria-hidden>
+                <i /><i /><i />
+                <span className="nbm-browser-url">nailsbymona.pk</span>
+              </div>
+              <Image
+                src="/nbm-hero.jpg"
+                alt="Nails by Mona home page on desktop: press-on nails, made to fit your hands, sets from Rs. 2,000"
+                width={1440}
+                height={900}
+                priority
+                sizes="640px"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
+            <div className="nbm-phone">
+              <Image
+                src="/nbm-phone-home.jpg"
+                alt="Nails by Mona home page on a phone"
+                width={780}
+                height={1688}
+                priority
+                sizes="160px"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
           </div>
         </div>
       </section>
